@@ -1,0 +1,38 @@
+Decompressing is pretty simple
+
+Code: [Select]
+04:A11A: B1 0E     LDA ($0E),Y
+ 04:A11C: 10 11     BPL $A12F
+ 04:A11E: 29 7F     AND #$7F
+ 04:A120: 48        PHA
+ 04:A121: C8        INY
+ 04:A122: B1 0E     LDA ($0E),Y
+ 04:A124: 85 0D     STA $0D
+ 04:A126: 68        PLA
+ 04:A127: 9D 00 06  STA $0600,X
+ 04:A12A: E8        INX
+ 04:A12B: C6 0D     DEC $0D
+ 04:A12D: D0 F8     BNE $A127
+ 04:A12F: 9D 00 06  STA $0600,X
+ 04:A132: E8        INX
+ 04:A133: C8        INY
+ 04:A134: E0 E0     CPX #$E0
+ 04:A136: D0 E2     BNE $A11A
+ 04:A138: 60        RTS
+
+Code checks if the loaded byte from the table is positive (less than 80), in that case this byte has to be written into ram a single time, then continue reading from the table.
+
+But if it appears to be negative (80 or higher), then code cuts off higher bit of that byte, loads following byte as a counter, and writes cutted byte into ram as many times as counter says so + 1 additional time, then continue reading from the table.
+
+Lets describe an example of the 1st level
+
+Code: [Select]
+80,06 01 44 80,0C 81,02
+
+Byte 80 - negative, then write byte "00" 7 times (06 + 1)
+Byte 01 - positive, write byte "01" 1 time
+Byte 44 - positive, write byte "44" 1 time
+Byte 80 - negative, then write byte "00" 12 times (0C + 1)
+Byte 81 - negative, then write byte "01" 3 times (02 + 1)
+
+And so on
