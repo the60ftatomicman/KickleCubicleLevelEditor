@@ -61,6 +61,64 @@ example: (8/0)0 == 80 OR 00, depending on group or single use.
 - (B/3)6->7: Spring Condensed Horizontal Right
 - (B/3)8->9: Spring Condensed Vertical Top
 - (B/3)A->B: Spring Condensed Vertical Bottom
+- (B/3)C: Sinking Tile Mid Sink (unwalkable)
+- (B/3)D: Sinking Tile Beginning Sink (unwalkable)
+- (B/3)E: Tiny Orange Blocks in a group of 4 (note: is walkable)(Yes same as A/2F)
+- (B/3)F: Purple Block  (Same as 8/02)
+---- (C/4)
+- (C/4)0: Cracked Ice (non-walkable)
+- (C/4)1: Edge of Ice - top and left
+- (C/4)2: Edge of Ice - top
+- (C/4)3: Edge of Ice - top
+- (C/4)4: Edge of Ice - left
+- (C/4)5: Edge of Ice - left
+- (C/4)6: Edge of Ice - Little top left corner
+- (C/4)7: Tiny yellow/blue corners in a group of 4 (not walkable)
+- (C/4)7: Tiny yellow/blue corners in a group of 4 (not walkable)
+- (C/4)8: Crushed Ice
+- (C/4)9: Crushed Ice (further deteriorated)
+- (C/4)A: Crushed Ice top only
+- (C/4)B: Crushed Ice top and Bottom
+- (C/4)C: Crushed Ice left only
+- (C/4)D: Crushed Ice (different than 8-9 but all over)
+- (C/4)E: Crushed Ice top right only
+- (C/4)F: Crushed Ice (different than 8,9 and D but all over)
+---- (D/5) (looks like edging in boss battles and princess rooms)(note flower is "hammer shaft")
+-- Note certain this isn't just sprite data at this point!
+-- all of these go without palette. will turn back if cylinder placed on them
+- (D/5)0: a lower case 'b' (walkable)
+- (D/5)1: half a flower (walkable)
+- (D/5)2: half flower and hammer
+- (D/5)3: half hammer horizontal and vertical
+- (D/5)4->5: half hammer vertical and horizontal
+- (D/5)6: half hammer vertical and flower
+- (D/5)7: more flower bits
+- (D/5)8: more flower bits and two blank sqaures
+- (D/5)9: Spring Horizontal (not working)
+- (D/5)A: Spring Vertical (not working)
+- (D/5)B: Spring collapsed (all)
+- (D/5)C: Spring collapsed Vertical
+- (D/5)D: Spring collapsed Horizontal
+- (D/5)E: pure white block
+- (D/5)F: Tiny Orange Blocks in a group of 4 (note: is walkable)(Yes same as A/2F)
+---- (E/6) (Numbers act as wall)
+- (E/6)0: Numeric, 4,5,6,7
+- (E/6)1: Numeric, 8,9, lives icon
+- (E/6)2: cool blue block (sprite data for block breakers)
+- (E/6)3: half cool blue block and arrow (sprite data for block breakers)
+- (E/6)4->F: Tiny Orange Blocks in a group of 4 (note: is walkable)(Yes same as A/2F)
+---- (F/7) (Numbers act as wall)
+- (F/7)0: Purple Edge Top Left
+- (F/7)1: Purple Edge Left Right 
+- (F/7)2: Purple Edge Bottom Left
+- (F/7)3: Purple Edge Top
+- (F/7)4: Purple Edge Bottom
+- (F/7)5: Purple Edge Top Right
+- (F/7)6: Purple Edge Right
+- (F/7)7: Purple Edge Bottom Right
+- (F/7)8: Odd blue and white pattern
+- (F/7)9->E: Tiny Orange Blocks in a group of 4 (note: is walkable)(Yes same as A/2F)
+- (F/7)F: Black Red Water
 # FAQ
  - Why is my screen modified after I die?
  -- You have not accounted for the byte limit set per level. You need to have an assignment for exactly X amount of tiles. If information is not defined you'll start seeing funky stuff after kickle dies and the level is reloaded.
