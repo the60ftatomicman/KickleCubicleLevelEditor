@@ -1,11 +1,44 @@
 # KickleCubicleLevelEditor
 Notes, eventually a program for editing Kickle Cubicle levels
 
-# Intro
-blah blah blah
+# Intro Summary Etc
+blah blah blah. Will write as time goes on but for now just copying down important notes!
 
-# Notes on how a level is layed out
- xxx amount of bytes
+#How Enemy Data Works
+Calling EF FF, the next 3 values will be our dream bag locations
+After that, call 01 and define kickles position
+0B,C0,0A,05,00 (and dividing by 00) seems to trigger noggle definition. note EF usually run after defining
+monsters
+The noggles are ALWAYS defined in the following manner at minimum until EF
+73 - Noggles #1 starting position (X: 30, Y: 70).
+83 - Noggles #1 Base Rock position (X: 30, Y: 80).
+FF - 
+01 - Noggles #1 direction (right).
+7B - Noggles #2 starting position (X: B0, Y: 70).
+8B - Noggles #2 Base Rock position (X: B0, Y: 80).
+FF - 
+03 - Noggles #2 direction (left).
+EF - Repeat starting, spawn, blank, direction until EF!
+
+ --- Enemies defined by this 5 hex character
+ 
+0B,C0,0A,05,00      = Noggle group
+1E,88,0D,11,(02/03) = Sparky group
+0D,08,0E,0D,(02/03) = Mr. Hoople group
+20,08,0B,03,(02/03) = Max group
+18,08,0C,0B,(02/03) = Rocky group
+1A,08,0F,03,(02/03) = Rooker group
+25,88,09,07,(02/03) = Bonkers group
+27,C8,10,01,(02/03) = Shades group
+2B,08,12,11,(02/03) = Equalizer group
+23,70,0A,11,(02/03) = Spiny (Right) group
+23,40,0A,11,(02/03) = Spiny (Left) group
+46,88,4F,0A,(02/03) = Spiny (Left) group
+
+# Moving Kickle's and Dream Bags Spawn Points
+ Defined by Nybbles of a single Byte.
+ Left Nybble is the Y Coordinate 0-F
+ Right Nybble is the X Coordinate 0-C
  
 # Values for block types
 !!! <it'd be nice to insert pictures OF the block!>
@@ -107,7 +140,7 @@ example: (8/0)0 == 80 OR 00, depending on group or single use.
 - (E/6)2: cool blue block (sprite data for block breakers)
 - (E/6)3: half cool blue block and arrow (sprite data for block breakers)
 - (E/6)4->F: Tiny Orange Blocks in a group of 4 (note: is walkable)(Yes same as A/2F)
----- (F/7) (Numbers act as wall)
+---- (F/7)
 - (F/7)0: Purple Edge Top Left
 - (F/7)1: Purple Edge Left Right 
 - (F/7)2: Purple Edge Bottom Left
@@ -119,6 +152,7 @@ example: (8/0)0 == 80 OR 00, depending on group or single use.
 - (F/7)8: Odd blue and white pattern
 - (F/7)9->E: Tiny Orange Blocks in a group of 4 (note: is walkable)(Yes same as A/2F)
 - (F/7)F: Black Red Water
+
 # FAQ
  - Why is my screen modified after I die?
  -- You have not accounted for the byte limit set per level. You need to have an assignment for exactly X amount of tiles. If information is not defined you'll start seeing funky stuff after kickle dies and the level is reloaded.
