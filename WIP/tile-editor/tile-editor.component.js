@@ -73,25 +73,14 @@ angular.
 			}
 		}
 		function getSpawnString(row,col){
-			let kickleSpawn = getKickleSpawn();
-			if(kickleSpawn.row == row && kickleSpawn.col == col){
+			let kickleSpawn = MapService.getKickleSpawn();
+			let bagSpawns   = MapService.getBagSpawns();
+			if(MapService.isKickleSpawn(row,col)){
 				return 'kickle';
+			}else if(MapService.isBagSpawn(row,col)){
+				return 'bag';
 			}
 			return '';
-		}
-		function getKickleSpawn(){
-			let hexValues   = self.enemyString.match(/[\s\S]{1,2}/g);
-			let pastEnemies = false;
-			let atKickle    = false;
-			let objSpawn    = {row:-1,col:-1};
-			for(let i=0;i<hexValues.length;i++){
-					pastEnemies = hexValues[i] === 'EF' || pastEnemies;
-					atKickle    = pastEnemies && hexValues[i-1] === '01'
-					if(atKickle && objSpawn.row == -1){ 
-						objSpawn = {row:parseInt(hexValues[i].charAt(0),16),col:parseInt(hexValues[i].charAt(1),16)};
-					}
-			}
-			return objSpawn;
 		}
 	}
   });

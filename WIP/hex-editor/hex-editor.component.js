@@ -15,12 +15,13 @@ angular.
 		//
 		self.$onInit = function () {
 			self.formatMapData_Editor();
+			self.formatEnemyData_Editor();
 		}
 		//
 		//
 		//
 		self.updateMapData = function(){
-			MapService.setTileData(self.formatMapData_Service());
+			MapService.setTileData(self.formatData_Service(self.formattedMemoryString));
 			self.formatMapData_Editor();
 		}
 		//
@@ -46,17 +47,44 @@ angular.
 			return self.formattedMemoryString;
 		}
 		//
-		self.formatMapData_Service = function(){
-			console.log(self.formattedMemoryString.replace(/ /g, '').replace(/,/g, ''));
-			return self.formattedMemoryString.replace(/ /g, '').replace(/,/g, '');
+		self.formatData_Service = function(editorData){
+			return editorData.replace(/ /g, '').replace(/,/g, '');
 		}
 		//
-		self.getDesiredHexCount = function(){
-			return self.memoryString.match(/[\s\S]{1,2}/g).length;
+		self.formatEnemyData_Editor = function(){
+			let serviceData = MapService.characterData();
+			if(self.enemyString != serviceData){
+				self.enemyString          = serviceData;
+				self.formattedEnemyString = '';
+				let hexValues             = self.enemyString.match(/[\s\S]{1,2}/g);
+				for(let i=0;i<hexValues.length;i=i){
+					//for now, just Space
+					self.formattedEnemyString += hexValues[i];
+					i+=1;
+					self.formattedEnemyString += ' ';
+				}
+			}
+			return self.formattedEnemyString;
 		}
 		//
-		self.getCurrentHexCount = function(){
-			return self.memoryString.match(/[\s\S]{1,2}/g).length;
+		self.updateEnemyData = function(){
+			MapService.setCharacterData(self.formatData_Service(self.formattedEnemyString));
+			self.formatEnemyData_Editor();
+		}
+		//
+		self.getOriginalCount = function(type){
+			if('Character'){
+				return MapService.getCharacterDataOriginalSize();
+			}else{
+				return MapService.getTileDataOriginalSize();
+			}
+		}
+		self.getCurrentCount = function(type){
+			if('Character'){
+				return MapService.getCharacterDataCurrentSize();
+			}else{
+				return MapService.getTileDataCurrentSize();
+			}
 		}
 	}
   });
