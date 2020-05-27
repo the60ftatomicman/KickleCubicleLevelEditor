@@ -35,7 +35,7 @@ angular.module('MapService', [])
 				{row:-1,col:-1},
 				{row:-1,col:-1}
 			],
-			enemy:[]
+			enemies:[]
 		},
 		sprite:[
 			'00','01','03','05','07',
@@ -92,13 +92,11 @@ angular.module('MapService', [])
 		this.mapData.character.current = hexData;
 		this.setKickleSpawn();
 		this.setBagSpawns();
-		this.setEnemySpawns();
 	};	
 	this.resetCharacterData = function(hexData) {
 		this.mapData.character.current  = this.mapData.character.original;
 		this.setKickleSpawn();
 		this.setBagSpawns();
-		this.setEnemySpawns();
 	};
 	this.getCharacterDataOriginalSize = function(){
 		return this.mapData.character.original.match(/[\s\S]{1,2}/g).length
@@ -115,9 +113,11 @@ angular.module('MapService', [])
 	this.setKickleSpawn = function(){
 		this.mapData.spawn.kickle = {row:-1,col:-1};
 		let hexValues   = this.mapData.character.current.match(/[\s\S]{1,2}/g);
+		let pastEnemies = false;
 		let atKickle    = false;
-		for(let i=hexValues.lastIndexOf('EF');i<hexValues.length;i++){
-			atKickle = hexValues[i-1] === '01'
+		for(let i=0;i<hexValues.length;i++){
+			pastEnemies = hexValues[i] === 'EF' || pastEnemies;
+			atKickle    = pastEnemies && hexValues[i-1] === '01'
 			if(atKickle && this.mapData.spawn.kickle.row == -1){ 
 				this.mapData.spawn.kickle = {row:parseInt(hexValues[i].charAt(0),16),col:parseInt(hexValues[i].charAt(1),16)};
 			}
@@ -133,70 +133,32 @@ angular.module('MapService', [])
 		return this.mapData.spawn.bag;
 	};
 	this.setBagSpawns = function(){
-		let hexValues      = this.mapData.character.current.match(/[\s\S]{1,2}/g);
-		let lastEnemyIndex = hexValues.lastIndexOf('EF');
-		for(var j=0;j<3;j++){
-			this.mapData.spawn.bag[j] = {
-				row:parseInt(hexValues[lastEnemyIndex+j+2].charAt(0),16),
-				col:parseInt(hexValues[lastEnemyIndex+j+2].charAt(1),16)
+		let hexValues             = this.mapData.character.current.match(/[\s\S]{1,2}/g);
+		let lastEnemyIndex        = 0;
+		this.mapData.spawn.bag[0] = {row:-1,col:-1};
+		this.mapData.spawn.bag[1] = {row:-1,col:-1};
+		this.mapData.spawn.bag[2] = {row:-1,col:-1};
+		for(let i=0;i<hexValues.length;i++){
+			if (hexValues[i] === 'EF'){
+				for(var j=0;j<3;j++){
+					this.mapData.spawn.bag[j] = {row:parseInt(hexValues[i+j+2].charAt(0),16),col:parseInt(hexValues[i+j+2].charAt(1),16)};
+				}
+				i=hexValues.length;
 			};
+				
 		}
 	};
 	this.isBagSpawn = function(row,col){
 		let isSpawn = false
 		for(var i=0;i<this.mapData.spawn.bag.length;i++){
-			let bag = this.mapData.spawn.bag[i];
-			isSpawn = bag.row == row && bag.col == col || isSpawn;
+			let bag = this.mapData.spawn.bag;
+			isSpawn = bag[i].row == row && bag[i].col == col || isSpawn;
 		}
 		return isSpawn;
-	};
-	//
-	// Enemy Functions
-	//
-	this.getEnemySpawns = function(){
-		return this.mapData.spawn.enemy;
-	};
-	this.setEnemySpawns = function(){
-		this.mapData.spawn.enemy = [];
-		let hexValues = this.mapData.character.current.match(/[\s\S]{1,2}/g);
-		let enemyIdx  = hexValues.lastIndexOf('EF');
-		for(let i=0;i<enemyIdx;i=i){
-			let identifier = hexValues.slice(i,i+5).toString().replace(/,/g, '');
-			let idxMoved   = 1;
-			if(identifier === '0BC00A0500'){
-				let groupSlice = hexValues.slice(i+5,enemyIdx);
-				    groupSlice = groupSlice.slice(0,groupSlice.indexOf('EF'));
-				for(var j=0;j<groupSlice.length;j+=4){
-					this.mapData.spawn.enemy.push({
-						row       : parseInt(groupSlice[j].charAt(0),16),
-						col       : parseInt(groupSlice[j].charAt(1),16),
-						direction : parseInt(groupSlice[j+3]        ,16),
-						name      :'noggle'});
-					this.mapData.spawn.enemy.push({
-						row       : parseInt(groupSlice[j+1].charAt(0),16),
-						col       : parseInt(groupSlice[j+1].charAt(1),16),
-						direction : '',
-						name      : 'baserock'});
-				}
-				idxMoved = groupSlice.length;
-			}
-			i+=idxMoved;
-		}
-	};
-	this.isEnemySpawn = function(row,col){
-		let retEnemy = undefined;
-		for(var i=0;i<this.mapData.spawn.enemy.length;i++){
-			let enemy = this.mapData.spawn.enemy[i];
-			if(enemy.row == row && enemy.col == col){
-				retEnemy = enemy;
-			}
-		}
-		return retEnemy;
 	};
 	//
 	// Constructor 
 	//
 	this.setKickleSpawn();
 	this.setBagSpawns();
-	this.setEnemySpawns();
 });

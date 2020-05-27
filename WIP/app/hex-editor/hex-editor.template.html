@@ -1,0 +1,21 @@
+<div>
+	<div style="display:inline-block">
+		<p>Map Data</p>
+		<textarea style="width:256px; height:256px;"
+		ng-model="$ctrl.formattedMemoryString"
+		ng-model-options="{ debounce: 1000 }"
+		ng-change="$ctrl.updateMapData()">
+		</textarea>
+		<p><span>Hexes Needed:</span><span>{{$ctrl.getOriginalCount('Map')}}</span></p>
+		<p><span>Hexes Currently:</span><span>{{$ctrl.getCurrentCount('Map')}}</span></p>
+	</div>
+	<div style="display:inline-block">
+		<p>Enemy Data</p>
+		<textarea style="width:256px; height:256px;"
+		ng-model="$ctrl.formattedEnemyString"
+		ng-model-options="{ debounce: 1000 }"
+		ng-change="$ctrl.updateEnemyData()"></textarea>
+		<p><span>Hexes Needed:</span><span>{{$ctrl.getOriginalCount('Character')}}</span></p>
+		<p><span>Hexes Currently:</span><span>{{$ctrl.getCurrentCount('Character')}}</span></p>
+	</div>
+</div>

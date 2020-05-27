@@ -1,0 +1,28 @@
+body {
+	padding : 20px 0px 00px 20px;
+}
+.row{
+	min-height : 16px;
+	max-height : 16px;
+	margin     : 0px;
+}
+.tile{
+	line-height: 16px;
+	min-width  : 16px;
+	max-width  : 16px;
+	font-size  : 11px;
+	text-align: center;
+
+}
+.faded_font{
+	color : rgba(0,0,0,0.1);
+}
+.faded_font:hover{
+	color : rgba(0,0,0,0.5);
+}
+.solid_font{
+	color : rgba(0,0,0,0.5);
+}
+.solid_font:hover{
+	color : rgba(0,0,0,1);
+}
