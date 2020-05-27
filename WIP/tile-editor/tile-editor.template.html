@@ -1,19 +1,20 @@
-<table class="grid" ng-repeat="row in $ctrl.getTiles() track by $index">
-  <!-- style="border: 1px solid black" -->
+<table class="grid" ng-repeat="row in $ctrl.getTiles() track by $index" cellspacing="0" cellpadding="0">
+	<!-- style="border: 1px solid black" -->
+	<!-- ng-style="tile.hex%2 === 0 && {'border':'1px solid black'} || {'border':'1px solid red'}" -->
 	<tr class="row">
-		<td class="tile"
+		<td class="tile" 
 			ng-repeat="tile in row track by $index"
-			ng-style="tile.hex%2 === 0 && {'border':'1px solid black'} || {'border':'1px solid red'}"
 			ng-mouseover="$ctrl.setCurrentTile(tile)">
-				<div ng-if='!tile.sprite'class="solid_font">{{tile.val}}</div>
-				<div ng-if='tile.sprite' class="faded_font" style="background-image:url({{tile.sprite}})">{{tile.val}}</div>
+				<div ng-if='!tile.sprite' ng-switch="tile.spawn" class="solid_font">
+					<span ng-switch-default>{{tile.val}}</span>
+					<img ng-switch-when="kickle" src="img/tiles/kickle_spawn.png"></img>
+				</div>
+				<div ng-if='tile.sprite' ng-switch="tile.spawn" class="faded_font" style="background-image:url({{tile.sprite}})">
+					<span ng-switch-default>{{tile.val}}</span>
+					<img ng-switch-when="kickle" src="img/tiles/kickle_spawn.png"></img>
+				</div>
 			<!-- <span>{{tile.val}}</span> -->
 			<!-- <span>{{tile.val}};{{tile.hex}}</span> -->
 		</td>
 	</tr>
-	<!-- 
-	<span>|</span>
-	<span style="background-color:lightgrey">{{row.length}}</span>
-	-->
-  </table>
-  	<!-- <p style="background-color:lightgrey"><span>Rows: </span><span>{{$ctrl.tiles.length}}</span></p> -->
+</table>

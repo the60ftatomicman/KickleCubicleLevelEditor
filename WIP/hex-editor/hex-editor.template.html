@@ -1,6 +1,18 @@
 <div>
-	<textarea 
-	ng-model="$ctrl.memoryString"
-	ng-change="$ctrl.updateMapData()">
-	</textarea>
+	<div style="display:inline-block">
+		<p>Map Data</p>
+		<textarea style="width:256px; height:256px;"
+		ng-model="$ctrl.formattedMemoryString"
+		ng-model-options="{ debounce: 1000 }"
+		ng-change="$ctrl.updateMapData()">
+		</textarea>
+		<p><span>Hexes Needed:</span><span>{{$ctrl.getDesiredHexCount()}}</span></p>
+		<p><span>Hexes Currently:</span><span></span></p>
+	</div>
+	<div style="display:inline-block">
+		<p>Enemy Data</p>
+		<textarea style="width:256px; height:256px;"></textarea>
+		<p><span>Hexes Needed:</span><span>{{$ctrl.getDesiredHexCount()}}</span></p>
+		<p><span>Hexes Currently:</span><span></span></p>
+	</div>
 </div>

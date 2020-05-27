@@ -21,8 +21,8 @@ angular.module('MapService', [])
 			current :'8005810244800A810444800881012C012C81014480078106458007428101038101414680033181022081044581023044318102208104458102304542C30381044542C302468004810445800942C30346800981012581014480094281024146800A42014146800C42468006'
 		},
 		character:{
-			original:'',
-			current :''
+			original:'0BC00A0500EFFF52625C016726012801',
+			current :'0BC00A0500EFFF52625C016726012801'
 		},
 		sprite:[
 			'00','01','03','05','07',
@@ -43,7 +43,7 @@ angular.module('MapService', [])
 	};
 
 	this.characterData = function() {
-		return this.character.tile.current;
+		return this.mapData.character.current;
 	};
 	this.getMapData = function(mapData){
 		this.name = mapData.name || '??????';
@@ -57,6 +57,8 @@ angular.module('MapService', [])
 	};
 	this.setTileData = function(hexData) {
 		this.mapData.tile.current = hexData;
+		//console.log('Setting Data');
+		//angular.copy(hexData,this.mapData.tile.current);
 	};
 	
 	this.resetTileData = function(hexData) {

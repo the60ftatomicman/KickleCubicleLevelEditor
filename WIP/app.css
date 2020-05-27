@@ -4,13 +4,14 @@ body {
 .row{
 	min-height : 16px;
 	max-height : 16px;
+	margin     : 0px;
 }
 .tile{
-	padding    : 1px;  
 	line-height: 16px;
 	min-width  : 16px;
 	max-width  : 16px;
 	font-size  : 11px;
+	text-align: center;
 
 }
 .faded_font{
