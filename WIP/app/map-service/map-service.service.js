@@ -170,6 +170,28 @@ angular.module('MapService', [])
 				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'noggle');
 			}else if(identifier === '0D080E0D02' || identifier === '0D080E0D03' ){
 				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'hoople');
+			}else if(identifier === '1E880D1102' || identifier === '1E880D1103' ){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'sparky');
+			}else if(identifier === '20080B0302' || identifier === '20080B0303' ){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'max');
+			}else if(identifier === '18080C0B02' || identifier === '18080C0B03' ){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'rocky');
+			}else if(identifier === '2D08130902' || identifier === '2D08130903' ){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'myrtle');
+			}else if(identifier === '1A080F0302' || identifier === '1A080F0303' ){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'rooker');
+			}else if(identifier === '2588090702' || identifier === '2588090703' ){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'bonkers');
+			}else if(identifier === '27C8100102' || identifier === '27C8100103' ){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'shades');
+			}else if(identifier === '2B08121102' || identifier === '2B08121103' ){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'equalizer');
+			}else if(identifier === '23700A1102' || identifier === '23700A1103' ){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'spiny_right');
+			}else if(identifier === '23400A1102' || identifier === '23400A1103' ){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'spiny_left');
+			}else if(identifier === '46884F0A02' || identifier === '46884F0A03' ){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'gale');
 			}
 			i+=idxMoved;
 		}

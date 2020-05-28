@@ -11,8 +11,10 @@ body {
 	min-width  : 16px;
 	max-width  : 16px;
 	font-size  : 11px;
-	text-align: center;
-
+	text-align : center;
+}
+.tile img{
+	display : block;
 }
 .faded_font{
 	color : rgba(0,0,0,0.1);
