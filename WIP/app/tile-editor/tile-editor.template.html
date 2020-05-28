@@ -6,18 +6,24 @@
 			ng-repeat="tile in row track by $index"
 			ng-mouseover="$ctrl.setCurrentTile(tile)">
 				<div ng-if='!tile.sprite' ng-switch="tile.spawn" class="solid_font">
-					<span ng-switch-default>{{tile.val}}</span>
+					<img ng-switch-default src="img/tiles/unknown_spawn.png"></img>
+					<span ng-switch-when="" src="img/tiles/kickle_spawn.png">{{tile.val}}</span>
 					<img ng-switch-when="kickle" src="img/tiles/kickle_spawn.png"></img>
 					<img ng-switch-when="bag" src="img/tiles/bag.png"></img>
 					<img ng-switch-when="noggle" src="img/tiles/noggle_down.png"></img>
+					<img ng-switch-when="baserock_noggle" src="img/tiles/baserock_noggle.png"></img>
 					<img ng-switch-when="hoople" src="img/tiles/hoople_down.png"></img>
+					<img ng-switch-when="max" src="img/tiles/max_down.png"></img>
 				</div>
 				<div ng-if='tile.sprite' ng-switch="tile.spawn" class="faded_font" style="background-image:url({{tile.sprite}})">
-					<span ng-switch-default>{{tile.val}}</span>
+					<img ng-switch-default src="img/tiles/unknown_spawn.png"></img>
+					<span ng-switch-when="">{{tile.val}}</span>
 					<img ng-switch-when="kickle" src="img/tiles/kickle_spawn.png"></img>
 					<img ng-switch-when="bag" src="img/tiles/bag.png"></img>
 					<img ng-switch-when="noggle" src="img/tiles/noggle_down.png"></img>
+					<img ng-switch-when="baserock_noggle" src="img/tiles/baserock_noggle.png"></img>
 					<img ng-switch-when="hoople" src="img/tiles/hoople_down.png"></img>
+					<img ng-switch-when="max" src="img/tiles/max_down.png"></img>
 				</div>
 			<!-- <span>{{tile.val}}</span> -->
 			<!-- <span>{{tile.val}};{{tile.hex}}</span> -->
