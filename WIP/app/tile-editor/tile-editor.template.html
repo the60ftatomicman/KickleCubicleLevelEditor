@@ -9,11 +9,15 @@
 					<span ng-switch-default>{{tile.val}}</span>
 					<img ng-switch-when="kickle" src="img/tiles/kickle_spawn.png"></img>
 					<img ng-switch-when="bag" src="img/tiles/bag.png"></img>
+					<img ng-switch-when="noggle" src="img/tiles/noggle_down.png"></img>
+					<img ng-switch-when="hoople" src="img/tiles/hoople_down.png"></img>
 				</div>
 				<div ng-if='tile.sprite' ng-switch="tile.spawn" class="faded_font" style="background-image:url({{tile.sprite}})">
 					<span ng-switch-default>{{tile.val}}</span>
 					<img ng-switch-when="kickle" src="img/tiles/kickle_spawn.png"></img>
 					<img ng-switch-when="bag" src="img/tiles/bag.png"></img>
+					<img ng-switch-when="noggle" src="img/tiles/hoople_down.png"></img>
+					<img ng-switch-when="hoople" src="img/tiles/hoople_down.png"></img>
 				</div>
 			<!-- <span>{{tile.val}}</span> -->
 			<!-- <span>{{tile.val}};{{tile.hex}}</span> -->

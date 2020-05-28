@@ -14,19 +14,22 @@ angular.module('MapService', [])
 	//8002810144000144008101448005424301440145014143468007420141014146800A4246424680088102870281024480048104078104448003810A4580032C81082C4580034281084146800442810641468006428104414680084281024146800A42054146800C42468006
 	//Lvl5
 	//8005810244800A810444800881012C012C81014480078106458007428101038101414680033181022081044581023044318102208104458102304542C30381044542C302468004810445800942C30346800981012581014480094281024146800A42014146800C42468006
-	this.mapData = {
+	var self = this;
+	self.mapData = {
 		name:'',
 		tile:{
-			original:'80060144800C810244800B42C301468007810A448002810C44800142C30B468001810C44800142810A41468002422C0103810203012C4146800442810641468006428104414680084281024146800A42014146800C42468006',
-			current :'80060144800C810244800B42C301468007810A448002810C44800142C30B468001810C44800142810A41468002422C0103810203012C4146800442810641468006428104414680084281024146800A42014146800C42468006'
+			original:'80060344800B810444800942C30346800907440744074480060344004246424642460003448002034103448104440341034400034146428106414642034403450081084400034542032C81082C0341460042038108034146800242810841468004428106414680064281044146800842C303468004',
+			current :'80060344800B810444800942C30346800907440744074480060344004246424642460003448002034103448104440341034400034146428106414642034403450081084400034542032C81082C0341460042038108034146800242810841468004428106414680064281044146800842C303468004'
 		},
 		//Lvl1
 		//0BC00A05007383FF017B8BFF03EFFF17161801A7
+		//Lvl2
+		//0BC00A0500848200018A8C0003EF0D080E0D0217FF0000EFFF15671901A7
 		//Lvl5
 		//0BC00A0500EFFF52625C016726012801
 		character:{
-			original:'0BC00A05007383FF017B8BFF03EFFF17161801A7',
-			current :'0BC00A05007383FF017B8BFF03EFFF17161801A7'
+			original:'0BC00A0500848200018A8C0003EF0D080E0D0217FF0000EFFF15671901A7',
+			current :'0BC00A0500848200018A8C0003EF0D080E0D0217FF0000EFFF15671901A7'
 		},
 		spawn:{
 			kickle:{row:-1,col:-1},
@@ -35,7 +38,7 @@ angular.module('MapService', [])
 				{row:-1,col:-1},
 				{row:-1,col:-1}
 			],
-			enemies:[]
+			enemy:[]
 		},
 		sprite:[
 			'00','01','03','05','07',
@@ -51,114 +54,157 @@ angular.module('MapService', [])
 	//
 	// Generic Functions
 	//
-	this.getMapData = function(mapData){
-		this.name = mapData.name || '??????';
-		this.initTileData(hexData.tile) 
-		this.setCharacterData(hexData.character)
+	self.getMapData = function(mapData){
+		self.name = mapData.name || '??????';
+		self.initTileData(hexData.tile) 
+		self.setCharacterData(hexData.character)
 	};
 	//
 	// Tile Data
 	//
-	this.tileData = function() {
-		return this.mapData.tile.current;
+	self.tileData = function() {
+		return self.mapData.tile.current;
 	};
-	this.initTileData = function(hexData) {
-		this.mapData.tile.original = hexData;
-		this.resetTileData();
+	self.initTileData = function(hexData) {
+		self.mapData.tile.original = hexData;
+		self.resetTileData();
 	};
-	this.setTileData = function(hexData) {
-		this.mapData.tile.current = hexData;
+	self.setTileData = function(hexData) {
+		self.mapData.tile.current = hexData;
 	};
-	this.resetTileData = function(hexData) {
-		this.mapData.tile.current  = this.mapData.tile.original;
+	self.resetTileData = function(hexData) {
+		self.mapData.tile.current  = self.mapData.tile.original;
 	};
-	this.getTileDataOriginalSize = function(){
-		return this.mapData.tile.original.match(/[\s\S]{1,2}/g).length
+	self.getTileDataOriginalSize = function(){
+		return self.mapData.tile.original.match(/[\s\S]{1,2}/g).length
 	};
-	this.getTileDataCurrentSize = function(){
-		return this.mapData.tile.current.match(/[\s\S]{1,2}/g).length
+	self.getTileDataCurrentSize = function(){
+		return self.mapData.tile.current.match(/[\s\S]{1,2}/g).length
 	};
 	//
 	// Character Data
 	//
-	this.characterData = function() {
-		return this.mapData.character.current;
+	self.characterData = function() {
+		return self.mapData.character.current;
 	};
-	this.initCharacterData = function(hexData) {
-		this.mapData.character.original = hexData;
-		this.resetTileData();
+	self.initCharacterData = function(hexData) {
+		self.mapData.character.original = hexData;
+		self.resetTileData();
 	};
-	this.setCharacterData = function(hexData) {
-		this.mapData.character.current = hexData;
-		this.setKickleSpawn();
-		this.setBagSpawns();
+	self.setCharacterData = function(hexData) {
+		self.mapData.character.current = hexData;
+		self.setKickleSpawn();
+		self.setBagSpawns();
+		self.setEnemySpawns();
 	};	
-	this.resetCharacterData = function(hexData) {
-		this.mapData.character.current  = this.mapData.character.original;
-		this.setKickleSpawn();
-		this.setBagSpawns();
+	self.resetCharacterData = function(hexData) {
+		self.mapData.character.current  = self.mapData.character.original;
+		self.setKickleSpawn();
+		self.setBagSpawns();
+		self.setEnemySpawns();
 	};
-	this.getCharacterDataOriginalSize = function(){
-		return this.mapData.character.original.match(/[\s\S]{1,2}/g).length
+	self.getCharacterDataOriginalSize = function(){
+		return self.mapData.character.original.match(/[\s\S]{1,2}/g).length
 	};
-	this.getCharacterDataCurrentSize = function(){
-		return this.mapData.character.current.match(/[\s\S]{1,2}/g).length
+	self.getCharacterDataCurrentSize = function(){
+		return self.mapData.character.current.match(/[\s\S]{1,2}/g).length
 	};
 	//
 	// Kickle Functions
 	//
-	this.getKickleSpawn = function(){
-		return this.mapData.spawn.kickle;
+	self.getKickleSpawn = function(){
+		return self.mapData.spawn.kickle;
 	};
-	this.setKickleSpawn = function(){
-		this.mapData.spawn.kickle = {row:-1,col:-1};
-		let hexValues   = this.mapData.character.current.match(/[\s\S]{1,2}/g);
-		let pastEnemies = false;
+	self.setKickleSpawn = function(){
+		self.mapData.spawn.kickle = {row:-1,col:-1};
+		let hexValues   = self.mapData.character.current.match(/[\s\S]{1,2}/g);
 		let atKickle    = false;
-		for(let i=0;i<hexValues.length;i++){
-			pastEnemies = hexValues[i] === 'EF' || pastEnemies;
-			atKickle    = pastEnemies && hexValues[i-1] === '01'
-			if(atKickle && this.mapData.spawn.kickle.row == -1){ 
-				this.mapData.spawn.kickle = {row:parseInt(hexValues[i].charAt(0),16),col:parseInt(hexValues[i].charAt(1),16)};
+		for(let i=hexValues.lastIndexOf('FF');i<hexValues.length;i++){
+			atKickle = hexValues[i-1] === '01'
+			if(atKickle && self.mapData.spawn.kickle.row == -1){ 
+				self.mapData.spawn.kickle = {row:parseInt(hexValues[i].charAt(0),16),col:parseInt(hexValues[i].charAt(1),16)};
 			}
 		}
 	};
-	this.isKickleSpawn = function(row,col){
-		return this.mapData.spawn.kickle.row == row && this.mapData.spawn.kickle.col == col;
+	self.isKickleSpawn = function(row,col){
+		return self.mapData.spawn.kickle.row == row && self.mapData.spawn.kickle.col == col;
 	};
 	//
 	// Dream Bag Functions
 	//
-	this.getBagSpawns = function(){
-		return this.mapData.spawn.bag;
+	self.getBagSpawns = function(){
+		return self.mapData.spawn.bag;
 	};
-	this.setBagSpawns = function(){
-		let hexValues             = this.mapData.character.current.match(/[\s\S]{1,2}/g);
-		let lastEnemyIndex        = 0;
-		this.mapData.spawn.bag[0] = {row:-1,col:-1};
-		this.mapData.spawn.bag[1] = {row:-1,col:-1};
-		this.mapData.spawn.bag[2] = {row:-1,col:-1};
-		for(let i=0;i<hexValues.length;i++){
-			if (hexValues[i] === 'EF'){
-				for(var j=0;j<3;j++){
-					this.mapData.spawn.bag[j] = {row:parseInt(hexValues[i+j+2].charAt(0),16),col:parseInt(hexValues[i+j+2].charAt(1),16)};
-				}
-				i=hexValues.length;
+	self.setBagSpawns = function(){
+		let hexValues      = self.mapData.character.current.match(/[\s\S]{1,2}/g);
+		let lastEnemyIndex = hexValues.lastIndexOf('FF');
+		for(var j=0;j<3;j++){
+			self.mapData.spawn.bag[j] = {
+				row:parseInt(hexValues[lastEnemyIndex+j+1].charAt(0),16),
+				col:parseInt(hexValues[lastEnemyIndex+j+1].charAt(1),16)
 			};
-				
 		}
 	};
-	this.isBagSpawn = function(row,col){
+	self.isBagSpawn = function(row,col){
 		let isSpawn = false
-		for(var i=0;i<this.mapData.spawn.bag.length;i++){
-			let bag = this.mapData.spawn.bag;
-			isSpawn = bag[i].row == row && bag[i].col == col || isSpawn;
+		for(var i=0;i<self.mapData.spawn.bag.length;i++){
+			let bag = self.mapData.spawn.bag[i];
+			isSpawn = bag.row == row && bag.col == col || isSpawn;
 		}
 		return isSpawn;
 	};
 	//
+	// Enemy Functions
+	//
+	self.getEnemySpawns = function(){
+		return self.mapData.spawn.enemy;
+	};
+	self.setEnemySpawns = function(){
+		self.mapData.spawn.enemy = [];
+		let hexValues = self.mapData.character.current.match(/[\s\S]{1,2}/g);
+		let enemyIdx  = hexValues.lastIndexOf('EF');
+		for(let i=0;i<enemyIdx;i=i){
+			let identifier = hexValues.slice(i,i+5).toString().replace(/,/g, '');
+			let idxMoved   = 1;
+			if(identifier === '0BC00A0500'){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'noggle');
+			}else if(identifier === '0D080E0D02' || identifier === '0D080E0D03' ){
+				idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'hoople');
+			}
+			i+=idxMoved;
+		}
+	};
+	function populateSpawnEntry(hexValues,currHexIdx,enemyIdx,enemyName){
+		let groupSlice = hexValues.slice(currHexIdx+5,enemyIdx);
+		    groupSlice = groupSlice.slice(0,groupSlice.indexOf('EF'));
+		for(var j=0;j<groupSlice.length;j+=4){
+		self.mapData.spawn.enemy.push({
+			row       : parseInt(groupSlice[j].charAt(0),16),
+			col       : parseInt(groupSlice[j].charAt(1),16),
+			direction : parseInt(groupSlice[j+3]        ,16),
+			name      : enemyName});
+		self.mapData.spawn.enemy.push({
+			row       : parseInt(groupSlice[j+1].charAt(0),16),
+			col       : parseInt(groupSlice[j+1].charAt(1),16),
+			direction : '',
+			name      : 'baserock'});
+		}
+		return groupSlice.length+5;
+	};
+	self.isEnemySpawn = function(row,col){
+		let retEnemy = undefined;
+		for(var i=0;i<self.mapData.spawn.enemy.length;i++){
+			let enemy = self.mapData.spawn.enemy[i];
+			if(enemy.row == row && enemy.col == col){
+				retEnemy = enemy;
+			}
+		}
+		return retEnemy;
+	};
+	//
 	// Constructor 
 	//
-	this.setKickleSpawn();
-	this.setBagSpawns();
+	self.setKickleSpawn();
+	self.setBagSpawns();
+	self.setEnemySpawns();
 });

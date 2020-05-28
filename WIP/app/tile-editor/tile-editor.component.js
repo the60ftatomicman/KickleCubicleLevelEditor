@@ -73,12 +73,12 @@ angular.
 			}
 		}
 		function getSpawnString(row,col){
-			let kickleSpawn = MapService.getKickleSpawn();
-			let bagSpawns   = MapService.getBagSpawns();
 			if(MapService.isKickleSpawn(row,col)){
 				return 'kickle';
 			}else if(MapService.isBagSpawn(row,col)){
 				return 'bag';
+			}else if(MapService.isEnemySpawn(row,col)){
+				return MapService.isEnemySpawn(row,col).name;
 			}
 			return '';
 		}
