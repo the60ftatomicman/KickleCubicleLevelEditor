@@ -1,5 +1,5 @@
 <div>
-	<div style="display:inline-block">
+	<div style="display:inline-block" ng-uf="$ctrl.hasData('Map')">
 		<p>Map Data</p>
 		<textarea style="width:256px; height:256px;"
 		ng-model="$ctrl.formattedMemoryString"
@@ -9,11 +9,11 @@
 		<p><span>Hexes Needed:</span><span>{{$ctrl.getOriginalCount('Map')}}</span></p>
 		<p><span>Hexes Currently:</span><span>{{$ctrl.getCurrentCount('Map')}}</span></p>
 	</div>
-	<div style="display:inline-block">
+	<div style="display:inline-block" ng-if="$ctrl.hasData('Character')">
 		<p>Enemy Data</p>
 		<textarea style="width:256px; height:256px;"
 		ng-model="$ctrl.formattedEnemyString"
-		ng-model-options="{ debounce: 1000 }"
+		ng-model-options="{ debounce: 1000 ,getterSetter: true}"
 		ng-change="$ctrl.updateEnemyData()"></textarea>
 		<p><span>Hexes Needed:</span><span>{{$ctrl.getOriginalCount('Character')}}</span></p>
 		<p><span>Hexes Currently:</span><span>{{$ctrl.getCurrentCount('Character')}}</span></p>

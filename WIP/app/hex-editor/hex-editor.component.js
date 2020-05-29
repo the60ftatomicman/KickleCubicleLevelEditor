@@ -44,7 +44,6 @@ angular.
 					self.formattedMemoryString += ' ';
 				}
 			}
-			return self.formattedMemoryString;
 		}
 		//
 		self.formatData_Service = function(editorData){
@@ -64,7 +63,6 @@ angular.
 					self.formattedEnemyString += ' ';
 				}
 			}
-			return self.formattedEnemyString;
 		}
 		//
 		self.updateEnemyData = function(){
@@ -84,6 +82,28 @@ angular.
 				return MapService.getCharacterDataCurrentSize();
 			}else{
 				return MapService.getTileDataCurrentSize();
+			}
+		}
+		//
+		self.hasData = function(){
+			if('Character'){
+				if(MapService.getCharacterDataCurrentSize() > 0 || self.formattedEnemyString != ''){
+					return true
+				}else{
+					if(self.formattedEnemyString == ''){
+						self.formatEnemyData_Editor();
+					}
+					return false;
+				}
+			}else{
+				if(MapService.getTileDataCurrentSize() > 0 || self.formattedMemoryString != ''){
+					return true
+				}else{
+					if(self.formattedMemoryString == ''){
+						self.formatMapData_Editor();
+					}
+					return false;
+				}
 			}
 		}
 	}

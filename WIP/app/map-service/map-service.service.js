@@ -1,39 +1,17 @@
 'use strict';
 angular.module('MapService',[]);
-angular.module('MapService', [])
-	.service('MapService', function() {
-	//
-	//
-	//Lvl1
-	//80060144800C810244800B42C301468007810A448002810C44800142C30B468001810C44800142810A41468002422C0103810203012C4146800442810641468006428104414680084281024146800A42014146800C42468006
-	//Lvl2
-	//80060344800B810444800942C30346800907440744074480060344004246424642460003448002034103448104440341034400034146428106414642034403450081084400034542032C81082C0341460042038108034146800242810841468004428106414680064281044146800842C303468004
-	//Lvl3
-	//80060144800C01410144800A074107410744800807410741074107448006074107410741074107448005424642464246424642468004810A4480032C81082C458003428108414680044281064146800642C3010141C30146800A0145800B0581020544800942C303468004
-	//Lvl4
-	//8002810144000144008101448005424301440145014143468007420141014146800A4246424680088102870281024480048104078104448003810A4580032C81082C4580034281084146800442810641468006428104414680084281024146800A42054146800C42468006
-	//Lvl5
-	//8005810244800A810444800881012C012C81014480078106458007428101038101414680033181022081044581023044318102208104458102304542C30381044542C302468004810445800942C30346800981012581014480094281024146800A42014146800C42468006
-	//Lvl6
-	//80060344800C810244800A810444800881064480068108448004810A448002810C4480012C41044104410441044104412C458001424642464246014542464246424680070145800D0145800B01440145800B42014146800C42468007
+angular.module('MapService')
+	.service('MapService', function($http) {
 	var self = this;
 	self.mapData = {
 		name:'',
 		tile:{
-			original:'80060344800C810244800A810444800881064480068108448004810A448002810C4480012C41044104410441044104412C458001424642464246014542464246424680070145800D0145800B01440145800B42014146800C42468007',
-			current :'80060344800C810244800A810444800881064480068108448004810A448002810C4480012C41044104410441044104412C458001424642464246014542464246424680070145800D0145800B01440145800B42014146800C42468007'
+			original:'',
+			current :''
 		},
-		//Lvl1
-		//0BC00A05007383FF017B8BFF03EFFF17161801A7
-		//Lvl2
-		//0BC00A0500848200018A8C0003EF0D080E0D0217FF0000EFFF15671901A7
-		//Lvl5
-		//0BC00A0500EFFF52625C016726012801
-		//Lvl6
-		//0BC00A0500547100015A7D0003EF20080B0302977D0000EFFFB5C6B70137
 		character:{
-			original:'0BC00A0500547100015A7D0003EF20080B0302977D0000EFFFB5C6B70137',
-			current :'0BC00A0500547100015A7D0003EF20080B0302977D0000EFFFB5C6B70137'
+			original:'',
+			current :''
 		},
 		spawn:{
 			kickle:{row:-1,col:-1},
@@ -59,9 +37,11 @@ angular.module('MapService', [])
 	// Generic Functions
 	//
 	self.getMapData = function(mapData){
-		self.name = mapData.name || '??????';
-		self.initTileData(hexData.tile) 
-		self.setCharacterData(hexData.character)
+		return $http.get('json/maps/'+mapData+'.json').then(function(data) {
+			let jsonMap = data.data;
+			self.initTileData(data.data.rawHexData.tile);
+			self.initCharacterData(data.data.rawHexData.character);
+		});
 	};
 	//
 	// Tile Data
@@ -93,7 +73,7 @@ angular.module('MapService', [])
 	};
 	self.initCharacterData = function(hexData) {
 		self.mapData.character.original = hexData;
-		self.resetTileData();
+		self.resetCharacterData();
 	};
 	self.setCharacterData = function(hexData) {
 		self.mapData.character.current = hexData;
@@ -200,6 +180,16 @@ angular.module('MapService', [])
 			i+=idxMoved;
 		}
 	};
+	self.isEnemySpawn = function(row,col){
+		let retEnemy = undefined;
+		for(var i=0;i<self.mapData.spawn.enemy.length;i++){
+			let enemy = self.mapData.spawn.enemy[i];
+			if(enemy.row == row && enemy.col == col){
+				retEnemy = enemy;
+			}
+		}
+		return retEnemy;
+	};
 	function populateSpawnEntry(hexValues,currHexIdx,enemyIdx,enemyName){
 		let groupSlice = hexValues.slice(currHexIdx+5,enemyIdx);
 		    groupSlice = groupSlice.slice(0,groupSlice.indexOf('EF'));
@@ -217,20 +207,12 @@ angular.module('MapService', [])
 		}
 		return groupSlice.length+5;
 	};
-	self.isEnemySpawn = function(row,col){
-		let retEnemy = undefined;
-		for(var i=0;i<self.mapData.spawn.enemy.length;i++){
-			let enemy = self.mapData.spawn.enemy[i];
-			if(enemy.row == row && enemy.col == col){
-				retEnemy = enemy;
-			}
-		}
-		return retEnemy;
-	};
+
 	//
 	// Constructor 
 	//
-	self.setKickleSpawn();
-	self.setBagSpawns();
-	self.setEnemySpawns();
+	//self.setKickleSpawn();
+	//self.setBagSpawns();
+	//self.setEnemySpawns();
+	self.getMapData('level_2');
 });
