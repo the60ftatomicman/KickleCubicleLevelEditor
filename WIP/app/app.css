@@ -12,19 +12,24 @@ body {
 	max-width  : 16px;
 	font-size  : 11px;
 	text-align : center;
+	box-sizing : content-box;
+	margin: 0px;
 }
 .tile img{
 	display : block;
 }
+/*.tile:hover{
+	border : 1px solid green;
+}*/
 .faded_font{
 	color : rgba(0,0,0,0.1);
 }
 .faded_font:hover{
-	color : rgba(0,0,0,0.5);
+	color  : rgba(0,0,0,0.5);
 }
 .solid_font{
 	color : rgba(0,0,0,0.5);
 }
 .solid_font:hover{
-	color : rgba(0,0,0,1);
+	color  : rgba(0,0,0,1);
 }

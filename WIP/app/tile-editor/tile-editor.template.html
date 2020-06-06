@@ -14,6 +14,8 @@
 					<img ng-switch-when="baserock_noggle" src="img/tiles/baserock_noggle.png"></img>
 					<img ng-switch-when="hoople" src="img/tiles/hoople_down.png"></img>
 					<img ng-switch-when="max" src="img/tiles/max_down.png"></img>
+					<img ng-switch-when="baserock_max" src="img/tiles/baserock_max.png"></img>
+					<img ng-switch-when="rocky" src="img/tiles/rocky_down.png"></img>
 				</div>
 				<div ng-if='tile.sprite' ng-switch="tile.spawn" class="faded_font" style="background-image:url({{tile.sprite}})">
 					<img ng-switch-default src="img/tiles/unknown_spawn.png"></img>
@@ -24,9 +26,12 @@
 					<img ng-switch-when="baserock_noggle" src="img/tiles/baserock_noggle.png"></img>
 					<img ng-switch-when="hoople" src="img/tiles/hoople_down.png"></img>
 					<img ng-switch-when="max" src="img/tiles/max_down.png"></img>
+					<img ng-switch-when="baserock_max" src="img/tiles/baserock_max.png"></img>
+					<img ng-switch-when="rocky" src="img/tiles/rocky_down.png"></img>
 				</div>
 			<!-- <span>{{tile.val}}</span> -->
 			<!-- <span>{{tile.val}};{{tile.hex}}</span> -->
 		</td>
 	</tr>
 </table>
+<span>Tile Type Currently Hovered Over: {{$ctrl.currentTile.val}}</span>

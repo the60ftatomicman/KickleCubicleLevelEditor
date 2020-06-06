@@ -1,0 +1,23 @@
+{
+	"levels": [
+		{"file":"level_1","name":"Garden Level A"},
+		{"file":"level_2","name":"Garden Level B"},
+		{"file":"level_3","name":"Garden Level C"},
+		{"file":"level_4","name":"Garden Level D"},
+		{"file":"level_5","name":"Garden Level E"},
+		{"file":"level_6","name":"Garden Level F"}
+	],
+	"sprites": {
+		"tile": [
+			"00", "01", "03", "04", "05", "07",
+			"20", "25", "2C",
+			"30", "31",
+			"41", "42", "43", "44", "45", "46",
+			"80", "81", "83", "84", "85", "87",
+			"A0", "A5", "AC",
+			"B0", "B1",
+			"C1", "C2", "C3", "C4", "C5", "C6"
+		],
+		"character": []
+	}
+}

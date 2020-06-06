@@ -2,6 +2,7 @@
 
 angular.module('kickleLevelEditorApp', [
   'MapService',
+  'mapSelector',
   'tileEditor',
   'hexEditor'
 ]);

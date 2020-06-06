@@ -6,9 +6,9 @@ angular.
     templateUrl: 'hex-editor/hex-editor.template.html',
     controller : function HexEditorController(MapService) {
 		var self                   = this;
-		self.memoryString          = '';
+		self.memoryString          = undefined;
 		self.formattedMemoryString = '';
-		self.enemyString           = '';
+		self.enemyString           = undefined;
 		self.formattedEnemyString  = '';
 		//
 		//
@@ -20,54 +20,54 @@ angular.
 		//
 		//
 		//
-		self.updateMapData = function(){
-			MapService.setTileData(self.formatData_Service(self.formattedMemoryString));
-			self.formatMapData_Editor();
-		}
-		//
-		self.formatMapData_Editor = function(){
-			let serviceData = MapService.tileData();
-			if(self.memoryString != serviceData){
-				self.memoryString          = serviceData;
-				self.formattedMemoryString = '';
-				let hexValues              = self.memoryString.match(/[\s\S]{1,2}/g);
-				for(let i=0;i<hexValues.length;i=i){
-					let isGroup = parseInt(hexValues[i].charAt(0),16) > 7;
-					let nextHex = hexValues[i+1];
-					if(isGroup && nextHex){ 
-						self.formattedMemoryString += hexValues[i]+','+nextHex	
-						i+=2;
-					}else{
-						self.formattedMemoryString += hexValues[i];
-						i+=1;
+		self.formatMapData_Editor = function(newData){
+			if(!!newData){
+                MapService.setTileData(self.formatData_Service(newData));
+			}else{
+				let serviceData = MapService.tileData();
+				if(serviceData != undefined && self.memoryString != serviceData){
+					self.memoryString          = serviceData;
+					self.formattedMemoryString = '';
+					let hexValues              = self.memoryString.match(/[\s\S]{1,2}/g);
+					for(let i=0;i<hexValues.length;i=i){
+						let isGroup = parseInt(hexValues[i].charAt(0),16) > 7;
+						let nextHex = hexValues[i+1];
+						if(isGroup && nextHex){ 
+							self.formattedMemoryString += hexValues[i]+','+nextHex	
+							i+=2;
+						}else{
+							self.formattedMemoryString += hexValues[i];
+							i+=1;
+						}
+						self.formattedMemoryString += ' ';
 					}
-					self.formattedMemoryString += ' ';
 				}
 			}
+			return self.formattedMemoryString;
 		}
 		//
 		self.formatData_Service = function(editorData){
 			return editorData.replace(/ /g, '').replace(/,/g, '');
 		}
 		//
-		self.formatEnemyData_Editor = function(){
-			let serviceData = MapService.characterData();
-			if(self.enemyString != serviceData){
-				self.enemyString          = serviceData;
-				self.formattedEnemyString = '';
-				let hexValues             = self.enemyString.match(/[\s\S]{1,2}/g);
-				for(let i=0;i<hexValues.length;i=i){
-					//for now, just Space
-					self.formattedEnemyString += hexValues[i];
-					i+=1;
-					self.formattedEnemyString += ' ';
+		self.formatEnemyData_Editor = function(newData){
+			if(!!newData){
+                MapService.setCharacterData(self.formatData_Service(newData));
+			}else{
+				let serviceData = MapService.characterData();
+				if(serviceData != undefined && self.enemyString != serviceData){
+					self.enemyString          = serviceData;
+					self.formattedEnemyString = '';
+					let hexValues             = self.enemyString.match(/[\s\S]{1,2}/g);
+					for(let i=0;i<hexValues.length;i=i){
+						//for now, just Space
+						self.formattedEnemyString += hexValues[i];
+						i+=1;
+						self.formattedEnemyString += ' ';
+					}
 				}
 			}
-		}
-		//
-		self.updateEnemyData = function(){
-			MapService.setCharacterData(self.formatData_Service(self.formattedEnemyString));
-			self.formatEnemyData_Editor();
+			return self.formattedEnemyString;	
 		}
 		//
 		self.getOriginalCount = function(type){
@@ -85,26 +85,25 @@ angular.
 			}
 		}
 		//
-		self.hasData = function(){
-			if('Character'){
-				if(MapService.getCharacterDataCurrentSize() > 0 || self.formattedEnemyString != ''){
-					return true
+		self.hasEnoughHexDataDefined = function(type){
+			return self.getOriginalCount(type) != self.getCurrentCount(type);
+		}
+		//
+		self.tilesDefined = function(){
+					let hexValues     = self.memoryString.match(/[\s\S]{1,2}/g);
+			let tileCount     = 0;
+			for(let i=0;i<hexValues.length;i=i){
+				let isGroup = parseInt(hexValues[i].charAt(0),16) > 7;
+				let nextHex = hexValues[i+1];
+				if(isGroup && nextHex){ 
+					tileCount+=parseInt(nextHex,16)+1;
+					i+=2;
 				}else{
-					if(self.formattedEnemyString == ''){
-						self.formatEnemyData_Editor();
-					}
-					return false;
-				}
-			}else{
-				if(MapService.getTileDataCurrentSize() > 0 || self.formattedMemoryString != ''){
-					return true
-				}else{
-					if(self.formattedMemoryString == ''){
-						self.formatMapData_Editor();
-					}
-					return false;
+					tileCount++;
+					i+=1;
 				}
 			}
+			return tileCount;	
 		}
 	}
   });

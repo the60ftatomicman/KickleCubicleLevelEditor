@@ -1,21 +1,35 @@
-<div>
-	<div style="display:inline-block" ng-uf="$ctrl.hasData('Map')">
-		<p>Map Data</p>
-		<textarea style="width:256px; height:256px;"
-		ng-model="$ctrl.formattedMemoryString"
-		ng-model-options="{ debounce: 1000 }"
-		ng-change="$ctrl.updateMapData()">
-		</textarea>
-		<p><span>Hexes Needed:</span><span>{{$ctrl.getOriginalCount('Map')}}</span></p>
-		<p><span>Hexes Currently:</span><span>{{$ctrl.getCurrentCount('Map')}}</span></p>
-	</div>
-	<div style="display:inline-block" ng-if="$ctrl.hasData('Character')">
-		<p>Enemy Data</p>
-		<textarea style="width:256px; height:256px;"
-		ng-model="$ctrl.formattedEnemyString"
-		ng-model-options="{ debounce: 1000 ,getterSetter: true}"
-		ng-change="$ctrl.updateEnemyData()"></textarea>
-		<p><span>Hexes Needed:</span><span>{{$ctrl.getOriginalCount('Character')}}</span></p>
-		<p><span>Hexes Currently:</span><span>{{$ctrl.getCurrentCount('Character')}}</span></p>
-	</div>
+<table>
+	<tr>
+		<th>Map Data</th>
+		<th>Character Data</th>
+	</tr>
+	<tr>
+		<td >
+			<textarea style="width:256px; height:245px;"
+			ng-model="$ctrl.formatMapData_Editor"
+			ng-model-options="{ debounce: 1000 , getterSetter: true}"
+			ng-change="$ctrl.formatMapData_Editor()">
+			</textarea>
+			<p>
+				<span>Hexes {{$ctrl.getCurrentCount('Map')}} of {{$ctrl.getOriginalCount('Map')}}</span>
+			</p>
+			<p>
+				<span>Tiles {{$ctrl.tilesDefined()}} of 224</span>
+				<span ng-if="$ctrl.tilesDefined() != 224">. Need {{224 - $ctrl.tilesDefined()}}</span>
+			</p>
+		</td>
+		<td >
+			<textarea style="width:256px; height:245px;"
+			ng-model="$ctrl.formatEnemyData_Editor"
+			ng-model-options="{ debounce: 1000 , getterSetter: true}"
+			ng-change="$ctrl.formatEnemyData_Editor()"></textarea>
+			<p>
+				<span>Hexes {{$ctrl.getCurrentCount('Character')}} of {{$ctrl.getOriginalCount('Character')}}</span>
+			</p>
+			<p>something to make the balance nice</p>
+		</td>
+		<!-- <td >
+			<label>detailed spawn stuff here</label>
+		</td> -->
+	</tr>
 </div>

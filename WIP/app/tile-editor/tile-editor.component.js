@@ -9,8 +9,8 @@ angular.
 		//
 		//
 		var self = this;
-		self.memoryString = '';
-		self.enemyString  = '';		
+		self.memoryString = undefined;
+		self.enemyString  = undefined;		
 		self.tiles        = [[]];
 		self.currentTile  = {};
 		//
@@ -48,7 +48,7 @@ angular.
 			return self.tiles;
 		}
 		self.setCurrentTile = function (i) {
-			console.log(i);
+			self.currentTile = i;
 		}
 		function populateTiles(tile,cHex,index){
 			if(self.tiles[self.tiles.length-1].length >= 16){
