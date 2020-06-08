@@ -1,7 +1,17 @@
 <table>
 	<tr>
-		<th>Map Data</th>
-		<th>Character Data</th>
+		<th>Map Data 
+		<button class="btn_action" ng-click="$ctrl.resetText('Map')">Reset</button>
+		<button class="btn_action" ng-click="">Copy</button>
+		</th>
+		<th>Character Data 
+		<button class="btn_action" ng-click="$ctrl.resetText('Character')">Reset</button>
+		<button class="btn_action" ng-click="">Copy</button>
+		</th>
+	</tr>
+	<tr>
+		<td>Address {{self.memoryLocation.start}} > {{self.memoryLocation.end}}</td>
+		<td>Address {{self.enemyLocation.start}} > {{self.enemyLocation.end}}</td>
 	</tr>
 	<tr>
 		<td >
@@ -10,6 +20,16 @@
 			ng-model-options="{ debounce: 1000 , getterSetter: true}"
 			ng-change="$ctrl.formatMapData_Editor()">
 			</textarea>
+		</td>
+		<td >
+			<textarea style="width:256px; height:245px;"
+			ng-model="$ctrl.formatEnemyData_Editor"
+			ng-model-options="{ debounce: 1000 , getterSetter: true}"
+			ng-change="$ctrl.formatEnemyData_Editor()"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td >
 			<p>
 				<span>Hexes {{$ctrl.getCurrentCount('Map')}} of {{$ctrl.getOriginalCount('Map')}}</span>
 			</p>
@@ -19,17 +39,10 @@
 			</p>
 		</td>
 		<td >
-			<textarea style="width:256px; height:245px;"
-			ng-model="$ctrl.formatEnemyData_Editor"
-			ng-model-options="{ debounce: 1000 , getterSetter: true}"
-			ng-change="$ctrl.formatEnemyData_Editor()"></textarea>
 			<p>
 				<span>Hexes {{$ctrl.getCurrentCount('Character')}} of {{$ctrl.getOriginalCount('Character')}}</span>
 			</p>
-			<p>something to make the balance nice</p>
-		</td>
-		<!-- <td >
-			<label>detailed spawn stuff here</label>
-		</td> -->
+			<p> </p>
+		</td>	
 	</tr>
 </div>

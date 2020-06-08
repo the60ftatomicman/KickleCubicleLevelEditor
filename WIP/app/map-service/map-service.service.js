@@ -10,7 +10,10 @@ angular.module('MapService')
 	//
 	self.initMapData = function(){
 		self.mapData = {
-			name:'',
+			memoryAddress:{
+				tile     :{start:undefined,end:undefined},
+				character:{start:undefined,end:undefined},
+			},
 			tile:{
 				original:undefined,
 				current :undefined
@@ -28,12 +31,16 @@ angular.module('MapService')
 				],
 				enemy:[]
 			},
-			sprite:[]
+			sprite:{
+				tile     :[],
+				character:[]
+			}
 		};
 		$http.get('json/meta_info.json').then(function(data) {
 			//console.log(data);
-			self.availableMaps  = data.data.levels; 
-			self.mapData.sprite = data.data.sprites.tile;
+			self.availableMaps = data.data.levels;			
+			self.mapData.sprite.tile      = data.data.sprites.tile;
+			self.mapData.sprite.character = data.data.sprites.character;
 		});
 	};
 	self.getMapData = function(mapData){
@@ -41,7 +48,9 @@ angular.module('MapService')
 			//console.log(data);
 			self.initTileData(data.data.rawHexData.tile);
 			self.initCharacterData(data.data.rawHexData.character);
-		});	
+			self.mapData.memoryAddress.tile      = data.data.hexAddresses.tile;
+			self.mapData.memoryAddress.character = data.data.hexAddresses.character;
+		});
 	};
 	//
 	// Tile Data

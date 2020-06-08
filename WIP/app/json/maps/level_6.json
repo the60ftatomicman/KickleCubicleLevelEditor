@@ -8,10 +8,10 @@
 		"character": "0BC00A0500547100015A7D0003EF20080B0302977D0000EFFFB5C6B70137",
 		"palette"  : ""
 	},
-	"hexLocations": {
-		"tile": [],
+	"hexAddresses ": {
+		"tile"     : {"start":"179FC","end":"17A57"},
 		"character": [],
-		"palette": []
+		"palette"  : []
 	}
 
 }

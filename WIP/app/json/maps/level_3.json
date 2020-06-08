@@ -8,9 +8,9 @@
 		"character": "",
 		"palette"  : ""
 	},
-	"hexLocations": {
-		"tile": [],
+	"hexAddresses": {
+		"tile"     : {"start":"13EBD","end":"13F27"},
 		"character": [],
-		"palette": []
+		"palette"  : []
 	}
 }

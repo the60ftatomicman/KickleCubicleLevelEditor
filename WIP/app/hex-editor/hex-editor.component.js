@@ -8,8 +8,10 @@ angular.
 		var self                   = this;
 		self.memoryString          = undefined;
 		self.formattedMemoryString = '';
+		self.memoryLocation        = {start:undefined,end:undefined};
 		self.enemyString           = undefined;
 		self.formattedEnemyString  = '';
+		self.enemyLocation         = {start:undefined,end:undefined};
 		//
 		//
 		//
@@ -28,6 +30,7 @@ angular.
 				if(serviceData != undefined && self.memoryString != serviceData){
 					self.memoryString          = serviceData;
 					self.formattedMemoryString = '';
+					self.memoryLocation        = MapService.mapData.memoryAddress.tile;
 					let hexValues              = self.memoryString.match(/[\s\S]{1,2}/g);
 					for(let i=0;i<hexValues.length;i=i){
 						let isGroup = parseInt(hexValues[i].charAt(0),16) > 7;
@@ -58,6 +61,7 @@ angular.
 				if(serviceData != undefined && self.enemyString != serviceData){
 					self.enemyString          = serviceData;
 					self.formattedEnemyString = '';
+					self.enemyLocation        = MapService.mapData.memoryAddress.character;
 					let hexValues             = self.enemyString.match(/[\s\S]{1,2}/g);
 					for(let i=0;i<hexValues.length;i=i){
 						//for now, just Space
@@ -71,19 +75,28 @@ angular.
 		}
 		//
 		self.getOriginalCount = function(type){
-			if('Character'){
+			if(type == 'Character'){
 				return MapService.getCharacterDataOriginalSize();
 			}else{
 				return MapService.getTileDataOriginalSize();
 			}
 		}
+		//
 		self.getCurrentCount = function(type){
-			if('Character'){
+			if(type == 'Character'){
 				return MapService.getCharacterDataCurrentSize();
 			}else{
 				return MapService.getTileDataCurrentSize();
 			}
 		}
+		self.resetText = function(type){
+			if(type == 'Character'){
+				return MapService.resetCharacterData();
+			}else{
+				return MapService.resetTileData();
+			}
+		}
+		
 		//
 		self.hasEnoughHexDataDefined = function(type){
 			return self.getOriginalCount(type) != self.getCurrentCount(type);

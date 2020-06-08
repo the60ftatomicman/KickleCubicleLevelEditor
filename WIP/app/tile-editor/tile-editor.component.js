@@ -16,7 +16,8 @@ angular.
 		//
 		//
 		//
-		self.$onInit = function () {}
+		self.$onInit = function () {
+		}
 		//
 		//
 		//
@@ -66,7 +67,7 @@ angular.
 			});
 		}
 		function getSpritePath(hexValue){
-			if(MapService.mapData.sprite.includes(hexValue)){
+			if(MapService.mapData.sprite.tile.includes(hexValue)){
 				return 'img/tiles/'+hexValue+'.png';
 			}else{
 				return false;
