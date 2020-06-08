@@ -158,35 +158,25 @@ angular.module('MapService')
 			for(let i=0;i<enemyIdx;i=i){
 				let identifier = hexValues.slice(i,i+5).toString().replace(/,/g, '');
 				let idxMoved   = 1;
-				if(identifier === '0BC00A0500'){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'noggle');
-				}else if(identifier === '0D080E0D02' || identifier === '0D080E0D03' ){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'hoople');
-				}else if(identifier === '1E880D1102' || identifier === '1E880D1103' ){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'sparky');
-				}else if(identifier === '20080B0302' || identifier === '20080B0303' ){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'max');
-				}else if(identifier === '18080C0B02' || identifier === '18080C0B03' ){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'rocky');
-				}else if(identifier === '2D08130902' || identifier === '2D08130903' ){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'myrtle');
-				}else if(identifier === '1A080F0302' || identifier === '1A080F0303' ){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'rooker');
-				}else if(identifier === '2588090702' || identifier === '2588090703' ){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'bonkers');
-				}else if(identifier === '27C8100102' || identifier === '27C8100103' ){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'shades');
-				}else if(identifier === '2B08121102' || identifier === '2B08121103' ){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'equalizer');
-				}else if(identifier === '23700A1102' || identifier === '23700A1103' ){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'spiny_right');
-				}else if(identifier === '23400A1102' || identifier === '23400A1103' ){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'spiny_left');
-				}else if(identifier === '46884F0A02' || identifier === '46884F0A03' ){
-					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,'gale');
+				let enemyName  = getEnemyGroup(identifier);
+				if(enemyName){
+					idxMoved = populateSpawnEntry(hexValues,i,enemyIdx,enemyName);
 				}
 				i+=idxMoved;
 			}
+			//For some odd reason, some levels have extra enemy spawn data here baserock data here.
+			let kickleData = hexValues.slice(hexValues.lastIndexOf('FF'));
+			for(let i=kickleData.indexOf('01')+2;i<kickleData.length;i+=2){
+				if(kickleData[i]){
+					self.mapData.spawn.enemy.push({
+						row       : parseInt(kickleData[i].charAt(0),16),
+						col       : parseInt(kickleData[i].charAt(1),16),
+						direction : '',
+						name      : 'baserock_'+getEnemyGroup(hexValues.slice(0,5).toString().replace(/,/g, ''))
+					});
+				}
+			}
+			
 		}
 	};
 	self.isEnemySpawn = function(row,col){
@@ -208,6 +198,36 @@ angular.module('MapService')
 		}else{
 			return hexString != "" ? hexString.match(/[\s\S]{1,2}/g).length : 0;
 		}
+	};
+	function getEnemyGroup(identifier){
+		if(identifier === '0BC00A0500'){
+			return 'noggle';
+		}else if(identifier === '0D080E0D02' || identifier === '0D080E0D03' ){
+			return 'hoople';
+		}else if(identifier === '1E880D1102' || identifier === '1E880D1103' ){
+			return 'sparky';
+		}else if(identifier === '20080B0302' || identifier === '20080B0303' ){
+			return 'max';
+		}else if(identifier === '18080C0B02' || identifier === '18080C0B03' ){
+			return 'rocky';
+		}else if(identifier === '2D08130902' || identifier === '2D08130903' ){
+			return 'myrtle';
+		}else if(identifier === '1A080F0302' || identifier === '1A080F0303' ){
+			return 'rooker';
+		}else if(identifier === '2588090702' || identifier === '2588090703' ){
+			return 'bonkers';
+		}else if(identifier === '27C8100102' || identifier === '27C8100103' ){
+			return 'shades';
+		}else if(identifier === '2B08121102' || identifier === '2B08121103' ){
+			return 'equalizer';
+		}else if(identifier === '23700A1102' || identifier === '23700A1103' ){
+			return 'spiny_right';
+		}else if(identifier === '23400A1102' || identifier === '23400A1103' ){
+			return 'spiny_left';
+		}else if(identifier === '46884F0A02' || identifier === '46884F0A03' ){
+			return 'gale';
+		}
+		return	undefined;	
 	};
 	function populateSpawnEntry(hexValues,currHexIdx,enemyIdx,enemyName){
 		let groupSlice = hexValues.slice(currHexIdx+5,enemyIdx);
