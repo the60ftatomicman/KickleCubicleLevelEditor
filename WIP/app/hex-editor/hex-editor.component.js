@@ -48,6 +48,7 @@ angular.
 			}
 			return self.formattedMemoryString;
 		}
+		
 		//
 		self.formatData_Service = function(editorData){
 			return editorData.replace(/ /g, '').replace(/,/g, '');
@@ -96,7 +97,22 @@ angular.
 				return MapService.resetTileData();
 			}
 		}
-		
+		self.copyText = function(type){
+			let tmp = document.createElement("textarea");
+			if(type == 'Character'){
+				tmp.value = MapService.characterData();
+			}else{
+				tmp.value = MapService.tileData();
+			}
+			tmp.style.height = "0";
+			tmp.style.overflow = "hidden";
+			tmp.style.position = "fixed";
+			document.body.appendChild(tmp);
+			tmp.focus();
+			tmp.select();
+			document.execCommand("copy");
+			document.body.removeChild(tmp);
+		}
 		//
 		self.hasEnoughHexDataDefined = function(type){
 			return self.getOriginalCount(type) != self.getCurrentCount(type);

@@ -2,16 +2,16 @@
 	<tr>
 		<th>Map Data 
 		<button class="btn_action" ng-click="$ctrl.resetText('Map')">Reset</button>
-		<button class="btn_action" ng-click="">Copy</button>
+		<button class="btn_action" ng-click="$ctrl.copyText('Map')">Copy</button>
 		</th>
 		<th>Character Data 
 		<button class="btn_action" ng-click="$ctrl.resetText('Character')">Reset</button>
-		<button class="btn_action" ng-click="">Copy</button>
+		<button class="btn_action" ng-click="$ctrl.copyText('Character')">Copy</button>
 		</th>
 	</tr>
 	<tr>
-		<td>Address {{self.memoryLocation.start}} > {{self.memoryLocation.end}}</td>
-		<td>Address {{self.enemyLocation.start}} > {{self.enemyLocation.end}}</td>
+		<td ng-if="!!$ctrl.memoryLocation.start">Address {{$ctrl.memoryLocation.start}} > {{$ctrl.memoryLocation.end}}</td>
+		<td ng-if="!!$ctrl.enemyLocation.start">Address {{$ctrl.enemyLocation.start}} > {{$ctrl.enemyLocation.end}}</td>
 	</tr>
 	<tr>
 		<td >
