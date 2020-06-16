@@ -229,9 +229,9 @@ angular.module('MapService')
 			return 'shades';
 		}else if(identifier === '2B08121102' || identifier === '2B08121103' ){
 			return 'equalizer';
-		}else if(identifier === '23700A1102' || identifier === '23700A1103' ){
-			return 'spiny_right';
-		}else if(identifier === '23400A1102' || identifier === '23400A1103' ){
+		}else if(identifier === '23700A1102' || identifier === '23700A1103' || identifier === '23480A1102'){
+			return 'spiny_right'; 
+		}else if(identifier === '23400A1102' || identifier === '23400A1103' || identifier === '23080A1102'){
 			return 'spiny_left';
 		}else if(identifier === '46884F0A02' || identifier === '46884F0A03' ){
 			return 'gale';

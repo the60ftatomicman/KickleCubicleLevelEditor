@@ -1,0 +1,23 @@
+{
+    "meta":  {
+                 "world":  "Toy Land C",
+                 "index":  "??"
+             },
+    "rawHexData":  {
+                       "tile":  "800F820E440241C30907414346820E4442C3050741C3040245820E4502410741C30A46820E4442C3050741C3040245820E450241C30907414346820E4442C30D4680",
+                       "character":  "",
+                       "palette":  ""
+                   },
+    "hexAddresses":  {
+                         "tile":  {
+                                      "start":  "17B0B",
+                                      "end":  "17B4D"
+                                  },
+                         "character":  [
+
+                                       ],
+                         "palette":  [
+
+                                     ]
+                     }
+}

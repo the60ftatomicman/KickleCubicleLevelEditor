@@ -15,7 +15,6 @@
 13C36 to 13CA2 = Garden Land O
 178D7 to 17938 = Garden Land P
 15B23 to 15BAC = Garden Land Q
-
 15C36 to 15CBE = Fruit Land A
 13010 to 13090 = Fruit Land B
 138B0 to 13922 = Fruit Land C
@@ -33,7 +32,6 @@
 15CBF to 15D46 = Fruit Land O
 147EA to 1488C = Fruit Land P
 13995 to 13A06 = Fruit Land Q
-
 1410C to 141D0 = Cake Land A
 153F8 to 1548A = Cake Land B
 155AF to 1563C = Cake Land C
@@ -50,7 +48,6 @@
 15BAD to 15C35 = Cake Land N
 137C8 to 1383B = Cake Land O
 15DCE to 15E53 = Cake Land P
-
 17A58 to 17AB1 = Toy Land A
 1488D to 1492F = Toy Land B
 17B0B to 17B4D = Toy Land C
@@ -68,7 +65,6 @@
 13CA3 to 13D0F = Toy Land O
 17874 to 178D6 = Toy Land P
 152D2 to 15364 = Toy Land Q
-
 13E52 to 13EBC = Special Game 01
 1340C to 13486 = Special Game 02
 1338F to 1340B = Special Game 03

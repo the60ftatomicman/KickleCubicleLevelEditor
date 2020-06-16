@@ -1,0 +1,23 @@
+{
+    "meta":  {
+                 "world":  "Special Game 07",
+                 "index":  "??"
+             },
+    "rawHexData":  {
+                       "tile":  "802F830E4429820C304529820C304529820203880403820230452982020182040182023045298202018204018202304583032C83094542C30D4680",
+                       "character":  "",
+                       "palette":  ""
+                   },
+    "hexAddresses":  {
+                         "tile":  {
+                                      "start":  "17B4E",
+                                      "end":  "17B89"
+                                  },
+                         "character":  [
+
+                                       ],
+                         "palette":  [
+
+                                     ]
+                     }
+}

@@ -16,25 +16,33 @@
 		{"file":"level_14","name":"Garden Land N"},
 		{"file":"level_15","name":"Garden Land O"},
 		{"file":"level_16","name":"Garden Land P"},
-		{"file":"level_17","name":"Garden Land Q"}
+		{"file":"level_17","name":"Garden Land Q"},
+		{"file":"level_18","name":"Fruit Land A" },
+		{"file":"level_19","name":"Fruit Land B" },
+		{"file":"level_20","name":"Fruit Land C" },
+		{"file":"level_21","name":"Fruit Land D" },
+		{"file":"level_22","name":"Fruit Land E" },
+		{"file":"level_23","name":"Fruit Land F" },
+		{"file":"level_24","name":"Fruit Land G" }
 	],
 	"sprites": {
 		"tile": [
-			"00", "01", "03", "04", "05", "07",
-			"20", "25", "2C",
+			"00", "01","02","03", "04", "05", "07",
+			"20", "21","25", "2C",
 			"30", "31",
 			"41", "42", "43", "44", "45", "46",
-			"80", "81", "83", "84", "85", "87",
-			"A0", "A5", "AC",
+			"80", "81", "82", "83", "84", "85", "87",
+			"A0", "A1","A5", "AC",
 			"B0", "B1",
 			"C1", "C2", "C3", "C4", "C5", "C6"
 		],
 		"character": [
 			"kickle","bag",
-			"noggle","baserock_noggle",
-			"hoople","baserock_hoope" ,
-			"max"   ,"baserock_max"   ,
-			"rocky"
+			"noggle"    ,"baserock_noggle",
+			"hoople"    ,"baserock_hoope" ,
+			"max"       ,"baserock_max"   ,
+			"rocky"     ,"baserock_rocky" ,
+			"spiny_left","spiny_right"
 		]
 	}
 }
