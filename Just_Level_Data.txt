@@ -1,0 +1,5780 @@
+---------------------------------------------------------------------------------------------------
+Level 01 - Garden Land A
+
+Level Data: 0x17AB2
+
+00000000000000014400000000000000
+00000000000001010144000000000000
+00000000000042434346000000000000
+00000101010101010101010101440000
+00010101010101010101010101014400
+00424343434343434343434343434600
+00010101010101010101010101014400
+00420101010101010101010101414600
+0000422C010301010103012C41460000
+00000042010101010101014146000000
+00000000420101010101414600000000
+00000000004201010141460000000000
+00000000000042014146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x1215A
+
+0B C0 0A 05 00 73 83 FF 01 7B 8B FF 03 EF FF 17 16 18 01 A7
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 1/4 palette for Kickle and Dream Bags.
+73 - Noggles #1 starting position (X: 30, Y: 70).
+83 - Noggles #1 Base Rock position (X: 30, Y: 80).
+FF - 
+01 - Noggles #1 direction (right).
+7B - Noggles #2 starting position (X: B0, Y: 70).
+8B - Noggles #2 Base Rock position (X: B0, Y: 80).
+FF - 
+03 - Noggles #2 direction (left).
+EF - 
+FF - 
+17 - Dream Bag #1 (X: 70, Y: 10).
+16 - Dream Bag #2 (X: 60, Y: 10).
+18 - Dream Bag #3 (X: 80, Y: 10).
+01 - 
+A7 - Kickle starting position (X: 70, Y: A0).
+-------------------------------------------------------------------------------
+Level 02 - Garden Land N
+
+Level Data: 0x13112
+
+000000000000002C4400000000000000
+00000000070101010101014400000000
+00000007010101010101010144000000
+00000701014143434343010101440000
+00000101410101440101410101450000
+00004243010101010101014143460000
+0000010141012C412C01410101440000
+00000101014143464243010101450000
+00000101010101010101010101450000
+00000101010101010101010101450000
+000042010101012C0101010141460000
+00000202020101010101020202440000
+00020202020241434302020202024400
+00424343434346000042434343434600
+
+Enemy Data: 0x1216E
+
+0B C0 0A 05 00 83 A7 FF 01 8B A7 FF 03 EF 1E 88 0D 11 02 27 07 FF 02 EF FF 17
+55 59 01 87
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+83 - Noggles #1 starting position (X: 30, Y: 80).
+A7 - Noggles #1 Base Rock position (X: 70, Y: A0).
+FF - 
+01 - Noggles #1 direction (right).
+8B - Noggles #2 starting position (X: B0, Y: 80).
+A7 - Noggles #2 Base Rock position (X: 70, Y: A0).
+FF - 
+03 - Noggles #2 direction (left).
+EF - 
+1E - 
+88 - 
+0D - 
+11 - 
+02 - 
+27 - Sparky #1 starting position (X: 70, Y: 20).
+07 - Sparky #1 Base Rock position (X: 70, Y: 00).
+FF - 
+02 - Sparky #1 direction (down; immediately turns left due to water).
+EF - 
+FF - 
+17 - Dream Bag #1 (X: 70, Y: 10).
+55 - Dream Bag #2 (X: 50, Y: 50).
+59 - Dream Bag #3 (X: 90, Y: 50).
+01 - 
+87 - Kickle starting position (X: 70, Y: 80).
+-------------------------------------------------------------------------------
+Level 03 - Garden Land E
+
+Level Data: 0x13D7C
+
+00000000000001010144000000000000
+00000000000101010101440000000000
+0000000001012C012C01014400000000
+00000000010101010101014500000000
+00000000420101030101414600000000
+31010101200101010101450101013044
+31010101200101010101450101013045
+42434343430101010101454243434346
+00000000000101010101450000000000
+00000000004243434343460000000000
+00000000000101250101440000000000
+00000000004201010141460000000000
+00000000000042014146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x1218C
+
+0B C0 0A 05 00 EF FF 52 62 5C 01 67 26 01 28 01
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+EF - 
+FF - 
+52 - Dream Bag #1 (X: 20, Y: 50).
+62 - Dream Bag #2 (X: 20, Y: 60).
+5C - Dream Bag #3 (X: C0, Y: 50).
+01 - 
+67 - Kickle starting position (X: 70, Y: 60).
+26 - Ice cube/Noggles #1 Base Rock position (X: 60, Y: 20).
+01 - Tile under ice cube #1 (01 - Land).
+28 - Ice cube/Noggles #2 Base Rock position (X: 80, Y: 20).
+01 - Tile under ice cube #2 (01 - Land).
+-------------------------------------------------------------------------------
+Level 04 - Garden Land B
+
+Level Data: 0x13669
+
+00000000000000034400000000000000
+00000000000101010101440000000000
+00000000004243434343460000000000
+00000000000744074407440000000000
+00000344004246424642460003440000
+00034103440101010101440341034400
+03414642010101010101014146420344
+03450001010101010101010144000345
+42032C0101010101010101012C034146
+00420301010101010101010103414600
+00004201010101010101010141460000
+00000042010101010101014146000000
+00000000420101010101414600000000
+00000000004243434343460000000000
+
+Enemy Data: 0x1219C
+
+0B C0 0A 05 00 84 82 00 01 8A 8C 00 03 EF 0D 08 0E 0D 02 17 FF 00 00 EF FF 15
+67 19 01 A7
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+84 - Noggles #1 starting position (X: 40, Y: 80).
+82 - Noggles #1 Base Rock position (X: 20, Y: 80).
+00 - 
+01 - Noggles #1 direction (right).
+8A - Noggles #2 starting position (X: A0, Y: 80).
+8C - Noggles #2 Base Rock position (X: C0, Y: 80).
+00 - 
+03 - Noggles #2 direction (left).
+EF - 
+0D - 
+08 - 
+0E - 
+0D - 
+02 - 
+17 - Mr. Hoople #1 starting position (X: 70, Y: 10).
+FF - Mr. Hoople #1 - No Base Rock position.
+00 - 
+00 - Mr. Hoople #1 direction (up; immediately turns right due to water).
+EF - 
+FF - 
+15 - Dream Bag #1 (X: 50, Y: 10).
+67 - Dream Bag #2 (X: 70, Y: 60).
+19 - Dream Bag #3 (X: 90, Y: 10).
+01 - 
+A7 - Kickle starting position (X: 70, Y: A0).
+-------------------------------------------------------------------------------
+Level 05 - Fruit Land F
+
+Level Data: 0x1523F
+
+00000000101315440202024400000000
+00000000111D19450202024500000000
+00000744121417450202024507440000
+00000745020202030202024507450000
+00004246020202030202024542460000
+00000303020202030202020303440000
+00030101010101030101010101034400
+03010101010101030101010101010344
+2C010101010101030101010101012C45
+03010101010101030101010101010345
+03010101010101030101010101010345
+42030101010103410301010101034146
+00420303030341464203030303414600
+00004243434346000042434343460000
+
+Enemy Data: 0x121BA
+
+0B C0 0A 05 00 74 80 00 00 76 80 00 00 EF 25 88 09 07 02 78 8E 00 00 7A 8E 00
+00 EF FF 93 29 9B 01 45
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+74 - Noggles #1 starting position (X: 40, Y: 70).
+80 - Noggles #1 Base Rock position (X: 00, Y: 80).
+00 - 
+00 - Noggles #1 direction (up).
+76 - Noggles #2 starting position (X: 60, Y: 70).
+80 - Noggles #2 Base Rock position (X: 00, Y: 80).
+00 - 
+00 - Noggles #2 direction (up).
+EF - 
+25 - 
+88 - 
+09 - 
+07 - 
+02 - 
+78 - Bonkers #1 starting position (X: 80, Y: 70).
+8E - Bonkers #1 Base Rock position (X: E0, Y: 80).
+00 - 
+00 - Bonkers #1 direction (up).
+7A - Bonkers #2 starting position (X: A0, Y: 70).
+8E - Bonkers #2 Base Rock position (X: E0, Y: 80).
+00 - 
+00 - Bonkers #2 direction (up).
+EF - 
+FF - 
+93 - Dream Bag #1 (X: 30, Y: 90).
+29 - Dream Bag #2 (X: 90, Y: 20).
+9B - Dream Bag #3 (X: B0, Y: 90).
+01 - 
+45 - Kickle starting position (X: 50, Y: 40).
+-------------------------------------------------------------------------------
+Level 06 - Garden Land I
+
+Level Data: 0x14BB1
+
+00000001010101030101010144000000
+00000107070101030101070701440000
+00010101010101030101010101014400
+01014143434301030141434343010144
+01014501014401030145010144010145
+01014501014501030145010145010145
+01014542434601030145424346010145
+01010101010101030101010101010145
+42010101010101030101202001014146
+002C01010101010301010101012C4500
+00422C0101010103010101012C414600
+00004201414343034143434343460000
+00000002020202020202020244000000
+00000042434343434343434346000000
+
+Enemy Data: 0x121DC
+
+0B C0 0A 05 00 53 91 00 02 EF 20 08 0B 03 02 AA FF FF 00 54 A2 FF 02 EF FF 44
+A6 A8 01 4A AC 01 FF 01
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+53 - Noggles #1 starting position (X: 30, Y: 50).
+91 - Noggles #1 Base Rock position (X: 10, Y: 90).
+00 - 
+02 - Noggles #1 direction (down; begins facing up anyway).
+EF - 
+20 - 
+08 - 
+0B - 
+03 - 
+02 - 
+AA - Max #1 starting position (X: A0, Y: A0).
+FF - Max #1 - No Base Rock position.
+FF - 
+00 - Max #1 direction (up).
+54 - Max #2 starting position (X: 40, Y: 50).
+A2 - Max #2 Base Rock position (X: 20, Y: A0).
+FF - 
+02 - Max #2 direction (down; begins facing up anyway).
+EF - 
+FF - 
+44 - Dream Bag #1 (X: 40, Y: 40).
+A6 - Dream Bag #2 (X: 60, Y: A0).
+A8 - Dream Bag #3 (X: 80, Y: A0).
+01 - 
+4A - Kickle starting position (X: A0, Y: 40).
+AC - Ice cube/Noggles #1 Base Rock position (X: C0, Y: A0).
+01 - Tile under ice cube #1 (01 - Land).
+FF - Ice cube/Noggles #2 - No Base Rock.
+01 - Tile under ice cube #2 (01 - Land).
+-------------------------------------------------------------------------------
+Level 07 - Fruit Land D
+
+Level Data: 0x14A73
+
+00000000000001440000000000000000
+00000000000101074400000000000000
+00000000010101070744000000000000
+00000001010141070707440000014400
+00000101014146420741460001010144
+000101214146000A4146002101014146
+0101214146000A410A44210101410344
+420101214400420A4121010141034146
+03410101014400420101014103414600
+42034101010144010101410341460000
+00420341010101010141034146000000
+00004203410101014103414600000000
+00000042034101410341460000000000
+00000000424642464246000000000000
+
+Enemy Data: 0x121FE
+
+FF C6 60 06 01 4D
+
+FF - 
+C6 - Dream Bag #1 (X: 60, Y: C0).
+60 - Dream Bag #2 (X: 00, Y: 60).
+06 - Dream Bag #3 (X: 60, Y: 00).
+01 - 
+4D - Kickle starting position (X: D0, Y: 40).
+-------------------------------------------------------------------------------
+Level 08 - Fruit Land I
+
+Level Data: 0x135F2
+
+00000000000000000000032C03440000
+00000000000000000003020202034400
+00000000000000000302020202020344
+00000000000000004243434343434346
+030303032C0303030301020202010344
+03310101010101020101020202300345
+03310101010101020101020202300345
+03310101010101020101020202300345
+03030303030303030301020202010345
+42434343434343434343434343434346
+00000000000000000301012501010344
+00000000000000004203010101034146
+00000000000000000042030303414600
+00000000000000000000424343460000
+
+Enemy Data: 0x12204
+
+0B C0 0A 05 00 55 44 00 01 75 44 00 01 EF 1E 08 0D 11 02 FF 0B 00 00 EF FF 53
+73 2B 01 6B
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+55 - Noggles #1 starting position (X: 50, Y: 50).
+44 - Noggles #1 Base Rock position (X: 40, Y: 40).
+00 - 
+01 - Noggles #1 direction (right).
+75 - Noggles #2 starting position (X: 50, Y: 70).
+44 - Noggles #2 Base Rock position (X: 40, Y: 40).
+00 - 
+01 - Noggles #2 direction (right).
+EF - 
+1E - 
+08 - 
+0D - 
+11 - 
+02 - 
+FF - Sparky #1 - No starting position.
+0B - Sparky #1 Base Rock position (X: B0, Y: 00).
+00 - 
+00 - Sparky #1 direction (up).
+EF - 
+FF - 
+53 - Dream Bag #1 (X: 30, Y: 50).
+73 - Dream Bag #2 (X: 30, Y: 70).
+2B - Dream Bag #3 (X: B0, Y: 20).
+01 - 
+6B - Kickle starting position (X: B0, Y: 60).
+-------------------------------------------------------------------------------
+Level 09 - Fruit Land L
+
+Level Data: 0x151AB
+
+00000003030303034400000000000000
+00000301010101010344000000000000
+00030101010101010103440000000000
+03010707010101070701034400000000
+03010101010101010101034500000000
+0301012C0101012C01010345032C0344
+03010101010101010101034502020245
+03010101010301010101034502020245
+42030101010101010103414602020245
+00420303010101030341460042434346
+02020202101815020202020210181544
+42434343111C164143434343111C1645
+00000000121417450000000012141745
+00000000424343460000000042434346
+
+Enemy Data: 0x12222
+
+0B C0 0A 05 00 62 53 00 00 65 53 00 00 68 57 00 00 FF 53 00 03 FF 57 00 03 EF
+1E 08 0D 11 02 FF 5D 00 02 EF FF 7C 7D 7E 01 A9
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+62 - Noggles #1 starting position (X: 20, Y: 60).
+53 - Noggles #1 Base Rock position (X: 30, Y: 50).
+00 - 
+00 - Noggles #1 direction (up).
+65 - Noggles #2 starting position (X: 50, Y: 60).
+53 - Noggles #2 Base Rock position (X: 30, Y: 50).
+00 - 
+00 - Noggles #2 direction (up).
+68 - Noggles #3 starting position (X: 80, Y: 60).
+57 - Noggles #3 Base Rock position (X: 70, Y: 50).
+00 - 
+00 - Noggles #3 direction (up).
+FF - Noggles #4 - No starting position.
+53 - Noggles #4 Base Rock position (X: 30, Y: 50).
+00 - 
+03 - Noggles #4 direction (left).
+FF - Noggles #5 - No starting position.
+57 - Noggles #5 Base Rock position (X: 70, Y: 50).
+00 - 
+03 - Noggles #5 direction (left).
+EF - 
+1E - 
+08 - 
+0D - 
+11 - 
+02 - 
+FF - Sparky #1 - No starting position.
+5D - Sparky #1 Base Rock position (X: D0, Y: 50).
+00 - 
+02 - Sparky #1 direction (down).
+EF - 
+FF - 
+7C - Dream Bag #1 (X: C0, Y: 70).
+7D - Dream Bag #2 (X: D0, Y: 70).
+7E - Dream Bag #3 (X: E0, Y: 70).
+01 - 
+A9 - Kickle starting position (X: 90, Y: A0).
+-------------------------------------------------------------------------------
+Level 0B - Cake Land M
+
+Level Data: 0x14E23
+
+000000000003072C0703440000000000
+00000000030301010103034400000000
+00000003030301010103030344000000
+00000303030301410103030303440000
+000303030303012C0103030303034400
+07010120012001010121012101010744
+2C010141432C0101012C414301012C45
+07010121012101010120012001010745
+420303030303012C0103030303034146
+00420303030301410103030303414600
+00004203030301010103030341460000
+00000042030301010103034146000000
+000000004203072C0703414600000000
+00000000004243434343460000000000
+
+Enemy Data: 0x1224C
+
+0B C0 0A 05 00 FF FF FF 01 EF 1E 88 0D 11 02 54 FF 00 02 74 60 00 02 5A 6E 00
+02 7A FF 00 02 EF FF 17 61 6D 01 67 65 01 47 01 87 01 69 01
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - 
+FF - 
+FF - 
+01 - 
+EF - 
+1E - 
+88 - 
+0D - 
+11 - 
+02 - 
+54 - Sparky #1 starting position (X: 40, Y: 50).
+FF - Sparky #1 - No Base Rock position.
+00 - 
+02 - Sparky #1 direction (down).
+74 - Sparky #2 starting position (X: 40, Y: 70).
+60 - Sparky #2 Base Rock position (X: 00, Y: 60).
+00 - 
+02 - Sparky #2 direction (down).
+5A - Sparky #3 starting position (X: A0, Y: 50).
+6E - Sparky #3 Base Rock position (X: E0, Y: 60).
+00 - 
+02 - Sparky #3 direction (down).
+7A - Sparky #4 starting position (X: A0, Y: 70).
+FF - Sparky #4 - No Base Rock position.
+00 - 
+02 - Sparky #4 direction (down).
+EF - 
+FF - 
+17 - Dream Bag #1 (X: 70, Y: 10).
+61 - Dream Bag #2 (X: 10, Y: 60).
+6D - Dream Bag #3 (X: D0, Y: 60).
+01 - 
+67 - Kickle starting position (X: 70, Y: 60).
+65 - Ice cube/Noggles #1 Base Rock position (X: 50, Y: 60).
+01 - Tile under ice cube #1 (01 - Land).
+47 - Ice cube/Noggles #2 Base Rock position (X: 70, Y: 40).
+01 - Tile under ice cube #2 (01 - Land).
+87 - Ice cube/Noggles #3 Base Rock position (X: 70, Y: 80).
+01 - Tile under ice cube #3 (01 - Land).
+69 - Ice cube/Noggles #4 Base Rock position (X: 90, Y: 60).
+01 - Tile under ice cube #4 (01 - Land).
+-------------------------------------------------------------------------------
+Level 0C - Cake Land A
+
+Level Data: 0x1410C
+
+310101010104012C0104010101013044
+04030103040301030103010301030445
+31010101010101410104010141013045
+04030103010304030103040301030445
+310101042C04010101012C0401013045
+04030103040301030103040301030445
+31010101010407010104010101073045
+04030103040301030403010307030445
+310101042C0101040104010701013045
+04030103040301030103010307030445
+31010104010141010101410101073045
+04030103010304030103010301030445
+3101010401012C040101010401013045
+42434343434343434343434343434346
+
+Enemy Data: 0x1227A
+
+0B C0 0A 05 00 FF 44 00 00 FF 84 00 00 FF C6 00 00 FF 07 00 00 FF 4A 00 00 EF
+FF 12 1C A7 01 62
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+44 - Noggles #1 Base Rock position (X: 40, Y: 40).
+00 - 
+00 - Noggles #1 direction (up).
+FF - Noggles #2 - No starting position.
+84 - Noggles #2 Base Rock position (X: 40, Y: 80).
+00 - 
+00 - Noggles #2 direction (up).
+FF - Noggles #3 - No starting position.
+C6 - Noggles #3 Base Rock position (X: 60, Y: C0).
+00 - 
+00 - Noggles #3 direction (up).
+FF - Noggles #4 - No starting position.
+07 - Noggles #4 Base Rock position (X: 70, Y: 00).
+00 - 
+00 - Noggles #4 direction (up).
+FF - Noggles #5 - No starting position.
+4A - Noggles #5 Base Rock position (X: A0, Y: 40).
+00 - 
+00 - Noggles #5 direction (up).
+EF - 
+FF - 
+12 - Dream Bag #1 (X: 20, Y: 10).
+1C - Dream Bag #2 (X: C0, Y: 10).
+A7 - Dream Bag #3 (X: 70, Y: A0).
+01 - 
+62 - Kickle starting position (X: 20, Y: 60).
+-------------------------------------------------------------------------------
+Level 0D - Cake Land D
+
+Level Data: 0x14C4E
+
+032C03440000000000000000032C0344
+01010103030303030303030301010145
+010101030A0202020202022001010145
+01010103030303020303030301010145
+01010103414343034143430301010145
+01010103450000424600000301010145
+01010102030344000003034101010145
+01010102020203030302024501010145
+01010103020202020202020301010145
+03070102020302020203024101070345
+42030302020202030202024503034146
+00424303030202020202030341434600
+00000042430303030303414346000000
+00000000004243434343460000000000
+
+Enemy Data: 0x1229A
+
+0B C0 0A 05 00 41 01 FF 02 4D 0D FF 02 EF 0D 88 0E 0D 02 11 FF FF 02 1D FF FF
+02 EF FF 71 37 7D 01 B7 FF 02
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+41 - Noggles #1 starting position (X: 10, Y: 40).
+01 - Noggles #1 Base Rock position (X: 10, Y: 00).
+FF - 
+02 - Noggles #1 direction (down).
+4D - Noggles #2 starting position (X: D0, Y: 40).
+0D - Noggles #2 Base Rock position (X: D0, Y: 00).
+FF - 
+02 - Noggles #2 direction (down).
+EF - 
+0D - 
+88 - 
+0E - 
+0D - 
+02 - 
+11 - Mr. Hoople #1 starting position (X: 10, Y: 10).
+FF - Mr. Hoople #1 - No Base Rock position.
+FF - 
+02 - Mr. Hoople #1 direction (down).
+1D - Mr. Hoople #2 starting position (X: D0, Y: 10).
+FF - Mr. Hoople #2 - No Base Rock position.
+FF - 
+02 - Mr. Hoople #2 direction (down).
+EF - 
+FF - 
+71 - Dream Bag #1 (X: 10, Y: 70).
+37 - Dream Bag #2 (X: 70, Y: 30).
+7D - Dream Bag #3 (X: D0, Y: 70).
+01 - 
+B7 - Kickle starting position (X: 70, Y: B0).
+FF - Ice cube/Noggles #1 - No Base Rock position.
+02 - Tile under ice cube #1 (02 - Slippery Ice).
+-------------------------------------------------------------------------------
+Level 0E - Cake Land K
+
+Level Data: 0x13923
+
+00000000000000000000000000000000
+00000000000000000000000000000000
+03030303030303030303030303030344
+31040404020202020402020202043045
+31040404020404020402040402043045
+31012004020404020402040402043045
+31012004020404020402040402043045
+31012004020404020202040402043045
+31040404020404040204040402043045
+31040404020202040204022002043045
+03030303030303030303030303030345
+42434343434343434343434343434346
+00000000000000000000000000000000
+00000000000000000000000000000000
+
+Enemy Data: 0x122BE
+
+20 08 0B 03 03 71 FF FF 01 EF 23 70 0A 11 02 9A FF FF 01 EF 0B 00 0A 05 00 FF
+FF FF 01 EF FF 34 3C 9C 01 96 FF 04 FF 04 FF 04 FF 02
+
+20 - 
+08 - 
+0B - 
+03 - 
+03 - 
+71 - Max #1 starting position (X: 10, Y: 70).
+FF - Max #1 - No Base Rock position.
+FF - 
+01 - Max #1 direction (right).
+EF - 
+23 - 
+70 - 
+0A - 
+11 - 
+02 - 
+9A - Spiny #1 starting position (X: A0, Y: 90).
+FF - Spiny #1 - No Base Rock position.
+FF - 
+01 - Spiny #1 direction (right).
+EF - 
+0B - 
+00 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+FF - Noggles #1 - No Base Rock position.
+FF - 
+01 - Noggles #1 direction (right).
+EF - 
+FF - 
+34 - Dream Bag #1 (X: 40, Y: 30).
+3C - Dream Bag #2 (X: C0, Y: 30).
+9C - Dream Bag #3 (X: C0, Y: 90).
+01 - 
+96 - Kickle starting position (X: 60, Y: 90).
+FF - Ice cube/Noggles #1 - No Base Rock position.
+04 - Tile under ice cube #1 (04 - Water Hole).
+FF - Ice cube/Noggles #2 - No Base Rock position.
+04 - Tile under ice cube #2 (04 - Water Hole).
+FF - Ice cube/Noggles #3 - No Base Rock position.
+04 - Tile under ice cube #3 (04 - Water Hole).
+FF - Ice cube/Noggles #4 - No Base Rock position.
+02 - Tile under ice cube #4 (02 - Slippery Ice).
+-------------------------------------------------------------------------------
+Level 0F - Fruit Land O
+
+Level Data: 0x15CBF
+
+00000000002C4400002C440000000000
+00000000030103440301034400000000
+00000003010107030701010344000000
+00000301010101030101010103440000
+00030101010101030101010101034400
+03030303030301030103030303030344
+42434343434343434343434343434346
+0303032C030302020203030303030344
+31010101010210181502020202023045
+423101010102111C1602020202304146
+00423101010212141702020230414600
+00004231010202020202023041460000
+00000042030303030303034146000000
+00000000424343434343434600000000
+
+Enemy Data: 0x122EA
+
+0B C0 0A 05 00 93 73 FF 01 EF 25 08 09 07 02 15 05 00 02 19 09 00 02 EF FF 35
+39 9A 01 A7
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+93 - Noggles #1 starting position (X: 30, Y: 90).
+73 - Noggles #1 Base Rock position (X: 30, Y: 70).
+FF - 
+01 - Noggles #1 direction (right).
+EF - 
+25 - 
+08 - 
+09 - 
+07 - 
+02 - 
+15 - Bonkers #1 starting position (X: 50, Y: 10).
+05 - Bonkers #1 Base Rock position (X: 50, Y: 00).
+00 - 
+02 - Bonkers #1 direction (down).
+19 - Bonkers #2 starting position (X: 90, Y: 10).
+09 - Bonkers #2 Base Rock position (X: 90, Y: 00).
+00 - 
+02 - Bonkers #2 direction (down).
+EF - 
+FF - 
+35 - Dream Bag #1 (X: 50, Y: 30).
+39 - Dream Bag #2 (X: 90, Y: 30).
+9A - Dream Bag #3 (X: A0, Y: 90).
+01 - 
+A7 - Kickle starting position (X: 70, Y: A0).
+-------------------------------------------------------------------------------
+Level 10 - Cake Land E
+
+Level Data: 0x136DE
+
+00000000000000000000000000000000
+00000000000000000000000303030344
+00000000000000000000030101010345
+00000000000000000003010125010345
+00000000000000000301010101010345
+00000000000000004243434343434346
+00000303032C03030303030101030344
+00030101010101010202010101020245
+03010101010101010202030103020245
+03010101010101010202033203020245
+03010101010101010202030303020245
+42030101010101010202024102020245
+00420303030303030303034503030345
+00004243434343434343434642434346
+
+Enemy Data: 0x12308
+
+0B C0 0A 05 00 83 65 00 00 A3 65 00 02 84 65 00 00 A4 65 00 02 85 65 00 00 A5
+65 00 02 86 65 00 00 A6 65 00 02 EF 23 40 0A 11 03 2C 90 FF 03 EF FF 49 3A 4A
+01 99
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+83 - Noggles #1 starting position (X: 30, Y: 80).
+65 - Noggles #1 Base Rock position (X: 50, Y: 60).
+00 - 
+00 - Noggles #1 direction (up).
+A3 - Noggles #2 starting position (X: 30, Y: A0).
+65 - Noggles #2 Base Rock position (X: 50, Y: 60).
+00 - 
+02 - Noggles #2 direction (down).
+84 - Noggles #3 starting position (X: 40, Y: 80).
+65 - Noggles #3 Base Rock position (X: 50, Y: 60).
+00 - 
+00 - Noggles #3 direction (up).
+A4 - Noggles #4 starting position (X: 40, Y: A0).
+65 - Noggles #4 Base Rock position (X: 50, Y: 60).
+00 - 
+02 - Noggles #4 direction (down).
+85 - Noggles #5 starting position (X: 50, Y: 80).
+65 - Noggles #5 Base Rock position (X: 50, Y: 60).
+00 - 
+00 - Noggles #5 direction (up).
+A5 - Noggles #6 starting position (X: 50, Y: A0).
+65 - Noggles #6 Base Rock position (X: 50, Y: 60).
+00 - 
+02 - Noggles #6 direction (down).
+86 - Noggles #7 starting position (X: 60, Y: 80).
+65 - Noggles #7 Base Rock position (X: 50, Y: 60).
+00 - 
+00 - Noggles #7 direction (up).
+A6 - Noggles #8 starting position (X: 60, Y: A0).
+65 - Noggles #8 Base Rock position (X: 50, Y: 60).
+00 - 
+02 - Noggles #8 direction (down).
+EF - 
+23 - 
+40 - 
+0A - 
+11 - 
+03 - 
+2C - Spiny #1 starting position (X: C0, Y: 20).
+90 - Spiny #1 Base Rock position (X: 00, Y: 90). (?!)
+FF - 
+03 - Spiny #1 direction (left).
+EF - 
+FF - 
+49 - Dream Bag #1 (X: 90, Y: 40).
+3A - Dream Bag #2 (X: A0, Y: 30).
+4A - Dream Bag #3 (X: A0, Y: 40).
+01 - 
+99 - Kickle starting position (X: 90, Y: 90).
+-------------------------------------------------------------------------------
+Level 11 - Cake Land G
+
+Level Data: 0x14CEB
+
+00000000000000000000000000000000
+0000032C034400000000000000000000
+00030101034500000000000000000000
+31010101034500000033443344000344
+31010101034500000002450245000145
+31010101034500000002450245000145
+31010101204502020202030203440145
+31010101034542434302410241460145
+31010101034531020202020203440145
+31010101034542434303410241460145
+42030707034531020202020202450145
+00420303034542434303410341460345
+00004243434600000042464246004246
+00000000000000000000000000000000
+
+Enemy Data: 0x1233E
+
+0B C0 0A 05 00 FF 13 00 01 EF 1A 08 0F 03 02 4E FF 00 02 EF FF 5E 7E 9E 01 62
+13 01
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+13 - Noggles #1 Base Rock position (X: 30, Y: 10).
+00 - 
+01 - Noggles #1 direction (right).
+EF - 
+1A - 
+08 - 
+0F - 
+03 - 
+02 - 
+4E - Rooker #1 starting position (X: E0, Y: 40).
+FF - Rooker #1 - No Base Rock position.
+00 - 
+02 - Rooker #1 direction (down).
+EF - 
+FF - 
+5E - Dream Bag #1 (X: E0, Y: 50).
+7E - Dream Bag #2 (X: E0, Y: 70).
+9E - Dream Bag #3 (X: E0, Y: 90).
+01 - 
+62 - Kickle starting position (X: 20, Y: 60).
+13 - Ice cube/Noggles #1 Base Rock position (X: 30, Y: 10).
+01 - Tile under ice cube #1 (01 - Land).
+-------------------------------------------------------------------------------
+Level 12 - Cake Land N
+
+Level Data: 0x15BAD
+
+02020302020202020302020202020244
+02020202020207023302020202020245
+02020202020202020202040402020245
+020202040402020404042C0402020245
+020202042C0404040101010402020245
+03310204010101040103010402020245
+02020204010301040120010402020245
+02070204010101040404040402300345
+02020204040404040202020202020245
+02020202020202020202020202020245
+020202022C0102030202020202020245
+02020202020202414343434302020245
+02020202020202450101014402020245
+42434343434343464243434642434346
+
+Enemy Data: 0x1235A
+
+20 08 0B 03 02 64 44 FF 00 5A 3A FF 02 EF 20 88 0B 03 02 17 A4 FF 02 EF 0B C0
+0A 05 00 A5 A4 FF 02 EF FF C8 C9 CA 01 99 FF 01
+
+20 - 
+08 - 
+0B - 
+03 - 
+02 - 
+64 - Max #1 starting position (X: 40, Y: 60).
+44 - Max #1 Base Rock position (X: 40, Y: 40).
+FF - 
+00 - Max #1 direction (up).
+5A - Max #2 starting position (X: A0, Y: 50).
+3A - Max #2 Base Rock position (X: A0, Y: 30).
+FF - 
+02 - Max #2 direction (down).
+EF - 
+20 - 
+88 - 
+0B - 
+03 - 
+02 - 
+17 - Max #3 starting position (X: 70, Y: 10).
+A4 - Max #3 Base Rock position (X: 40, Y: A0).
+FF - 
+02 - Max #3 direction (down).
+EF - 
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+A5 - Noggles #1 starting position (X: 50, Y: A0).
+A4 - Noggles #1 Base Rock position (X: 40, Y: A0).
+FF - 
+02 - Noggles #1 direction (down).
+EF - 
+FF - 
+C8 - Dream Bag #1 (X: 80, Y: C0).
+C9 - Dream Bag #2 (X: 90, Y: C0).
+CA - Dream Bag #3 (X: A0, Y: C0).
+01 - 
+99 - Kickle starting position (X: 90, Y: 90).
+FF - Ice cube/Noggles #1 - No Base Rock position.
+01 - Tile under ice cube #1 (01 - Land).
+-------------------------------------------------------------------------------
+Level 13 - Special Game 15
+
+Level Data: 0x158FB
+
+00000000000033440244024400000000
+00000000000002450245024500000000
+00000000000002021013154500000000
+00000000000002411B1F164500000000
+31020202020202021214170202023044
+42434343434302410241024143434346
+31020202020210131502020202023044
+424302412C41111E1641024143434346
+310202020102121A1702020202020244
+42434343434302410241024143434346
+00000000000002450245024500000000
+00000000000002450245424600000000
+00000000000032450245024400000000
+00000000000042464246424600000000
+
+Enemy Data: 0x12384
+
+0B C0 0A 05 00 84 74 FF 02 EF FF 08 0A CA 01 72
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+84 - Noggles #1 starting position (X: 40, Y: 80).
+74 - Noggles #1 Base Rock position (X: 40, Y: 70).
+FF - 
+02 - Noggles #1 direction (down).
+EF - 
+FF - 
+08 - Dream Bag #1 (X: 80, Y: 00).
+0A - Dream Bag #2 (X: A0, Y: 00).
+CA - Dream Bag #3 (X: A0, Y: C0).
+01 - 
+72 - Kickle starting position (X:20, Y: 70).
+-------------------------------------------------------------------------------
+Level 15 - Special Game 04
+
+Level Data: 0x14EBC
+
+10131544000000000000000010131544
+111E164500000000000000001B1F1645
+121A1702020202020202020212141745
+42430202020202020202020202414346
+10131502070230030202010210131544
+111D19020702030303022C02111D1945
+12141703414303010341430312141745
+42434343020203410302024143434346
+00030302020202020202020203034400
+03310202020202020202010202300344
+42020202020202020202010202024146
+00420202020202020202010202414600
+000042022C02020202022C0241460000
+00000042434343434343434346000000
+
+Enemy Data: 0x12394
+
+0B C0 0A 05 00 4A 5A 00 01 FF CA 00 03 FF CA 00 03 FF CA 00 03 EF 18 08 0C 0B
+02 84 C4 FF 02 8A C4 FF 02 EF FF 67 97 A7 01 37
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+4A - Noggles #1 starting position (X: A0, Y: 40).
+5A - Noggles #1 Base Rock position (X: A0, Y: 50).
+00 - 
+01 - Noggles #1 direction (right).
+FF - Noggles #2 - No starting position.
+CA - Noggles #2 Base Rock position (X: A0, Y: C0).
+00 - 
+03 - Noggles #2 direction (left).
+FF - Noggles #3 - No starting position.
+CA - Noggles #3 Base Rock position (X: A0, Y: C0).
+00 - 
+03 - Noggles #3 direction (left).
+FF - Noggles #4 - No starting position.
+CA - Noggles #4 Base Rock position (X: A0, Y: C0).
+00 - 
+03 - Noggles #4 direction (left).
+EF - 
+18 - 
+08 - 
+0C - 
+0B - 
+02 - 
+84 - Rocky #1 starting position (X: 40, Y: 80).
+C4 - Rocky #1 Base Rock position (X: 40, Y: C0).
+FF - 
+02 - Rocky #1 direction (down).
+8A - Rocky #2 starting position (X: A0, Y: 80).
+C4 - Rocky #2 Base Rock position (X: 40, Y: C0).
+FF - 
+02 - Rocky #2 direction (down).
+EF - 
+FF - 
+67 - Dream Bag #1 (X: 70, Y: 60).
+97 - Dream Bag #2 (X: 70, Y: 90).
+A7 - Dream Bag #3 (X: 70, Y: A0).
+01 - 
+37 - Kickle starting position (X: 70, Y: 30).
+-------------------------------------------------------------------------------
+Level 16 - Toy Land K
+
+Level Data: 0x13292
+
+03030303030303030303030103030344
+03033333333333333333334133030345
+03310701010101010101010507300345
+03310101010101010101010101300345
+03310101012C0120012C010101300345
+03310101010120012001010101300345
+03310101010101010101010101300345
+03310101010120012001010101300345
+03310101012C0120012C010101300345
+03310101010101010101010101300345
+03310705010101010101010107300345
+03033241323232323232323232030345
+03030301030303030303030303030345
+42434343434343434343434343434346
+
+Enemy Data: 0x123BE
+
+0B C0 0A 05 00 FF FF 00 01 EF 20 08 0B 03 02 54 45 00 01 7A 89 00 03 EF FF 0B
+C3 67 01 A7 49 01 45 01 49 01 85 01 89 01 85 01
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+FF - Noggles #1 - No Base Rock position.
+00 - 
+01 - Noggles #1 direction (right).
+EF - 
+20 - 
+08 - 
+0B - 
+03 - 
+02 - 
+54 - Max #1 starting position (X: 40, Y: 50).
+45 - Max #1 Base Rock position (X: 50, Y: 40).
+00 - 
+01 - Max #1 direction (right).
+7A - Max #2 starting position (X: A0, Y: 70).
+89 - Max #2 Base Rock position (X: 90, Y: 80).
+00 - 
+03 - Max #2 direction (left).
+EF - 
+FF - 
+0B - Dream Bag #1 (X: B0, Y: 00).
+C3 - Dream Bag #2 (X: 30, Y: C0).
+67 - Dream Bag #3 (X: 70, Y: 60).
+01 - 
+A7 - Kickle starting position (X: 70, Y: A0).
+49 - Ice cube/Noggles #1 Base Rock position (X: 90, Y: 40).
+01 - Tile under ice cube #1 (01 - Land).
+45 - Ice cube/Noggles #2 Base Rock position (X: 50, Y: 40).
+01 - Tile under ice cube #2 (01 - Land).
+49 - Ice cube/Noggles #3 Base Rock position (X: 90, Y: 40).
+01 - Tile under ice cube #3 (01 - Land).
+85 - Ice cube/Noggles #4 Base Rock position (X: 50, Y: 80).
+01 - Tile under ice cube #4 (01 - Land).
+89 - Ice cube/Noggles #5 Base Rock position (X: 90, Y: 80).
+01 - Tile under ice cube #5 (01 - Land).
+85 - Ice cube/Noggles #6 Base Rock position (X: 50, Y: 80).
+01 - Tile under ice cube #6 (01 - Land).
+-------------------------------------------------------------------------------
+Level 17 - Special Game 08
+
+Level Data: 0x15985
+
+10131503030303030303030310131544
+111D19030303030303030303111E1645
+121417020202020202020202121A1745
+03030203030303030303030302030345
+03030203070101010101070302030345
+03030203010101010101012102030345
+0303022C010101010101010341020245
+03030203010101010101010303030345
+03030203070101010101070333030345
+03030203040404040404040302030345
+10181502020202020202020210181545
+111C16030303032C03030303111C1645
+12141703030303030303030312141745
+42434343434343434343434343434346
+
+Enemy Data: 0x123E8
+
+0B C0 0A 05 00 55 63 00 01 75 63 00 01 EF 25 08 09 07 02 92 B7 00 00 27 B7 00
+01 A7 B7 00 03 3C B7 00 02 EF FF 65 6D 6E 01 69
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+55 - Noggles #1 starting position (X: 50, Y: 50).
+63 - Noggles #1 Base Rock position (X: 30, Y: 60).
+00 - 
+01 - Noggles #1 direction (right).
+75 - Noggles #2 starting position (X: 50, Y: 70).
+63 - Noggles #2 Base Rock position (X: 30, Y: 60).
+00 - 
+01 - Noggles #2 direction (right).
+EF - 
+25 - 
+08 - 
+09 - 
+07 - 
+02 - 
+92 - Bonkers #1 starting position (X: 20, Y: 90).
+B7 - Bonkers #1 Base Rock position (X: 70, Y: B0).
+00 - 
+00 - Bonkers #1 direction (up).
+27 - Bonkers #2 starting position (X: 70, Y: 20).
+B7 - Bonkers #2 Base Rock position (X: 70, Y: B0).
+00 - 
+01 - Bonkers #2 direction (right).
+A7 - Bonkers #3 starting position (X: 70, Y: A0).
+B7 - Bonkers #3 Base Rock position (X: 70, Y: B0).
+00 - 
+03 - Bonkers #3 direction (left).
+3C - Bonkers #4 starting position (X: C0, Y: 30).
+B7 - Bonkers #4 Base Rock position (X: 70, Y: B0).
+00 - 
+02 - Bonkers #4 direction (down).
+EF - 
+FF - 
+65 - Dream Bag #1 (X: 50, Y: 60).
+6D - Dream Bag #2 (X: D0, Y: 60).
+6E - Dream Bag #3 (X: E0, Y: 60).
+01 - 
+69 - Kickle starting position (X: 90, Y: 60).
+-------------------------------------------------------------------------------
+Level 18 - Toy Land E
+
+Level Data: 0x14289
+
+00010101012104010121010101014400
+00010303030203030302030303014500
+00010302020203020302030202014500
+00010302020203020302030202014500
+00010302020203020302030202014500
+00010303030203020302030303214500
+00010202030203020302020203014500
+00010202030203020302020203014500
+00010202030203020302020203014500
+00010303030203030302030303014500
+00010101042101010121040101014500
+00214143434343434343434343214500
+01010144000000000000000001010144
+42434346000000000000000042434346
+
+Enemy Data: 0x12412
+
+0B C0 0A 05 00 FF FF FF 03 EF 23 20 0A 11 02 55 FF FF 00 0B FF FF 01 EF 23 60
+0A 11 02 03 FF FF 03 59 FF FF 00 AB FF FF 01 EF FF 34 3C CD 01 C1
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+FF - Noggles #1 - No Base Rock position.
+FF - 
+03 - Noggles #1 direction (left).
+EF - 
+23 - 
+20 - 
+0A - 
+11 - 
+02 - 
+55 - Spiny #1 starting position (X: 50, Y: 50).
+FF - Spiny #1 - No Base Rock position.
+FF - 
+00 - Spiny #1 direction (up).
+0B - Spiny #2 starting position (X: B0, Y: 00).
+FF - Spiny #2 - No Base Rock position.
+FF - 
+01 - Spiny #2 direction (right).
+EF - 
+23 - 
+60 - 
+0A - 
+11 - 
+02 - 
+03 - Spiny #3 starting position (X: 30, Y: 00).
+FF - Spiny #3 - No Base Rock position.
+FF - 
+03 - Spiny #3 direction (left).
+59 - Spiny #4 starting position (X: 90, Y: 50).
+FF - Spiny #4 - No Base Rock position.
+FF - 
+00 - Spiny #4 direction (up).
+AB - Spiny #5 starting position (X: B0, Y: A0).
+FF - Spiny #5 - No Base Rock position.
+FF - 
+01 - Spiny #5 direction (right).
+EF - 
+FF - 
+34 - Dream Bag #1 (X: 40, Y: 30).
+3C - Dream Bag #2 (X: C0, Y: 30).
+CD - Dream Bag #3 (X: D0, Y: C0).
+01 - 
+C1 - Kickle starting position (X: 10, Y: C0).
+-------------------------------------------------------------------------------
+Level 19 - Special Game 06
+
+Level Data: 0x146A0
+
+2C0101010101012C0101010101012C44
+01010101030101010103010301010145
+01010101010101010101010101010145
+03311018150302030302030202300345
+0331111C160202020202330202300345
+03311214170202020202020202300345
+03310202020202101815070202300345
+03310202020202111C16020202300345
+03310202020202121417020202300345
+03310202070202020202101815300345
+03310202020303020303111C16300345
+03310202320341434303121417300345
+03310202030345024403020202300345
+42434343434346424642434343434346
+
+Enemy Data: 0x12442
+
+0B C0 0A 05 00 17 07 00 02 EF 1A 08 0F 03 02 12 00 FF 02 1C 0E FF 02 EF FF 74
+7A C7 01 87
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+17 - Noggles #1 starting position (X: 70, Y: 10).
+07 - Noggles #1 Base Rock position (X: 70, Y: 00).
+00 - 
+02 - Noggles #1 direction (down).
+EF - 
+1A - 
+08 - 
+0F - 
+03 - 
+02 - 
+12 - Rooker #1 starting position (X: 20, Y: 10).
+00 - Rooker #1 Base Rock position (X: 00, Y: 00).
+FF - 
+02 - Rooker #1 direction (down).
+1C - Rooker #2 starting position (X: C0, Y: 10).
+0E - Rooker #2 Base Rock position (X: E0, Y: 00).
+FF - 
+02 - Rooker #2 direction (down).
+EF - 
+FF - 
+74 - Dream Bag #1 (X: 40, Y: 70).
+7A - Dream Bag #2 (X: A0, Y: 70).
+C7 - Dream Bag #3 (X: 70, Y: C0).
+01 - 
+87 - Kickle starting position (X: 70, Y: 80).
+-------------------------------------------------------------------------------
+Level 1B - Special Game 20
+
+Level Data: 0x14FEB
+
+00000000000002020244000002020244
+31010101010410131502020210131545
+310101010101111E160202021B1F1645
+310101010104121A1702020212141745
+2C0303032C03040204040404042C0445
+01010103030302020202024102020245
+07010101014102020302024502020245
+07010101014503020202024502020245
+01010101014502020202034502020245
+03030303030302040404040404040445
+42434343431013150202020210181545
+0000000000111D1902020202111C1645
+00000000001214170202020212141745
+00000000004243434343434343434346
+
+Enemy Data: 0x12460
+
+0B C0 0A 05 00 21 44 00 01 61 40 00 01 71 40 00 01 EF 1E C8 0D 11 02 FF 4D 00
+01 EF FF BA 6D 7D 01 2A
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+21 - Noggles #1 starting position (X: 10, Y: 20).
+44 - Noggles #1 Base Rock position (X: 40, Y: 40).
+00 - 
+01 - Noggles #1 direction (right).
+61 - Noggles #2 starting position (X: 10, Y: 60).
+40 - Noggles #2 Base Rock position (X: 00, Y: 40).
+00 - 
+01 - Noggles #2 direction (right).
+71 - Noggles #3 starting position (X: 10, Y: 70).
+40 - Noggles #3 Base Rock position (X: 00, Y: 40).
+00 - 
+01 - Noggles #3 direction (right).
+EF - 
+1E - 
+C8 - 
+0D - 
+11 - 
+02 - 
+FF - Sparky #1 - No starting position.
+4D - Sparky #1 Base Rock position (X: D0, Y: 40).
+00 - 
+01 - Sparky #1 direction (right).
+EF - 
+FF - 
+BA - Dream Bag #1 (X: A0, Y: B0).
+6D - Dream Bag #2 (X: D0, Y: 60).
+7D - Dream Bag #3 (X: D0, Y: 70).
+01 - 
+2A - Kickle starting position (X: A0, Y: 20).
+-------------------------------------------------------------------------------
+Level 1C - Garden Land J
+
+Level Data: 0x15758
+
+00000003440000034400000344000000
+00000042010101410101014146000000
+00000007010101450101010744000000
+00000042010101450101014146000000
+00000000424343464243434600000000
+00000101010101010101010101440000
+002C01010101010101010101012C4400
+00034101010101010101010141034500
+00034542010101010101014146034500
+00034500010101010101014500034500
+00420344420101010101414603414600
+00004246030301010103034442460000
+00000003030303410303030344000000
+00000042434343464242424246000000
+
+Enemy Data: 0x12482
+
+0B C0 0A 05 00 64 61 00 01 6A 6D 00 03 EF 23 00 0A 11 02 15 FF FF 03 EF 23 40
+0A 11 02 19 FF FF 01 EF FF 25 67 29 01 97
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+64 - Noggles #1 starting position (X: 40, Y: 60).
+61 - Noggles #1 Base Rock position (X: 10, Y: 60).
+00 - 
+01 - Noggles #1 direction (right).
+6A - Noggles #2 starting position (X: A0, Y: 60).
+6D - Noggles #2 Base Rock position (X: D0, Y: 60).
+00 - 
+03 - Noggles #2 direction (left).
+EF - 
+23 - 
+00 - 
+0A - 
+11 - 
+02 - 
+15 - Spiny #1 starting position (X: 50, Y: 10).
+FF - Spiny #1 - No Base Rock position.
+FF - 
+03 - Spiny #1 direction (left).
+EF - 
+23 - 
+40 - 
+0A - 
+11 - 
+02 - 
+19 - Spiny #2 starting position (X: 90, Y: 10).
+FF - Spiny #2 - No Base Rock position.
+FF - 
+01 - Spiny #2 direction (right).
+EF - 
+FF - 
+25 - Dream Bag #1 (X: 50, Y: 20).
+67 - Dream Bag #2 (X: 70, Y: 60).
+29 - Dream Bag #3 (X: 90, Y: 20).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+-------------------------------------------------------------------------------
+Level 1D - Special Game 09
+
+Level Data: 0x13192
+
+02021013150202020202101315020244
+02021B1F1602020202021B1F16020245
+31021214170202020202121417020245
+02030202020202020202020202020245
+02020202020202020202101815020245
+02020202020202020202111C16020245
+03021013150202020203121417020245
+0202111E160202030202020202020245
+0202121A170202020202020202020245
+02020202020202020202020202020245
+02030202020202020202020202020245
+0202020203022C012C41434343434346
+02020202020202020245020202024400
+42434343434343434346424343434600
+
+Enemy Data: 0x124AA
+
+0B C0 0A 05 00 B7 B6 FF 01 EF 0D 08 0E 0D 02 35 B8 FF 02 39 B8 FF 02 EF FF 57
+CB CC 01 97
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+B7 - Noggles #1 starting position (X: 70, Y: B0).
+B6 - Noggles #1 Base Rock position (X: 60, Y: B0).
+FF - 
+01 - Noggles #1 direction (right).
+EF - 
+0D - 
+08 - 
+0E - 
+0D - 
+02 - 
+35 - Mr. Hoople #1 starting position (X: 50, Y: 30).
+B8 - Mr. Hoople #1 Base Rock position (X: 80, Y: B0).
+FF - 
+02 - Mr. Hoople #1 direction (down).
+39 - Mr. Hoople #2 starting position (X: 90, Y: 30).
+B8 - Mr. Hoople #2 Base Rock position (X: 80, Y: B0).
+FF - 
+02 - Mr. Hoople #2 direction (down).
+EF - 
+FF - 
+57 - Dream Bag #1 (X: 70, Y: 50).
+CB - Dream Bag #2 (X: B0, Y: C0).
+CC - Dream Bag #3 (X: C0, Y: C0).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+-------------------------------------------------------------------------------
+Level 1F - Special Game 10
+
+Level Data: 0x1548B
+
+00000000000000000000000000000000
+03032C03030333030303030303030344
+03010101030307030703030101010345
+03010101030301010101030101012C45
+03010101030101030103030101010345
+03034103030101030103030103030345
+31020102010201020101010201023045
+03030103030101030103010103030345
+03010101030301030101030101010345
+03010101010101010403030101010345
+03010101030307030701030101010345
+03030303030303033203030303030345
+42434343434343434343434343434346
+00000000000000000000000000000000
+
+Enemy Data: 0x124C8
+
+0B C0 0A 05 00 3C 3E FF 00 EF 2D 08 13 09 02 FF 12 00 03 FF 12 00 03 EF FF 31
+32 33 01 9C
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+3C - Noggles #1 starting position (X: C0, Y: 30).
+3E - Noggles #1 Base Rock position (X: E0, Y: 30).
+FF - 
+00 - Noggles #1 direction (up).
+EF - 
+2D - 
+08 - 
+13 - 
+09 - 
+02 - 
+FF - Myrtle #1 - No starting position.
+12 - Myrtle #1 Base Rock position (X: 20, Y: 10).
+00 - 
+03 - Myrtle #1 direction (left).
+FF - Myrtle #2 - No starting position.
+12 - Myrtle #2 Base Rock position (X: 20, Y: 10).
+00 - 
+03 - Myrtle #2 direction (left).
+EF - 
+FF - 
+31 - Dream Bag #1 (X: 10, Y: 30).
+32 - Dream Bag #2 (X: 20, Y: 30).
+33 - Dream Bag #3 (X: 30, Y: 30).
+01 - 
+9C - Kickle starting position (X: C0, Y: 90).
+-------------------------------------------------------------------------------
+Level 20 - Toy Land J
+
+Level Data: 0x14747
+
+04040404040404040404440000000000
+02020202020210131504450000000000
+020202101315111E160402022C030344
+101315111E16121A1704020201023045
+111E16121A1702020204020201023045
+121A1702020202020204020201023045
+0404040404040404040407022C030345
+02210241020241020207020741434346
+04040404040404040404070245020244
+10131510131510131504020245020245
+111D19111D19111D1904020245020245
+12141712141712141704414346424346
+04040404040404040404450000000000
+42434343434343434343460000000000
+
+Enemy Data: 0x124E6
+
+0B C0 0A 05 00 3C 2C FF 03 4C 2C FF 03 5C 2C FF 03 FF 2C 00 03 FF 2C 00 03 EF
+23 50 0A 11 03 8D 2B FF 01 AE 2B FF 03 EF FF 9D 9E 70 01 7A
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+3C - Noggles #1 starting position (X: C0, Y: 30).
+2C - Noggles #1 Base Rock position (X: C0, Y: 20).
+FF - 
+03 - Noggles #1 direction (left).
+4C - Noggles #2 starting position (X: C0, Y: 40).
+2C - Noggles #2 Base Rock position (X: C0, Y: 20).
+FF - 
+03 - Noggles #2 direction (left).
+5C - Noggles #3 starting position (X: C0, Y: 50).
+2C - Noggles #3 Base Rock position (X: C0, Y: 20).
+FF - 
+03 - Noggles #3 direction (left).
+FF - Noggles #4 - No starting position.
+2C - Noggles #4 Base Rock position (X: C0, Y: 20).
+00 - 
+03 - Noggles #4 direction (left).
+FF - Noggles #5 - No starting position.
+2C - Noggles #5 Base Rock position (X: C0, Y: 20).
+00 - 
+03 - Noggles #5 direction (left).
+EF - 
+23 - 
+50 - 
+0A - 
+11 - 
+03 - 
+8D - Spiny #1 starting position (X: D0, Y: 80).
+2B - Spiny #1 Base Rock position (X: B0, Y: 20).
+FF - 
+01 - Spiny #1 direction (right).
+AE - Spiny #2 starting position (X: E0, Y: A0).
+2B - Spiny #2 Base Rock position (X: B0, Y: 20).
+FF - 
+03 - Spiny #2 direction (left).
+EF - 
+FF - 
+9D - Dream Bag #1 (X: D0, Y: 90).
+9E - Dream Bag #2 (X: E0, Y: 90).
+70 - Dream Bag #3 (X: 00, Y: 70).
+01 - 
+7A - Kickle starting position (X: A0, Y: 70).
+-------------------------------------------------------------------------------
+Level 21 - Special Game 05
+
+Level Data: 0x14930
+
+024402020202022C0202020202442544
+42020202020202020202020202024146
+02020202020202020202020202020244
+04040401010101010101010104040445
+03010401020202020202020104010345
+01010401020202020202020104010145
+01040401020404040404020104040145
+0104040102042C032C04020104040145
+01040401020401010104020104040145
+01010401020404030404020104010145
+2C030301020202020202020103032C45
+42020201024143434343020102024146
+00420201024501010144020102414600
+00004243434642434346424343460000
+
+Enemy Data: 0x12514
+
+0B C0 0A 05 00 86 76 FF 01 EF 20 88 0B 03 02 60 A0 00 02 88 78 00 02 6E AE 00
+02 17 07 00 02 EF FF C6 C7 C8 01 57
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+86 - Noggles #1 starting position (X: 60, Y: 80).
+76 - Noggles #1 Base Rock position (X: 60, Y: 70).
+FF - 
+01 - Noggles #1 direction (right).
+EF - 
+20 - 
+88 - 
+0B - 
+03 - 
+02 - 
+60 - Max #1 starting position (X: 00, Y: 60).
+A0 - Max #1 Base Rock position (X: 00, Y: A0).
+00 - 
+02 - Max #1 direction (down).
+88 - Max #2 starting position (X: 80, Y: 80).
+78 - Max #2 Base Rock position (X: 80, Y: 70).
+00 - 
+02 - Max #2 direction (down; immediately turns left due to Water Hole).
+6E - Max #3 starting position (X: E0, Y: 60).
+AE - Max #3 Base Rock position (X: E0, Y: A0).
+00 - 
+02 - Max #3 direction (down).
+17 - Max #4 starting position (X: 70, Y: 10).
+07 - Max #4 Base Rock position (X: 70, Y: 00).
+00 - 
+02 - Max #4 direction (down).
+EF - 
+FF - 
+C6 - Dream Bag #1 (X: 60, Y: C0).
+C7 - Dream Bag #2 (X: 70, Y: C0).
+C8 - Dream Bag #3 (X: 80, Y: C0).
+01 - 
+57 - Kickle starting position (X: 70, Y: 50).
+-------------------------------------------------------------------------------
+Level 22 - Special Game 23
+
+Level Data: 0x15081
+
+10181502020202020202020210181544
+111C160202022C0202020202111C1645
+12141702020202020202020212141745
+02021018151018150202020202020245
+0202111C16111C160202101815020245
+02021214171214170202111C16020245
+02020202020202020202121417020245
+10181502020202020202020202020245
+111C1602020202020202020202020245
+12141702021018150202021018150245
+0202020202111C16022802111C160245
+0202022C011214174143431214170245
+02020202020202280202022802020245
+42434343434343434343434343434346
+
+Enemy Data: 0x1253A
+
+0B C0 0A 05 00 B4 B3 00 03 EF 2D 08 13 09 02 51 16 00 02 5D 16 00 02 EF FF C8
+C9 CA 01 67
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+B4 - Noggles #1 starting position (X: 40, Y: B0).
+B3 - Noggles #1 Base Rock position (X: 30, Y: B0).
+00 - 
+03 - Noggles #1 direction (left).
+EF - 
+2D - 
+08 - 
+13 - 
+09 - 
+02 - 
+51 - Myrtle #1 starting position (X: 10, Y: 50).
+16 - Myrtle #1 Base Rock position (X: 60, Y: 10).
+00 - 
+02 - Myrtle #1 direction (down).
+5D - Myrtle #2 starting position (X: D0, Y: 50).
+16 - Myrtle #2 Base Rock position (X: 60, Y: 10).
+00 - 
+02 - Myrtle #2 direction (down).
+EF - 
+FF - 
+C8 - Dream Bag #1 (X: 80, Y: C0).
+C9 - Dream Bag #2 (X: 90, Y: C0).
+CA - Dream Bag #3 (X: A0, Y: C0).
+01 - 
+67 - Kickle starting position (X: 70, Y: 60).
+-------------------------------------------------------------------------------
+Level 25 - Garden Land H
+
+Level Data: 0x156CB
+
+00000000000000000000000000000000
+00024402440000000000000244024400
+00024502450000000000000245024500
+00024502450000000000000245024500
+00020202452C4400002C440202024500
+00420241460145000001454202414600
+00004202440101010101450241460000
+00000042010101010101014146000000
+00020202010101010101010202024400
+02414343010101010101014143430244
+42460202410101010101410202444246
+00024143464243434343464243024400
+00424600000000000000000000424600
+00000000000000000000000000000000
+
+Enemy Data: 0x12558
+
+0B C0 0A 05 00 75 45 00 02 79 49 00 02 EF FF 11 B1 9E 01 A7
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+75 - Noggles #1 starting position (X: 50, Y: 70).
+45 - Noggles #1 Base Rock position (X: 50, Y: 40).
+00 - 
+02 - Noggles #1 direction (down).
+79 - Noggles #2 starting position (X: 90, Y: 70).
+49 - Noggles #2 Base Rock position (X: 90, Y: 40).
+00 - 
+02 - Noggles #2 direction (down).
+EF - 
+FF - 
+11 - Dream Bag #1 (X: 10, Y: 10).
+B1 - Dream Bag #2 (X: 10, Y: B0).
+9E - Dream Bag #3 (X: E0, Y: 90).
+01 - 
+A7 - Kickle starting position (X: 70, A: A0).
+-------------------------------------------------------------------------------
+Level 26 - Special Game 29
+
+Level Data: 0x13A07
+
+02020202020207020202020207020244
+02020207020202020202020202020245
+07020202020202020702020202020245
+02020202020202020202020202070245
+02070207020202020202020202020245
+02020202020702010202070202070245
+020202020202022C0202020202020245
+02020702020202020202020702020745
+07020202020702020202020202020245
+02020702020202020207020202020245
+07020202020202020202020702020245
+02020202070207020702020203410345
+02020702020202020202020703020245
+42434343434343434343434343434346
+
+Enemy Data: 0x1256C
+
+0B C0 0A 05 00 57 67 FF 00 EF 2B 08 12 11 02 97 67 FF 00 EF FF 22 2C CD 01 37
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+57 - Noggles #1 starting position (X: 70, Y: 50).
+67 - Noggles #1 Base Rock position (X: 70, Y: 60).
+FF - 
+00 - Noggles #1 direction (up).
+EF - 
+2B - 
+08 - 
+12 - 
+11 - 
+02 - 
+97 - Equalizer #1 starting position (X: 70, Y: 90).
+67 - Equalizer #1 Base Rock position (X: 70, Y: 60).
+FF - 
+00 - Equalizer #1 direction (up).
+EF - 
+FF - 
+22 - Dream Bag #1 (X: 20, Y: 20).
+2C - Dream Bag #2 (X: C0, Y: 20).
+CD - Dream Bag #3 (X: D0, Y: C0).
+01 - 
+37 - Kickle starting position (X: 70, Y: 30).
+-------------------------------------------------------------------------------
+Level 29 - Special Game 17
+
+Level Data: 0x143F1
+
+00000000000202020202440000000000
+00000000004243024143460000000000
+000000032A2A2A412A2A2A0344000000
+0000022C010101010104012C02440000
+00020241010401040104014102024400
+0002290401040104010401042B024500
+0002290401040101010401042B024500
+002C31040101010401010104302C4500
+0002290401040104010401042B024500
+0002290401040104010401042B024500
+00020241010401040104014102024500
+00422529010101040101012B02414600
+00004203282828322828280341460000
+00000042434343434343434346000000
+
+Enemy Data: 0x12586
+
+0B C0 0A 05 00 64 33 FF 00 84 33 FF 00 6A 3B FF 00 8A 3B FF 00 EF 1A 08 0F 03
+02 91 71 00 02 A2 71 FF 01 5D 7D FF 00 EF FF 51 07 9D 01 67
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+64 - Noggles #1 starting position (X: 40, Y: 60).
+33 - Noggles #1 Base Rock position (X: 30, Y: 30).
+FF - 
+00 - Noggles #1 direction (up).
+84 - Noggles #2 starting position (X: 40, Y: 80).
+33 - Noggles #2 Base Rock position (X: 30, Y: 30).
+FF - 
+00 - Noggles #2 direction (up).
+6A - Noggles #3 starting position (X: A0, Y: 60).
+3B - Noggles #3 Base Rock position (X: B0, Y: 30).
+FF - 
+00 - Noggles #3 direction (up).
+8A - Noggles #4 starting position (X: A0, Y: 80).
+3B - Noggles #4 Base Rock position (X: B0, Y: 30).
+FF - 
+00 - Noggles #4 direction (up).
+EF - 
+1A - 
+08 - 
+0F - 
+03 - 
+02 - 
+91 - Rooker #1 starting position (X: 10, Y: 90).
+71 - Rooker #1 Base Rock position (X: 10, Y: 70).
+00 - 
+02 - Rooker #1 direction (down).
+A2 - Rooker #2 starting position (X: 20, Y: A0).
+71 - Rooker #2 Base Rock position (X: 10, Y: 70).
+FF - 
+01 - Rooker #2 direction (right; turns up and then left due to water).
+5D - Rooker #3 starting position (X: D0, Y: 50).
+7D - Rooker #3 Base Rock position (X: D0, Y: 70).
+FF - 
+00 - Rooker #3 direction (up).
+EF - 
+FF - 
+51 - Dream Bag #1 (X: 10, Y: 50).
+07 - Dream Bag #2 (X: 70, Y: 00).
+9D - Dream Bag #3 (X: D0, Y: 90).
+01 - 
+67 - Kickle starting position (X: 70, Y: 60).
+-------------------------------------------------------------------------------
+Level 2A - Toy Land P
+
+Level Data: 0x17874
+
+00000000000000000000000000000000
+00000000000001010144000000000000
+00000000000042014146000000000000
+0000002A2A2A2A412A2A2A2A44000000
+0000290202020202020202022B440000
+0000290202020202022002022B450000
+0000290202200202020202022B450000
+0000290220020202020220022B450000
+0000290202020202200202022B450000
+0000290202022002020202022B450000
+0000290202020202020202022B450000
+00004228282828282828282841460000
+00000042434343434343434346000000
+00000000000000000000000000000000
+
+Enemy Data: 0x125B4
+
+23 30 0A 11 02 47 FF FF 03 EF 23 70 0A 11 02 27 FF FF 03 EF FF 94 17 9A 01 67
+FF 02 FF 02 FF 02 FF 02 FF 02 FF 02
+
+23 - 
+30 - 
+0A - 
+11 - 
+02 - 
+47 - Spiny #1 starting position (X: 70, Y: 40).
+FF - Spiny #1 - No Base Rock position.
+FF - 
+03 - Spiny #1 direction (left).
+EF - 
+23 - 
+70 - 
+0A - 
+11 - 
+02 - 
+27 - Spiny #2 starting position (X: 70, Y: 20).
+FF - Spiny #2 - No Base Rock position.
+FF - 
+03 - Spiny #2 direction (left).
+EF - 
+FF - 
+94 - Dream Bag #1 (X: 40, Y: 90).
+17 - Dream Bag #2 (X: 70, Y: 10).
+9A - Dream Bag #3 (X: A0, Y: 90).
+01 - 
+67 - Kickle starting position (X: 70, Y: 60).
+FF - Ice cube/Noggles #1 - No Base Rock position.
+02 - Tile under ice cube #1 (02 - Slippery Ice).
+FF - Ice cube/Noggles #2 - No Base Rock position.
+02 - Tile under ice cube #2 (02 - Slippery Ice).
+FF - Ice cube/Noggles #3 - No Base Rock position.
+02 - Tile under ice cube #3 (02 - Slippery Ice).
+FF - Ice cube/Noggles #4 - No Base Rock position.
+02 - Tile under ice cube #4 (02 - Slippery Ice).
+FF - Ice cube/Noggles #5 - No Base Rock position.
+02 - Tile under ice cube #5 (02 - Slippery Ice).
+FF - Ice cube/Noggles #6 - No Base Rock position.
+02 - Tile under ice cube #6 (02 - Slippery Ice).
+-------------------------------------------------------------------------------
+Level 2B - Special Game 14
+
+Level Data: 0x15A0F
+
+00000000000000000000000000000000
+00000000034400024400034400000000
+00000000420302030203414600000000
+00000000020202020207024400000000
+00000003020704020402020344000000
+000003022C02020202012C0203440000
+00030202020202020202020202034400
+03020202101815021018150202020344
+42030202111C1602111C160202034146
+00420302121417031214170203414600
+00004203020241434302020341460000
+00000042434302030241434346000000
+00000000000042434346000000000000
+00000000000000000000000000000000
+
+Enemy Data: 0x125DA
+
+0B C0 0A 05 00 59 5A FF 02 EF 0D 08 0E 0D 02 87 54 FF 00 EF FF B6 17 B8 01 47
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+59 - Noggles #1 starting position (X: 90, Y: 50).
+5A - Noggles #1 Base Rock position (X: A0, Y: 50).
+FF - 
+02 - Noggles #1 direction (down).
+EF - 
+0D - 
+08 - 
+0E - 
+0D - 
+02 - 
+87 - Mr. Hoople #1 starting position (X: 70, Y: 80).
+54 - Mr. Hoople #1 Base Rock position (X: 40, Y: 50).
+FF - 
+00 - Mr. Hoople direction (up).
+EF - 
+FF - 
+B6 - Dream Bag #1 (X: 60, Y: B0).
+17 - Dream Bag #2 (X: 70, Y: 10).
+B8 - Dream Bag #3 (X: 80, Y: B0).
+01 - 
+47 - Kickle starting position (X: 70, Y: 40).
+-------------------------------------------------------------------------------
+Level 2C - Special Game 03
+
+Level Data: 0x1338F
+
+00000003030303030303030344000000
+00000302020302030203020303440000
+00030203020302030203020302034400
+03042104042004200420200404040344
+02020202020202020202020202020245
+02020202020202020202020202020245
+02020220020202020202022002020245
+02020202020202020202020202020245
+02020202020202020202020202020245
+03040404040404040404040421040345
+42030202410241024102410202034146
+00420302450245024502450203414600
+00004203030303030303030341460000
+00000042434343434343434346000000
+
+Enemy Data: 0x125F4
+
+0B C0 0A 05 00 FF FF 00 10 EF 20 48 0B 03 03 14 FF 00 02 16 FF 00 02 18 FF 00
+02 1A FF 00 02 EF 23 30 0A 11 02 83 FF 00 01 EF FF A3 A7 AB 01 67 FF 04 FF 04
+FF 04 FF 04 FF 02 FF 02
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+FF - Noggles #1 - No Base Rock position.
+00 - 
+10 - Noggles #1 direction (would be up).
+EF - 
+20 - 
+48 - 
+0B - 
+03 - 
+03 - 
+14 - Max #1 starting position (X: 40, Y: 10).
+FF - Max #1 - No Base Rock position.
+00 - 
+02 - Max #1 direction (down).
+16 - Max #2 starting position (X: 60, Y: 10).
+FF - Max #2 - No Base Rock position.
+00 - 
+02 - Max #2 direction (down).
+18 - Max #3 starting position (X: 80, Y: 10).
+FF - Max #3 - No Base Rock position.
+00 - 
+02 - Max #3 direction (down).
+1A - Max #4 starting position (X: A0, Y: 10).
+FF - Max #4 - No Base Rock position.
+00 - 
+02 - Max #4 direction (down).
+EF - 
+23 - 
+30 - 
+0A - 
+11 - 
+02 - 
+83 - Spiny #1 starting position (X: 30, Y: 80).
+FF - Spiny #1 - No Base Rock position.
+00 - 
+01 - Spiny #1 direction (right).
+EF - 
+FF - 
+A3 - Dream Bag #1 (X: 30, Y: A0).
+A7 - Dream Bag #2 (X: 70, Y: A0).
+AB - Dream Bag #3 (X: B0, Y: A0).
+01 - 
+67 - Kickle starting position (X: 70, Y: 60).
+FF - Ice cube/Noggles #1 - No Base Rock position.
+04 - Tile under ice cube #1 (04 - Water Hole).
+FF - Ice cube/Noggles #2 - No Base Rock position.
+04 - Tile under ice cube #2 (04 - Water Hole).
+FF - Ice cube/Noggles #3 - No Base Rock position.
+04 - Tile under ice cube #3 (04 - Water Hole).
+FF - Ice cube/Noggles #4 - No Base Rock position.
+04 - Tile under ice cube #4 (04 - Water Hole).
+FF - Ice cube/Noggles #5 - No Base Rock position.
+02 - Tile under ice cube #5 (02 - Slippery Ice).
+FF - Ice cube/Noggles #6 - No Base Rock position.
+02 - Tile under ice cube #6 (02 - Slippery Ice).
+-------------------------------------------------------------------------------
+Level 2D - Fruit Land Q
+
+Level Data: 0x13995
+
+00000000000000000000000000000000
+00000144000000000001440000000000
+00012101440000000101014400000000
+0042012C4500000042012C4500000000
+00004243460144000042434601440000
+00000000010101440000000101014400
+0000000042012C4500000042012C4500
+00000000004243460000000042434600
+00000000000000000000000000000000
+0000000000012C4400012C4400000000
+00000000010101450101014500000000
+00000000420141464201414600000000
+00000000004246000042460000000000
+00000000000000000000000000000000
+
+Enemy Data: 0x12630
+
+0B C0 0A 05 00 23 33 00 02 FF 66 00 03 FF 96 00 03 FF 3A 00 03 FF 9A 00 03 EF
+25 C8 09 07 02 55 FF 00 02 A5 FF 00 01 29 FF 00 03 A9 FF 00 00 EF FF 5B 4C 5C
+01 32
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+23 - Noggles #1 starting position (X: 30, Y: 20).
+33 - Noggles #1 Base Rock position (X: 30, Y: 30).
+00 - 
+02 - Noggles #1 direction (down).
+FF - Noggles #2 - No starting position.
+66 - Noggles #2 Base Rock position (X: 60, Y: 60).
+00 - 
+03 - Noggles #2 direction (left).
+FF - Noggles #3 - No starting position.
+96 - Noggles #3 Base Rock position (X: 60, Y: 90).
+00 - 
+03 - Noggles #3 direction (left).
+FF - Noggles #4 - No starting position.
+3A - Noggles #4 Base Rock position (X: A0, Y: 30).
+00 - 
+03 - Noggles #4 direction (left).
+FF - Noggles #5 - No starting position.
+9A - Noggles #5 Base Rock position (X: A0, Y: 90).
+00 - 
+03 - Noggles #5 direction (left).
+EF - 
+25 - 
+C8 - 
+09 - 
+07 - 
+02 - 
+55 - Bonkers #1 starting position (X: 50, Y: 50).
+FF - Bonkers #1 - No Base Rock position.
+00 - 
+02 - Bonkers #1 direction (down).
+A5 - Bonkers #2 starting position (X: 50, Y: A0).
+FF - Bonkers #2 - No Base Rock position.
+00 - 
+01 - Bonkers #2 direction (right).
+29 - Bonkers #3 starting position (X: 90, Y: 20).
+FF - Bonkers #3 - No Base Rock position.
+00 - 
+03 - Bonkers #3 direction (left).
+A9 - Bonkers #4 starting position (X: 90, Y: A0).
+FF - Bonkers #4 - No Base Rock position.
+00 - 
+00 - Bonkers #4 direction (up).
+EF - 
+FF - 
+5B - Dream Bag #1 (X: B0, Y: 50).
+4C - Dream Bag #2 (X: C0, Y: 40).
+5C - Dream Bag #3 (X: C0, Y: 50).
+01 - 
+32 - Kickle starting position (X: 20, Y: 30).
+-------------------------------------------------------------------------------
+Level 30 - Cake Land H
+
+Level Data: 0x157E4
+
+03030303030303030303030303030344
+03020302020202020202020341020345
+03020202020202020302020345020345
+03020203020202020202020345020345
+03020202020203020202020345020345
+03030202021018150202020245020345
+0302020203111C160203020245020345
+03020202021214170202020345020345
+03020302020202020202020345020345
+03020202020302022C01020345020345
+03020203020202020202020345020345
+03020202020202030202020345020345
+03030303030303030303030303030345
+42434343434343434343434343434346
+
+Enemy Data: 0x12666
+
+0B C0 0A 05 00 FF 98 00 01 EF 2D 48 13 09 02 26 98 FF 02 2D 98 FF 02 EF FF 4D
+6D 8D 01 96
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+98 - Noggles #1 Base Rock position (X: 80, Y: 90).
+00 - 
+01 - Noggles #1 direction (right).
+EF - 
+2D - 
+48 - 
+13 - 
+09 - 
+02 - 
+26 - Myrtle #1 starting position (X: 60, Y: 20).
+98 - Myrtle #1 Base Rock position (X: 80, Y: 90).
+FF - 
+02 - Myrtle #1 direction (down).
+2D - Myrtle #2 starting position (X: D0, Y: 20).
+98 - Myrtle #2 Base Rock position (X: 80, Y: 90).
+FF - 
+02 - Myrtle #2 direction (down).
+EF - 
+FF - 
+4D - Dream Bag #1 (X: D0, Y: 40).
+6D - Dream Bag #2 (X: D0, Y: 60).
+8D - Dream Bag #3 (X: D0, Y: 80).
+01 - 
+96 - Kickle starting position (X: 60, Y: 90).
+-------------------------------------------------------------------------------
+Level 31 - Fruit Land K
+
+Level Data: 0x14B12
+
+03020202020202020202020202020344
+42024143024143434343024143024146
+00024500034500000000024500024500
+03020202020202020202020302020344
+42024143014143434343014143024146
+00024500014500024400014500024500
+2C02022C014502020244010202022C44
+42024143014542024146034143024146
+00024500014500424600014500024500
+03020202020202020202020202020344
+42024143034143434343024143024146
+00024500024500000000024500024500
+03020202020202020202020202020344
+42434343434343434343434343434346
+
+Enemy Data: 0x12684
+
+0B C0 0A 05 00 64 63 00 02 EF 0D C8 0E 0D 02 61 60 00 02 6D 6E 00 02 EF FF 57
+67 77 01 97
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+64 - Noggles #1 starting position (X: 40, Y: 60).
+63 - Noggles #1 Base Rock position (X: 30, Y: 60).
+00 - 
+02 - Noggles #1 direction (down).
+EF - 
+0D - 
+C8 - 
+0E - 
+0D - 
+02 - 
+61 - Mr. Hoople #1 starting position (X: 10, Y: 60).
+60 - Mr. Hoople #1 Base Rock position (X: 00, Y: 60).
+00 - 
+02 - Mr. Hoople #1 direction (down).
+6D - Mr. Hoople #2 starting position (X: D0, Y: 60).
+6E - Mr. Hoople #2 Base Rock position (X: E0, Y: 60).
+00 - 
+02 - Mr. Hoople #2 direction (down).
+EF - 
+FF - 
+57 - Dream Bag #1 (X: 70, Y: 50).
+67 - Dream Bag #2 (X: 70, Y: 60).
+77 - Dream Bag #3 (X: 70, Y: 70).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+-------------------------------------------------------------------------------
+Level 33 - Garden Land D
+
+Level Data: 0x13DE7
+
+00000001014400014400010144000000
+00000042430144014501414346000000
+00000000004201410141460000000000
+00000000000042464246000000000000
+00000001010107070701010144000000
+00000101010101070101010101440000
+00000101010101010101010101450000
+00002C0101010101010101012C450000
+00004201010101010101010141460000
+00000042010101010101014146000000
+00000000420101010101414600000000
+00000000004201010141460000000000
+00000000000042054146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x126A2
+
+0B C0 0A 05 00 75 72 00 01 79 7C 00 03 EF FF 03 07 0B 01 97
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+75 - Noggles #1 starting position (X: 50, Y: 70).
+72 - Noggles #1 Base Rock position (X: 20, Y: 70).
+00 - 
+01 - Noggles #1 direction (right).
+79 - Noggles #2 starting position (X: 90, Y: 70).
+7C - Noggles #2 Base Rock position (X: C0, Y: 70).
+00 - 
+03 - Noggles #2 direction (left).
+EF - 
+FF - 
+03 - Dream Bag #1 (X: 30, Y: 00).
+07 - Dream Bag #2 (X: 70, Y: 00).
+0B - Dream Bag #3 (X: B0, Y: 00).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+-------------------------------------------------------------------------------
+Level 35 - Special Game 19
+
+Level Data: 0x15870
+
+00000303030303440303030303440000
+000302020702022C0202020202034400
+03020202020207020202020207020344
+03020202020202020202020702020345
+03070202020210181502020202020345
+030202020202111C1602020202020345
+03020202020212141702020702020345
+42030207020202020202020202034146
+004203020202022C0102020203414600
+00004203020202020202020341460000
+00000042034143434343034146000000
+00000000420302030203414600000000
+00000000004203030341460000000000
+00000000000042434346000000000000
+
+Enemy Data: 0x126B6
+
+0B C0 0A 05 00 88 87 FF 02 EF 27 C8 10 01 02 27 17 FF 02 EF FF 37 B6 B8 01 67
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+88 - Noggles #1 starting position (X: 80, Y: 80).
+87 - Noggles #1 Base Rock position (X: 70, Y: 80).
+FF - 
+02 - Noggles #1 direction (down).
+EF - 
+27 - 
+C8 - 
+10 - 
+01 - 
+02 - 
+27 - Shades #1 starting position (X: 70, Y: 20).
+17 - Shades #1 Base Rock position (X: 70, Y: 10).
+FF - 
+02 - Shades #1 direction (down).
+EF - 
+FF - 
+37 - Dream Bag #1 (X: 70, Y: 30).
+B6 - Dream Bag #2 (X: 60, Y: B0).
+B8 - Dream Bag #3 (X: 80, Y: B0).
+01 - 
+67 - Kickle starting position (X: 70, Y: 60).
+-------------------------------------------------------------------------------
+Level 36 - Special Game 01
+
+Level Data: 0x13E52
+
+000000000000002A4400000000000000
+0000000000002A012A44000000000000
+00000000000042434346000000000000
+000000002902020202022B4400000000
+00000003010107070701010344000000
+00000301010101030101010103440000
+002C01010101010101010101012C4400
+00420301010101010101010103414600
+00004203010101010101010341460000
+00000042030101010101034146000000
+00000000420301010103414600000000
+00000000004203010341460000000000
+00000000000042054146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x126D0
+
+0B C0 0A 05 00 54 61 00 02 65 61 00 02 69 6D 00 02 5A 6D 00 02 EF FF 17 63 6B
+01 97
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+54 - Noggles #1 starting position (X: 40, Y: 50).
+61 - Noggles #1 Base Rock position (X: 10, Y: 60).
+00 - 
+02 - Noggles #1 direction (down).
+65 - Noggles #2 starting position (X: 50, Y: 60).
+61 - Noggles #2 Base Rock position (X: 10, Y: 60).
+00 - 
+02 - Noggles #2 direction (down).
+69 - Noggles #3 starting position (X: 90, Y: 60).
+6D - Noggles #3 Base Rock position (X: D0, Y: 60).
+00 - 
+02 - Noggles #3 direction (down).
+5A - Noggles #4 starting position (X: A0, Y: 50).
+6D - Noggles #4 Base Rock position (X: D0, Y: 60).
+00 - 
+02 - Noggles #4 direction (down).
+EF - 
+FF - 
+17 - Dream Bag #1 (X: 70, Y: 10).
+63 - Dream Bag #2 (X: 30, Y: 60).
+6B - Dream Bag #3 (X: B0, Y: 60).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+-------------------------------------------------------------------------------
+Level 39 - Fruit Land H
+
+Level Data: 0x14D87
+
+00000000000000034402020244000000
+00000001010144030202020202440000
+00000101010101030102020201450000
+00010141434307030741434301014400
+00014146000042074146000042014500
+002C45000101444246010144002C4500
+00424600010445014404014500424600
+00010144424301010141434601014400
+00010101010101010101010101014500
+002C01010101010101010101012C4500
+00420101010101410101010101414600
+00004201010101010101010141460000
+00000042010101410101014146000000
+00000000424343464243434600000000
+
+Enemy Data: 0x126EC
+
+0B C0 0A 05 00 93 91 00 01 9B 9D 00 03 EF 2B 08 12 11 02 22 51 00 01 2C 5D 00
+03 EF FF 14 B7 1A 01 87
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+93 - Noggles #1 starting position (X: 30, Y: 90).
+91 - Noggles #1 Base Rock position (X: 10, Y: 90).
+00 - 
+01 - Noggles #1 direction (right).
+9B - Noggles #2 starting position (X: B0, Y: 90).
+9D - Noggles #2 Base Rock position (X: D0, Y: 90).
+00 - 
+03 - Noggles #2 direction (left).
+EF - 
+2B - 
+08 - 
+12 - 
+11 - 
+02 - 
+22 - Equalizer #1 starting position (X: 20, Y: 20).
+51 - Equalizer #1 Base Rock position (X: 10, Y: 50).
+00 - 
+01 - Equalizer #1 direction (right).
+2C - Equalizer #2 starting position (X: C0, Y: 20).
+5D - Equalizer #2 Base Rock position (X: D0, Y: 50).
+00 - 
+03 - Equalizer #2 direction (left).
+EF - 
+FF - 
+14 - Dream Bag #1 (X: 40, Y: 10).
+B7 - Dream Bag #2 (X: 70, Y: B0).
+1A - Dream Bag #3 (X: A0, Y: 10).
+01 - 
+87 - Kickle starting position (X: 70, Y: 80).
+-------------------------------------------------------------------------------
+Level 3A - Cake Land C
+
+Level Data: 0x155AF
+
+0000014400000000000000002C440000
+00010101440000000000000101014400
+01010101014401010102010101010144
+42010101414604010441430101014146
+00420141460404010404444201414600
+00004246040701010107044442460000
+00000004040103010301040444000000
+00000101010101010101010101440000
+00004204040103010301040441460000
+00000042040701010107044146000000
+00000000420404010404414600000000
+00000000004204010441460000000000
+00000000000042014146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x1270E
+
+0B C0 0A 05 00 FF 0C 00 01 FF 0C 00 01 FF 0C 00 01 FF 0C 00 01 EF 1A 08 0F 03
+02 27 FF 00 02 72 FF 00 01 C7 FF 00 00 7C FF 00 03 EF FF 20 97 2E 01 77
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+0C - Noggles #1 Base Rock position (X: C0, Y: 00).
+00 - 
+01 - Noggles #1 direction (right).
+FF - Noggles #2 - No starting position.
+0C - Noggles #2 Base Rock position (X: C0, Y: 00).
+00 - 
+01 - Noggles #2 direction (right).
+FF - Noggles #3 - No starting position.
+0C - Noggles #3 Base Rock position (X: C0, Y: 00).
+00 - 
+01 - Noggles #3 direction (right).
+FF - Noggles #4 - No starting position.
+0C - Noggles #4 Base Rock position (X: C0, Y: 00).
+00 - 
+01 - Noggles #4 direction (right).
+EF - 
+1A - 
+08 - 
+0F - 
+03 - 
+02 - 
+27 - Rooker #1 starting position (X: 70, Y: 20).
+FF - Rooker #1 - No Base Rock position.
+00 - 
+02 - Rooker #1 direction (down).
+72 - Rooker #2 starting position (X: 20, Y: 70).
+FF - Rooker #2 - No Base Rock position.
+00 - 
+01 - Rooker #2 direction (right).
+C7 - Rooker #3 starting position (X: 70, Y: C0).
+FF - Rooker #3 - No Base Rock position.
+00 - 
+00 - Rooker #3 direction (up).
+7C - Rooker #4 starting position (X: C0, Y: 70).
+FF - Rooker #4 - No Base Rock position.
+00 - 
+03 - Rooker #4 direction (left).
+EF - 
+FF - 
+20 - Dream Bag #1 (X: 00, Y: 20).
+97 - Dream Bag #2 (X: 70, Y: 90).
+2E - Dream Bag #3 (X: E0, Y: 20).
+01 - 
+77 - Kickle starting position (X: 70, Y: 70).
+-------------------------------------------------------------------------------
+Level 3C - Garden Land P
+
+Level Data: 0x178D7
+
+00000000000000014400000000000000
+00000000000444424604440000000000
+00000000000445014404450000000000
+00000000000445424604450000000000
+00000007440404040404450744000000
+00000101070101010101070101440000
+00010101010101010101010101014400
+2C010101010101010101010101012C44
+42434343010101010101014143434346
+00000000010101010101014500000000
+00000000420101010101414600000000
+00000000004243054143460000000000
+00000000000000054500000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x12740
+
+0B C0 0A 05 00 73 70 00 01 7B 7E 00 03 EF 23 08 0A 11 02 07 FF 00 01 EF FF 65
+27 69 01 97
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+73 - Noggles #1 starting position (X: 30, Y: 70).
+70 - Noggles #1 Base Rock position (X: 00, Y: 70).
+00 - 
+01 - Noggles #1 direction (right).
+7B - Noggles #2 starting position (X: B0, Y: 70).
+7E - Noggles #2 Base Rock position (X: E0, Y: 70).
+00 - 
+03 - Noggles #2 direction (left).
+EF - 
+23 - 
+08 - 
+0A - 
+11 - 
+02 - 
+07 - Spiny #1 starting position (X: 70, Y: 00).
+FF - Spiny #1 - No Base Rock position.
+00 - 
+01 - Spiny #1 direction (right).
+EF - 
+FF - 
+65 - Dream Bag #1 (X: 50, Y: 60).
+27 - Dream Bag #2 (X: 70, Y: 20).
+69 - Dream Bag #3 (X: 90, Y: 60).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+-------------------------------------------------------------------------------
+Level 3D - Garden Land O
+
+Level Data: 0x13C36
+
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000010103014400000000
+00000000000001010103010144000000
+00034400000101010103010101440000
+00030344010101010103012C01034400
+0003032C010101010103010103414600
+00030341010101010103010101034400
+00034146420101010103010101414600
+00424600004201010103070741460000
+00000000000042010103074146000000
+00000000000000424343434600000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+
+Enemy Data: 0x1275E
+
+0B C0 0A 05 00 55 63 FF 01 75 63 FF 01 EF 0D 08 0E 0D 02 FF 5B 00 02 EF FF 47
+87 2A 01 67
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+55 - Noggles #1 starting position (X: 50, Y: 50).
+63 - Noggles #1 Base Rock position (X: 30, Y: 60).
+FF - 
+01 - Noggles #1 direction (right).
+75 - Noggles #2 starting position (X: 50, Y: 70).
+63 - Noggles #2 Base Rock position (X: 30, Y: 60).
+FF - 
+01 - Noggles #2 direction (right).
+EF - 
+0D - 
+08 - 
+0E - 
+0D - 
+02 - 
+FF - Mr. Hoople #1 - No starting position.
+5B - Mr. Hoople #1 Base Rock position (X: B0, Y: 50).
+00 - 
+02 - Mr. Hoople #1 direction (down).
+EF - 
+FF - 
+47 - Dream Bag #1 (X: 70, Y: 40).
+87 - Dream Bag #2 (X: 70, Y: 80).
+2A - Dream Bag #3 (X: A0, Y: 20).
+01 - 
+67 - Kickle starting position (X: 70, Y: 60).
+-------------------------------------------------------------------------------
+Level 3E - Garden Land L
+
+Level Data: 0x13B59
+
+00000000000001010144000000000000
+00000000000001010145000000000000
+00000000000001010145000000000000
+00000000000042214146000000000000
+00010101440000014500000101014400
+00010101210101010101210101014500
+00010101414343014143430101014500
+00424343460001010144004243434600
+00000000000101010101440000000000
+00000000010101010101014400000000
+00000000420101010101414600000000
+00000000004201010141460000000000
+00000000000042014146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x1277C
+
+23 08 0A 11 02 42 FF FF 03 EF 23 48 0A 11 02 07 FF FF 01 4C FF FF 01 EF FF 52
+17 5C 01 97
+
+23 - 
+08 - 
+0A - 
+11 - 
+02 - 
+42 - Spiny #1 starting position (X: 20, Y: 40).
+FF - Spiny #1 - No Base Rock position.
+FF - 
+03 - Spiny #1 direction (left).
+EF - 
+23 - 
+48 - 
+0A - 
+11 - 
+02 - 
+07 - Spiny #2 starting position (X: 70, Y: 00).
+FF - Spiny #2 - No Base Rock position.
+FF - 
+01 - Spiny #2 direction (right).
+4C - Spiny #3 starting position (X: C0, Y: 40).
+FF - Spiny #3 - No Base Rock position.
+FF - 
+01 - Spiny #3 direction (right).
+EF - 
+FF - 
+52 - Dream Bag #1 (X: 20, Y: 50).
+17 - Dream Bag #2 (X: 70, Y: 10).
+5C - Dream Bag #3 (X: C0, Y: 50).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+-------------------------------------------------------------------------------
+Level 3F - Special Game 18
+
+Level Data: 0x13F92
+
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000321442144214421442103440000
+00032101210121012101210121034400
+00420321012101210121012103414600
+00004203210121012101210341460000
+00000042032101210121034146000000
+00000000420321012103414600000000
+00000000004203210341460000000000
+00000000000042034146000000000000
+00000000000000424600000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+
+Enemy Data: 0x1279A
+
+23 48 0A 11 02 45 FF 00 01 65 FF 00 01 56 FF 00 01 76 FF 00 01 47 FF 00 01 58
+FF 00 01 78 FF 00 01 49 FF 00 01 69 FF 00 01 4B FF 00 01 EF FF 54 87 5A 01 43
+
+23 - 
+48 - 
+0A - 
+11 - 
+02 - 
+45 - Spiny #1 starting position (X: 50, Y: 40).
+FF - Spiny #1 - No Base Rock position.
+00 - 
+01 - Spiny #1 direction (right).
+65 - Spiny #2 starting position (X: 50, Y: 60).
+FF - Spiny #2 - No Base Rock position.
+00 - 
+01 - Spiny #2 direction (right).
+56 - Spiny #3 starting position (X: 60, Y: 50).
+FF - Spiny #3 - No Base Rock position.
+00 - 
+01 - Spiny #3 direction (right).
+76 - Spiny #4 starting position (X: 60, Y: 70).
+FF - Spiny #4 - No Base Rock position.
+00 - 
+01 - Spiny #4 direction (right).
+47 - Spiny #5 starting position (X: 70, Y: 40).
+FF - Spiny #5 - No Base Rock position.
+00 - 
+01 - Spiny #5 direction (right).
+58 - Spiny #6 starting position (X: 80, Y: 50).
+FF - Spiny #6 - No Base Rock position.
+00 - 
+01 - Spiny #6 direction (right).
+78 - Spiny #7 starting position (X: 80, Y: 70).
+FF - Spiny #7 - No Base Rock position.
+00 - 
+01 - Spiny #7 direction (right).
+49 - Spiny #8 starting position (X: 90, Y: 40).
+FF - Spiny #8 - No Base Rock position.
+00 - 
+01 - Spiny #8 direction (right).
+69 - Spiny #9 starting position (X: 90, Y: 60).
+FF - Spiny #9 - No Base Rock position.
+00 - 
+01 - Spiny #9 direction (right).
+4B - Spiny #10 starting position (X: B0, Y: 40).
+FF - Spiny #10 - No Base Rock position.
+00 - 
+01 - Spiny #10 direction (right).
+EF - 
+FF - 
+54 - Dream Bag #1 (X: 40, Y: 50).
+87 - Dream Bag #2 (X: 70, Y: 80).
+5A - Dream Bag #3 (X: A0, Y: 50).
+01 - 
+43 - Kickle starting position (X: 30, Y: 40).
+-------------------------------------------------------------------------------
+Level 40 - Toy Land F
+
+Level Data: 0x149D2
+
+00000033440000000000003344000000
+00000307450000000000000703440000
+00030301450000000000000103034400
+31010102010101010101010201013044
+42434301414343434343430141434346
+00000301450000000000000103440000
+002C01014500000000000001012C4400
+00420301450000000000000103414600
+00004201450000000000000141460000
+31010102450101030101440201013044
+42030301454243434343460103034146
+00420307450000000000000703414600
+00004232450000000000003241460000
+00000042460000000000004246000000
+
+Enemy Data: 0x127CE
+
+0B C0 0A 05 00 43 61 00 02 EF 0D 08 0E 0D 02 4B FF 00 02 EF FF 96 37 98 01 93
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+43 - Noggles #1 starting position (X: 30, Y: 40).
+61 - Noggles #1 Base Rock position (X: 10, Y: 60).
+00 - 
+02 - Noggles #1 direction (down).
+EF - 
+0D - 
+08 - 
+0E - 
+0D - 
+02 - 
+4B - Mr. Hoople #1 starting position (X: B0, Y: 40).
+FF - Mr. Hoople #1 - No Base Rock position.
+00 - 
+02 - Mr. Hoople #1 direction (down).
+EF - 
+FF - 
+96 - Dream Bag #1 (X: 60, Y: 90).
+37 - Dream Bag #2 (X: 70, Y: 30).
+98 - Dream Bag #3 (X: 80, Y: 90).
+01 - 
+93 - Kickle starting position (X: 30, Y: 90).
+-------------------------------------------------------------------------------
+Level 41 - Toy Land Q
+
+Level Data: 0x152D2
+
+02020202020202020244024402020244
+0202022C020202020245424602020245
+10181502020202021018150202020245
+111C160202020202111C160202020245
+12141702101815021214170210181545
+02020202111C160202020202111C1645
+10181502121417021018150212141745
+111C160202020202111C160202020245
+12141702101815021214170210181545
+02020202111C160202020202111C1645
+02020202121417020202020212141745
+0202022C010202020202020202020245
+02020202020202020202020202020245
+42434343434343434343434343434346
+
+Enemy Data: 0x127E8
+
+0B C0 0A 05 00 B4 B3 FF 02 EF 27 C8 10 01 02 33 13 FF 02 3B 13 FF 02 EF FF 17
+B7 0A 01 97
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+B4 - Noggles #1 starting position (X: 40, Y: B0).
+B3 - Noggles #1 Base Rock position (X: 30, Y: B0).
+FF - 
+02 - Noggles #1 direction (down).
+EF - 
+27 - 
+C8 - 
+10 - 
+01 - 
+02 - 
+33 - Shades #1 starting position (X: 30, Y: 30).
+13 - Shades #1 Base Rock position (X: 30, Y: 10).
+FF - 
+02 - Shades #1 direction (down).
+3B - Shades #2 starting position (X: B0, Y: 30).
+13 - Shades #2 Base Rock position (X: 30, Y: 10).
+FF - 
+02 - Shades #2 direction (down).
+EF - 
+FF - 
+17 - Dream Bag #1 (X: 70, Y: 10).
+B7 - Dream Bag #2 (X: 70, Y: B0).
+0A - Dream Bag #3 (X: A0, Y: 00).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+-------------------------------------------------------------------------------
+Level 43 - Special Game 07
+
+Level Data: 0x17B4E
+
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+03030303030303030303030303030344
+29020202020202020202020202023045
+29020202020202020202020202023045
+29020202030808080808030202023045
+29020202010202020202010202023045
+29020202010202020202010202023045
+030303032C0303030303030303030345
+42434343434343434343434343434346
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+
+Enemy Data: 0x12806
+
+0B C0 0A 05 00 FF 94 00 01 FF 94 00 01 FF 94 00 01 FF 94 00 01 FF 94 00 01 EF
+23 50 0A 11 02 77 FF 00 01 EF FF 72 5C 7C 01 52
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+94 - Noggles #1 Base Rock position (X: 40, Y: 90).
+00 - 
+01 - Noggles #1 direction (right).
+FF - Noggles #2 - No starting position.
+94 - Noggles #2 Base Rock position (X: 40, Y: 90).
+00 - 
+01 - Noggles #2 direction (right).
+FF - Noggles #3 - No starting position.
+94 - Noggles #3 Base Rock position (X: 40, Y: 90).
+00 - 
+01 - Noggles #3 direction (right).
+FF - Noggles #4 - No starting position.
+94 - Noggles #4 Base Rock position (X: 40, Y: 90).
+00 - 
+01 - Noggles #4 direction (right).
+FF - Noggles #5 - No starting position.
+94 - Noggles #5 Base Rock position (X: 40, Y: 90).
+00 - 
+01 - Noggles #5 direction (right).
+EF - 
+23 - 
+50 - 
+0A - 
+11 - 
+02 - 
+77 - Spiny #1 starting position (X: 70, Y: 70).
+FF - Spiny #1 - No Base Rock position.
+00 - 
+01 - Spiny #1 direction (right).
+EF - 
+FF - 
+72 - Dream Bag #1 (X: 20, Y: 70).
+5C - Dream Bag #2 (X: C0, Y: 50).
+7C - Dream Bag #3 (X: C0, Y: 70).
+01 - 
+52 - Kickle starting position (X: 20, Y: 50).
+-------------------------------------------------------------------------------
+Level 44 - Toy Land N
+
+Level Data: 0x13212
+
+00000000000000000000000000000000
+00000202020202020202020202440000
+00000241434343434343434302450000
+00000245000000074400000002450000
+00000245000000424600000002450000
+00000245000001010144000002450000
+000002450744012C0145074402450000
+00000245424601010145424602450000
+00000245000042434346000002450000
+00000245000000074400000002450000
+00000245000000424600000002450000
+00000202020202020202020202450000
+00004243434343434343434343460000
+00000000000000000000000000000000
+
+Enemy Data: 0x12830
+
+0B D0 0A 05 00 76 67 FF 01 78 67 FF 00 EF 20 C8 0B 03 02 56 67 FF 02 58 67 FF
+03 EF 23 6C 0A 11 03 72 27 FF 02 EF FF 66 68 6C 01 52
+
+0B - 
+D0 - 
+0A - 
+05 - 
+00 - 
+76 - Noggles #1 starting position (X: 60, Y: 70).
+67 - Noggles #1 Base Rock position (X: 70, Y: 60).
+FF - 
+01 - Noggles #1 direction (right).
+78 - Noggles #2 starting position (X: 80, Y: 70).
+67 - Noggles #2 Base Rock position (X: 70, Y: 60).
+FF - 
+00 - Noggles #2 direction (up).
+EF - 
+20 - 
+C8 - 
+0B - 
+03 - 
+02 - 
+56 - Max #1 starting position (X: 60, Y: 50).
+67 - Max #1 Base Rock position (X: 70, Y: 60).
+FF - 
+02 - Max #1 direction (down).
+58 - Max #2 starting position (X: 80, Y: 50).
+67 - Max #2 Base Rock position (X: 70, Y: 60).
+FF - 
+03 - Max #2 direction (left).
+EF - 
+23 - 
+6C - 
+0A - 
+11 - 
+03 - 
+72 - Spiny #1 starting position (X: 20, Y: 70).
+27 - Spiny #1 Base Rock position (X: 70, Y: 20).
+FF - 
+02 - Spiny #1 direction (down).
+EF - 
+FF - 
+66 - Dream Bag #1 (X: 60, Y: 60).
+68 - Dream Bag #2 (X: 80, Y: 60).
+6C - Dream Bag #3 (X: C0, Y: 60).
+01 - 
+52 - Kickle starting position (X: 20, Y: 50).
+-------------------------------------------------------------------------------
+Level 45 - Cake Land J
+
+Level Data: 0x15365
+
+0000290210131502101315022B440000
+00002902111E1602111E16022B450000
+00002902121A1702121A17022B450000
+0000290202020202020202022B450000
+002941020202020202020202412B4400
+29254502020210181502020245012B44
+422945020202111C16020202452B4146
+0042290202021214170202022B414600
+0000422C010101010101012C41460000
+000000422902020202022B4146000000
+0000000042290202022B414600000000
+00000000004229022B41460000000000
+00000000000042284146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x1285C
+
+0B C0 0A 05 00 87 83 00 02 EF 18 C8 0C 0B 02 6A 8B 00 02 EF FF 44 4A 5D 01 64
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+87 - Noggles #1 starting position (X: 70, Y: 80).
+83 - Noggles #1 Base Rock position (X: 30, Y: 80).
+00 - 
+02 - Noggles #1 direction (down).
+EF - 
+18 - 
+C8 - 
+0C - 
+0B - 
+02 - 
+6A - Rocky #1 starting position (X: A0, Y: 60).
+8B - Rocky #1 Base Rock position (X: B0, Y: 80).
+00 - 
+02 - Rocky #1 direction (down).
+EF - 
+FF - 
+44 - Dream Bag #1 (X: 40, Y: 40).
+4A - Dream Bag #2 (X: A0, Y: 40).
+5D - Dream Bag #3 (X: D0, Y: 50).
+01 - 
+64 - Kickle starting position (X: 40, Y: 60).
+-------------------------------------------------------------------------------
+Level 46 - Fruit Land M
+
+Level Data: 0x13F28
+
+00000000000000024400000000000000
+00000000000002410244000000000000
+00000000000241464202440000000000
+00000000024101440141024400000000
+00000000424642464246424600000000
+00030101010101010101010101034400
+032C01010101010101010101012C0344
+42030101010101010101010101034146
+00424343010101010101014143434600
+00000000420101010101414600000000
+00000000004201010141460000000000
+00000000000042034146000000000000
+00000000000101250101440000000000
+00000000004243434343460000000000
+
+Enemy Data: 0x12876
+
+0B C0 0A 05 00 65 61 00 01 69 6D 00 03 EF 23 08 0A 11 02 34 FF 00 03 16 FF 00
+03 EF 23 48 0A 11 02 18 FF 00 01 3A FF 00 01 EF FF 25 07 29 01 97
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+65 - Noggles #1 starting position (X: 50, Y: 60).
+61 - Noggles #1 Base Rock position (X: 10, Y: 60).
+00 - 
+01 - Noggles #1 direction (right).
+69 - Noggles #2 starting position (X: 90, Y: 60).
+6D - Noggles #2 Base Rock position (X: D0, Y: 60).
+00 - 
+03 - Noggles #2 direction (left).
+EF - 
+23 - 
+08 - 
+0A - 
+11 - 
+02 - 
+34 - Spiny #1 starting position (X: 40, Y: 30).
+FF - Spiny #1 - No Base Rock position.
+00 - 
+03 - Spiny #1 direction (left).
+16 - Spiny #2 starting position (X: 60, Y: 10).
+FF - Spiny #2 - No Base Rock position.
+00 - 
+03 - Spiny #2 direction (left).
+EF - 
+23 - 
+48 - 
+0A - 
+11 - 
+02 - 
+18 - Spiny #3 starting position (X: 80, Y: 10).
+FF - Spiny #3 - No Base Rock position.
+00 - 
+01 - Spiny #3 direction (right).
+3A - Spiny #4 starting position (X: A0, Y: 30).
+FF - Spiny #4 - No Base Rock position.
+00 - 
+01 - Spiny #4 direction (right).
+EF - 
+FF - 
+25 - Dream Bag #1 (X: 50, Y: 20).
+07 - Dream Bag #2 (X: 70, Y: 00).
+29 - Dream Bag #3 (X: 90, Y: 20).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+-------------------------------------------------------------------------------
+Level 47 - Cake Land P
+
+Level Data: 0x15DCE
+
+00000000030202020202034400000000
+03030303030202020202030303030344
+31020202410210131502410202023045
+310202024502111E1602450202023045
+310202024502121A1702450202023045
+03030303030202020202030303030345
+42430302020202020202020203414346
+00000302020202020202020203450000
+000003020202022C0102020203450000
+00000302020202020202020203450000
+00004203020202020202020341460000
+00000042030202020202034146000000
+00000000420332323203414600000000
+00000000004243434343460000000000
+
+Enemy Data: 0x128A6
+
+0B C0 0A 05 00 88 87 00 02 EF 2D 08 13 09 02 23 87 00 02 2B 87 00 02 EF FF 32
+67 3C 01 A7
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+88 - Noggles #1 starting position (X: 80, Y: 80).
+87 - Noggles #1 Base Rock position (X: 70, Y: 80).
+00 - 
+02 - Noggles #1 direction (down).
+EF - 
+2D - 
+08 - 
+13 - 
+09 - 
+02 - 
+23 - Myrtle #1 starting position (X: 30, Y: 20).
+87 - Myrtle #1 Base Rock position (X: 70, Y: 80).
+00 - 
+02 - Myrtle #1 direction (down).
+2B - Myrtle #2 starting position (X: B0, Y: 20).
+87 - Myrtle #2 Base Rock position (X: 70, Y: 80).
+00 - 
+02 - Myrtle #2 direction (down).
+EF - 
+FF - 
+32 - Dream Bag #1 (X: 20, Y: 30).
+67 - Dream Bag #2 (X: 70, Y: 60).
+3C - Dream Bag #3 (X: C0, Y: 30).
+01 - 
+A7 - Kickle starting position (X: 70, Y: A0).
+-------------------------------------------------------------------------------
+Level 48 - Special Game 25
+
+Level Data: 0x13753
+
+10131502020202020202020210131544
+111D190202020202020202021B1F1645
+12141702020202020202020212141745
+02020241434343434343434302020245
+02020203020202020202020302020245
+022C02033333332C33333303022C0245
+02020201010101010101010102020245
+02020201010101010101010102020245
+02020201010101010101010102020245
+02020204040404040404040402020245
+10181502020202020202020210181545
+111C16030303030303030303111C1645
+12141702020202020202020212141745
+42434343434343434343434343434346
+
+Enemy Data: 0x128C4
+
+0B C0 0A 05 00 75 57 FF 02 79 57 FF 02 EF 25 48 09 07 02 81 51 FF 02 8D 5D FF
+02 EF FF 17 47 77 01 A7
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+75 - Noggles #1 starting position (X: 50, Y: 70).
+57 - Noggles #1 Base Rock position (X: 70, Y: 50).
+FF - 
+02 - Noggles #1 direction (down).
+79 - Noggles #2 starting position (X: 90, Y: 70).
+57 - Noggles #2 Base Rock position (X: 70, Y: 50).
+FF - 
+02 - Noggles #2 direction (down).
+EF - 
+25 - 
+48 - 
+09 - 
+07 - 
+02 - 
+81 - Bonkers #1 starting position (X: 10, Y: 80).
+51 - Bonkers #1 Base Rock position (X: 10, Y: 50).
+FF - 
+02 - Bonkers #1 direction (down).
+8D - Bonkers #2 starting position (X: D0, Y: 80).
+5D - Bonkers #2 Base Rock position (X: D0, Y: 50).
+FF - 
+02 - Bonkers #2 direction (down).
+EF - 
+FF - 
+17 - Dream Bag #1 (X: 70, Y: 10).
+47 - Dream Bag #2 (X: 70, Y: 40).
+77 - Dream Bag #3 (X: 70, Y: 70).
+01 - 
+A7 - Kickle starting position (X: 70, Y: A0).
+-------------------------------------------------------------------------------
+Level 49 - Fruit Land P
+
+Level Data: 0x147EA
+
+00000000000003010344000000000000
+00000000000341214103440000000000
+00000000034146014542034400000000
+00000003034500014500030344000000
+00000341430344214503414303440000
+00034146004203010341460042034400
+03012101012101010121010121010344
+42034143434303010341434343034146
+00420344000341014103440003414600
+00004203034146014542030341460000
+00000042034500014500034146000000
+00000000420344014503414600000000
+00000000004203010341460000000000
+00000000000042434346000000000000
+
+Enemy Data: 0x128E6
+
+23 48 0A 11 02 63 FF 00 00 27 FF 00 01 6B FF 00 02 EF FF 61 07 6D 01 97
+
+23 - 
+48 - 
+0A - 
+11 - 
+02 - 
+63 - Spiny #1 starting position (X: 30, Y: 60).
+FF - Spiny #1 - No Base Rock position.
+00 - 
+00 - Spiny #1 direction (up).
+27 - Spiny #2 starting position (X: 70, Y: 20).
+FF - Spiny #2 - No Base Rock position.
+00 - 
+01 - Spiny #2 direction (right).
+6B - Spiny #3 starting position (X: B0, Y: 60).
+FF - Spiny #3 - No Base Rock position.
+00 - 
+02 - Spiny #3 direction (down).
+EF - 
+FF - 
+61 - Dream Bag #1 (X: 10, Y: 60).
+07 - Dream Bag #2 (X: 70, Y: 00).
+6D - Dream Bag #3 (X: D0, Y: 60).
+01 - 
+97 - Kickle starting position.
+-------------------------------------------------------------------------------
+Level 4A - Fruit Land C
+
+Level Data: 0x138B0
+
+00000000000000000000000000000000
+00010101010101010101010101014400
+00014143434343434343434343014500
+00014501010101010101010144014500
+00014501414343434343430145014500
+0001450145010101012C440145014500
+00014501450141434343460145014500
+00014501450101010101010145014500
+00014501454243434343434346014500
+00014501010101010101010101014500
+00014542434343434343434343434600
+000101010101010101010101012C4400
+00424343434343434343434343434600
+00000000000000000000000000000000
+
+Enemy Data: 0x128FE
+
+25 08 09 07 02 11 BD 00 02 33 BD 00 02 55 59 00 02 7B 59 00 00 9D BD 00 00 EF
+FF 37 57 77 01 B7
+
+25 - 
+08 - 
+09 - 
+07 - 
+02 - 
+11 - Bonkers #1 starting position (X: 10, Y: 10).
+BD - Bonkers #1 Base Rock position (X: D0, Y: B0).
+00 - 
+02 - Bonkers #1 direction (down).
+33 - Bonkers #2 starting position (X: 30, Y: 30).
+BD - Bonkers #2 Base Rock position (X: D0, Y: B0).
+00 - 
+02 - Bonkers #2 direction (down).
+55 - Bonkers #3 starting position (X: 50, Y: 50).
+59 - Bonkers #3 Base Rock position (X: 90, Y: 50).
+00 - 
+02 - Bonkers #3 direction (down).
+7B - Bonkers #4 starting position (X: B0, Y: 70).
+59 - Bonkers #4 Base Rock position (X: 90, Y: 50).
+00 - 
+00 - Bonkers #4 direction (up).
+9D - Bonkers #5 starting position (X: D0, Y: 90).
+BD - Bonkers #5 Base Rock position (X: D0, Y: B0).
+00 - 
+00 - Bonkers #5 direction (up).
+EF - 
+FF - 
+37 - Dream Bag #1 (X: 70, Y: 30).
+57 - Dream Bag #2 (X: 70, Y: 50).
+77 - Dream Bag #3 (X: 70, Y: 70).
+01 - 
+B7 - Kickle starting position (X: 70, Y: B0).
+-------------------------------------------------------------------------------
+Level 4B - Toy Land G
+
+Level Data: 0x15A99
+
+00000003333333333333330344000000
+03030303020202020202020303030344
+02020202020202021018150101073045
+0202020202020202111C160101073045
+02020202101815021214170101073045
+03032C03111C1602020202032C030345
+42434303121417020202020341434346
+00000003020202020202020345000000
+00000003414343034143430345000000
+00000042030202030202034146000000
+00000000420302030203414600000000
+00000000004203030341460000000000
+00000000000042034146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x1291E
+
+0B C0 0A 05 00 FF 5C 00 01 EF 18 C8 0C 0B 02 FF 52 00 01 EF FF 96 27 98 01 57
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+5C - Noggles #1 Base Rock position (X: C0, Y: 50).
+00 - 
+01 - Noggles #1 direction (right).
+EF - 
+18 - 
+C8 - 
+0C - 
+0B - 
+02 - 
+FF - Rocky #1 - No starting position.
+52 - Rocky #1 Base Rock position (X: 20, Y: 50).
+00 - 
+01 - Rocky #1 direction (right).
+EF - 
+FF - 
+96 - Dream Bag #1 (X: 60, Y: 90).
+27 - Dream Bag #2 (X: 70, Y: 20).
+98 - Dream Bag #3 (X: 80, Y: 90).
+01 - 
+57 - Kickle starting position (X: 70, Y: 50).
+-------------------------------------------------------------------------------
+Level 4C - Fruit Land B
+
+Level Data: 0x13010
+
+00000000000000000000000000000000
+00030301010101210101010103034400
+00030301414343434343434303034500
+000701010101210121010101012C4500
+00424343434343434343430141434600
+002C0101010121012101010101074400
+00424301414343434343434343434600
+000701010101210121010101012C4400
+00424343434343434343430141434600
+002C0101010121012101010101074400
+00030301414343434343434303034500
+00030301010101210101010103034500
+00424343434343434343434343434600
+00000000000000000000000000000000
+
+Enemy Data: 0x12938
+
+1E 08 0D 11 02 37 51 00 02 57 91 00 02 77 3D 00 02 97 7D 00 02 EF FF 14 54 1A
+01 BA
+
+1E - 
+08 - 
+0D - 
+11 - 
+02 - 
+37 - Sparky #1 starting position (X: 70, Y: 30).
+51 - Sparky #1 Base Rock position (X: 10, Y: 50).
+00 - 
+02 - Sparky #1 direction (down).
+57 - Sparky #2 starting position (X: 70, Y: 50).
+91 - Sparky #2 Base Rock position (X: 10, Y: 90).
+00 - 
+02 - Sparky #2 direction (down).
+77 - Sparky #3 starting position (X: 70, Y: 70).
+3D - Sparky #3 Base Rock position (X: D0, Y: 30).
+00 - 
+02 - Sparky #3 direction (down).
+97 - Sparky #4 starting position (X: 70, Y: 90).
+7D - Sparky #4 Base Rock position (X: D0, Y: 70).
+00 - 
+02 - Sparky #4 direction (down).
+EF - 
+FF - 
+14 - Dream Bag #1 (X: 40, Y: 10).
+54 - Dream Bag #2 (X: 40, Y: 50).
+1A - Dream Bag #3 (X: A0, Y: 10).
+01 - 
+BA - Kickle starting position (X: A0, Y: B0).
+-------------------------------------------------------------------------------
+Level 4D - Toy Land L
+
+Level Data: 0x13501
+
+00000000000000000000000000000000
+00020202020202020202020202024400
+00020202020202020202020202024500
+00020241434343254143434302024500
+00020245020202020202024402024500
+00020245024143434343024502024500
+00020245024500024400024502024500
+00020245024502020244024502024500
+00020245020202020202024502024500
+00020245424343434343434602024500
+00020202020202020202020202024500
+00020202020202020202020202024500
+00424343434343434343434343434600
+00000000000000000000000000000000
+
+Enemy Data: 0x12954
+
+23 70 0A 11 02 B1 FF FF 00 11 FF FF 01 1D FF FF 02 BD FF FF 03 32 FF FF 02 9C
+FF FF 00 2B FF FF 03 EF FF 76 67 78 01 B7
+
+23 - 
+70 - 
+0A - 
+11 - 
+02 - 
+B1 - Spiny #1 starting position (X: 10, Y: B0).
+FF - Spiny #1 - No Base Rock position.
+FF - 
+00 - Spiny #1 direction (up).
+11 - Spiny #2 starting position (X: 10, Y: 10).
+FF - Spiny #2 - No Base Rock position.
+FF - 
+01 - Spiny #2 direction (right).
+1D - Spiny #3 starting position (X: D0, Y: 10).
+FF - Spiny #3 - No Base Rock position.
+FF - 
+02 - Spiny #3 direction (down).
+BD - Spiny #4 starting position (X: D0, Y: B0).
+FF - Spiny #4 - No Base Rock position.
+FF - 
+03 - Spiny #4 direction (left).
+32 - Spiny #5 starting position (X: 20, Y: 30).
+FF - Spiny #5 - No Base Rock position.
+FF - 
+02 - Spiny #5 direction (down).
+9C - Spiny #6 starting position (X: C0, Y: 90).
+FF - Spiny #6 - No Base Rock position.
+FF - 
+00 - Spiny #6 direction (up).
+2B - Spiny #7 starting position (X: B0, Y: 20).
+FF - Spiny #7 - No Base Rock position.
+FF - 
+03 - Spiny #7 direction (left).
+EF - 
+FF - 
+76 - Dream Bag #1 (X: 60, Y: 70).
+67 - Dream Bag #2 (X: 70, Y: 60).
+78 - Dream Bag #3 (X: 80, Y: 70).
+01 - 
+B7 - Kickle starting position (X: 70, B0).
+-------------------------------------------------------------------------------
+Level 4E - Cake Land O
+
+Level Data: 0x137C8
+
+00000000000000034400000000000000
+00000000000003020344000000000000
+00000303030341434303030303440000
+00030202330202020202020302034400
+03020202020202020202023302020344
+03030331020202020202020202300345
+03020202020202020202020202020345
+03310202020202023003020202020345
+03020202320202020202020202020345
+03020202033102010202020230030345
+030202020202022C0202020202020345
+42030202020202020202023202034146
+00420303030303030303030303414600
+00004243434343434343434343460000
+
+Enemy Data: 0x1297C
+
+0B C0 0A 05 00 97 A7 00 00 EF 2B 08 12 11 02 FF A7 00 02 EF FF 54 17 5A 01 67
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+97 - Noggles #1 starting position (X: 70, Y: 90).
+A7 - Noggles #1 Base Rock position (X: 70, Y: A0).
+00 - 
+00 - Noggles #1 direction (up).
+EF - 
+2B - 
+08 - 
+12 - 
+11 - 
+02 - 
+FF - Equalizer #1 - No starting position.
+A7 - Equalizer #1 Base Rock position (X: 70, Y: A0).
+00 - 
+02 - Equalizer #1 direction (down).
+EF - 
+FF - 
+54 - Dream Bag #1 (X: 40, Y: 50).
+17 - Dream Bag #2 (X: 70, Y: 10).
+5A - Dream Bag #3 (X: A0, Y: 50).
+01 - 
+67 - Kickle starting position (X: 70, Y: 60).
+-------------------------------------------------------------------------------
+Level 4F - Special Game 21
+
+Level Data: 0x1383C
+
+00000000000000000000000000000000
+2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A44
+31040404040404040410131504043045
+3104030303040402021B1F1602023045
+31020202020202020412141704023045
+31020404040404040404040404023045
+31020202020204020202020202023045
+04020101010204020404040404040445
+04020101010204020410181504040445
+0402012C0102040202111C1602020445
+04020202020204040412141704040445
+28282828282828282828282828282845
+42434343434343434343434343434346
+00000000000000000000000000000000
+
+Enemy Data: 0x12996
+
+0B C0 0A 05 00 FF 93 00 03 EF FF 97 6A 9D 01 43
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+93 - Noggles #1 Base Rock position (X: 30, Y: 90).
+00 - 
+03 - Noggles #1 direction (left).
+EF - 
+FF - 
+97 - Dream Bag #1 (X: 70, Y: 90).
+6A - Dream Bag #2 (X: A0, Y: 60).
+9D - Dream Bag #3 (X: D0, Y: 90).
+01 - 
+43 - Kickle starting position (X: 30, Y: 40).
+-------------------------------------------------------------------------------
+Level 50 - Fruit Land G
+
+Level Data: 0x1551D
+
+0000000000000000000000000C440000
+00034400000000000000000302034400
+0A020201010101010101010102414600
+42030141434343434343434301450000
+00420745000244000002440007450000
+00000145020202440202024401450000
+00000145420241464202414601450000
+00000145004246000042460001450000
+00000145000000034400000001450000
+00000145000000424600000001034400
+00000201010101010101010102020E44
+00030203414343434343434343034146
+00420841460000000000000000424600
+00004246000000000000000000000000
+
+Enemy Data: 0x129A6
+
+0B C0 0A 05 00 62 FF 00 02 25 FF 00 01 A7 FF 00 01 6C FF 00 02 EF FF B2 1C AD
+01 29
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+62 - Noggles #1 starting position (X: 20, Y: 60).
+FF - Noggles #1 - No Base Rock position.
+00 - 
+02 - Noggles #1 direction (down).
+25 - Noggles #2 starting position (X: 50, Y: 20).
+FF - Noggles #2 - No Base Rock position.
+00 - 
+01 - Noggles #2 direction (right).
+A7 - Noggles #3 starting position (X: 70, Y: A0).
+FF - Noggles #3 - No Base Rock position.
+00 - 
+01 - Noggles #3 direction (right).
+6C - Noggles #4 starting position (X: C0, Y: 60).
+FF - Noggles #4 - No Base Rock position.
+00 - 
+02 - Noggles #4 direction (down).
+EF - 
+FF - 
+B2 - Dream Bag #1 (X: 20, Y: B0).
+1C - Dream Bag #2 (X: C0, Y: 10).
+AD - Dream Bag #3 (X: D0, Y: A0).
+01 - 
+29 - Kickle starting position (X: 90, Y: 20).
+-------------------------------------------------------------------------------
+Level 51 - Special Game 12
+
+Level Data: 0x13091
+
+00000003030303030303030344000000
+00003102020202040202410230440000
+00034143434343024143464243034400
+03020202020202020202020202020344
+03020202020202020202020202020345
+03020202020202020202020202020345
+03020203020202020202020302020345
+0302032C030202020202032C03020345
+03020201020210131502020202023045
+030202020202111E1602020202020345
+420302020202121A1702020202034146
+00420302020202020202020203414600
+00004203030303030303030341460000
+00000042434343434343434346000000
+
+Enemy Data: 0x129C2
+
+0B C0 0A 05 00 83 73 00 00 EF 18 08 0C 0B 02 43 7B 00 01 4B 7B 00 03 EF FF 13
+67 1B 01 47
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+83 - Noggles #1 starting position (X: 30, Y: 80).
+73 - Noggles #1 Base Rock position (X: 30, Y: 70).
+00 - 
+00 - Noggles #1 direction (up).
+EF - 
+18 - 
+08 - 
+0C - 
+0B - 
+02 - 
+43 - Rocky #1 starting position (X: 30, Y: 40).
+7B - Rocky #1 Base Rock position (X: B0, Y: 70).
+00 - 
+01 - Rocky #1 direction (right).
+4B - Rocky #2 starting position (X: B0, Y: 40).
+7B - Rocky #2 Base Rock position (X: B0, Y: 70).
+00 - 
+03 - Rocky #2 direction (left).
+EF - 
+FF - 
+13 - Dream Bag #1 (X: 30, Y: 10).
+67 - Dream Bag #2 (X: 70, Y: 60).
+1B - Dream Bag #3 (X: B0, Y: 10).
+01 - 
+47 - Kickle starting position (X: 70, Y: 40).
+-------------------------------------------------------------------------------
+Level 53 - Cake Land L
+
+Level Data: 0x145F8
+
+00000000034400000000034400000000
+00000003020344000003020344000000
+00000341020203030302024103440000
+00030245020202020202024502034400
+00420345020202030202024503414600
+000042030202022C0101010341460000
+00000042030202030202034146000000
+00000003020202030202020344000000
+00000302101815041018150203440000
+00000302111C162C111C160203450000
+00000302121417041214170203450000
+00004203020202030202020341460000
+00000042030303410303034146000000
+00000000424343464243434600000000
+
+Enemy Data: 0x129E0
+
+0B C0 0A 05 00 59 57 00 02 EF 0D 88 0E 0D 02 FF 97 00 01 EF FF 32 37 3C 01 55
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+59 - Noggles #1 starting position (X: 90, Y: 50).
+57 - Noggles #1 Base Rock position (X: 70, Y: 50).
+00 - 
+02 - Noggles #1 direction (down).
+EF - 
+0D - 
+88 - 
+0E - 
+0D - 
+02 - 
+FF - Bonkers #1 - No starting position.
+97 - Bonkers #1 Base Rock position (X: 70, Y: 90).
+00 - 
+01 - Bonkers #1 direction (right).
+EF - 
+FF - 
+32 - Dream Bag #1 (X: 20, Y: 30).
+37 - Dream Bag #2 (X: 70, Y: 30).
+3C - Dream Bag #3 (X: C0, Y: 30).
+01 - 
+55 - Kickle starting position (X: 50, Y: 50).
+-------------------------------------------------------------------------------
+Level 55 - Special Game 24
+
+Level Data: 0x15EDA
+
+0000002C020202020202022C44000000
+00000042434343434343434346000000
+02020202020202020202021018150244
+0303030303030303030302111C160245
+31020202020202020202021214170245
+03030303030303030203040403030345
+31020202020202021018150204020245
+0303030303030203111C160203030345
+31020202020202031214170202020245
+0303032C030302030303040303030345
+31010101010110181504101315020245
+010101010101111C16031B1F16020245
+01010101010112141703121417020245
+42434343434343434343434343434346
+
+Enemy Data: 0x129FA
+
+0B C0 0A 05 00 FF 93 00 01 FF 93 00 01 FF 93 00 01 FF 93 00 01 FF 93 00 03 EF
+1E 08 0D 11 02 FF 03 00 03 EF FF 07 47 67 01 78
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+93 - Noggles #1 Base Rock position (X: 30, Y: 90).
+00 - 
+01 - Noggles #1 direction (right).
+FF - Noggles #2 - No starting position.
+93 - Noggles #2 Base Rock position (X: 30, Y: 90).
+00 - 
+01 - Noggles #2 direction (right).
+FF - Noggles #3 - No starting position.
+93 - Noggles #3 Base Rock position (X: 30, Y: 90).
+00 - 
+01 - Noggles #3 direction (right).
+FF - Noggles #4 - No starting position.
+93 - Noggles #4 Base Rock position (X: 30, Y: 90).
+00 - 
+01 - Noggles #4 direction (right).
+FF - Noggles #5 - No starting position.
+93 - Noggles #5 Base Rock position (X: 30, Y: 90).
+00 - 
+03 - Noggles #5 direction (left).
+EF - 
+1E - 
+08 - 
+0D - 
+11 - 
+02 - 
+FF - Sparky #1 - No starting position.
+03 - Sparky #1 Base Rock position (X: 30, Y: 00).
+00 - 
+03 - Sparky #1 direction (left).
+EF - 
+FF - 
+07 - Dream Bag #1 (X: 70, Y: 00).
+47 - Dream Bag #2 (X: 70, Y: 40).
+67 - Dream Bag #3 (X: 70, Y: 60).
+01 - 
+78 - Kickle starting position (X: 80, Y: 70).
+-------------------------------------------------------------------------------
+Level 56 - Cake Land F
+
+Level Data: 0x15D47
+
+00000000000000000000000000000000
+00000244024402440244024402440000
+00020202020202020202020202024400
+00420241024102410241024102414600
+00020202020202020202020202024400
+00420241024102410241024102414600
+00020202020202020202020202024400
+00420241024102410241024102414600
+00020202020202020202020202024400
+00420241024102410241024102414600
+00020202020202020202020202024400
+00420241024102410241024102414600
+00004246424642464246424642460000
+00000000000000000000000000000000
+
+Enemy Data: 0x12A24
+
+2D 48 13 09 02 54 FF 00 02 45 FF 00 02 36 FF 00 02 38 FF 00 02 49 FF 00 02 5A
+FF 00 02 EF FF 12 67 1C 01 A7
+
+2D - 
+48 - 
+13 - 
+09 - 
+02 - 
+54 - Myrtle #1 starting position (X: 40, Y: 50).
+FF - Myrtle #1 - No Base Rock position.
+00 - 
+02 - Myrtle #1 direction (down).
+45 - Myrtle #2 starting position (X: 50, Y: 40).
+FF - Myrtle #2 - No Base Rock position.
+00 - 
+02 - Myrtle #2 direction (down).
+36 - Myrtle #3 starting position (X: 60, Y: 30).
+FF - Myrtle #3 - No Base Rock position.
+00 - 
+02 - Myrtle #3 direction (down).
+38 - Myrtle #4 starting position (X: 80, Y: 30).
+FF - Myrtle #4 - No Base Rock position.
+00 - 
+02 - Myrtle #4 direction (down).
+49 - Myrtle #5 starting position (X: 90, Y: 40).
+FF - Myrtle #5 - No Base Rock position.
+00 - 
+02 - Myrtle #5 direction (down).
+5A - Myrtle #6 starting position (X: A0, Y: 50).
+FF - Myrtle #6 - No Base Rock position.
+00 - 
+02 - Myrtle #6 direction (down).
+EF - 
+FF - 
+12 - Dream Bag #1 (X: 20, Y: 10).
+67 - Dream Bag #2 (X: 70, Y: 60).
+1C - Dream Bag #3 (X: C0, Y: 10).
+01 - 
+A7 - Kickle starting position (X: 70, Y: A0).
+-------------------------------------------------------------------------------
+Level 57 - Toy Land B
+
+Level Data: 0x1488D
+
+00000000000000000000000000000000
+0000210244000221440000002C440000
+00210202020202022144000002450000
+00020241434343020245000002450000
+00420245000000024146000002450000
+00022002440002020244000202024400
+00020202450002020245000202024500
+00020202450002020245000202024500
+00420241460042024146004202414600
+00000245000002024500000002024400
+00000245000021020202020202214500
+00002C45000042210241430221414600
+00004246000000424346004243460000
+00000000000000000000000000000000
+
+Enemy Data: 0x12A48
+
+27 08 10 01 02 32 B2 00 02 23 B2 00 03 26 B2 00 03 37 B2 00 00 97 1C 00 00 A8
+1C 00 03 AB 1C 00 03 9C 1C 00 02 EF FF 22 67 2C 01 72 FF 02
+
+27 - 
+08 - 
+10 - 
+01 - 
+02 - 
+32 - Shades #1 starting position (X: 20, Y: 30).
+B2 - Shades #1 Base Rock position (X: 20, Y: B0).
+00 - 
+02 - Shades #1 direction (down).
+23 - Shades #2 starting position (X: 30, Y: 20).
+B2 - Shades #2 Base Rock position (X: 20, Y: B0).
+00 - 
+03 - Shades #2 direction (left).
+26 - Shades #3 starting position (X: 60, Y: 20).
+B2 - Shades #3 Base Rock position (X: 20, Y: B0).
+00 - 
+03 - Shades #3 direction (left).
+37 - Shades #4 starting position (X: 70, Y: 30).
+B2 - Shades #4 Base Rock position (X: 20, Y: B0).
+00 - 
+00 - Shades #4 direction (up).
+97 - Shades #5 starting position (X: 70, Y: 90).
+1C - Shades #5 Base Rock position (X: C0, Y: 10).
+00 - 
+00 - Shades #5 direction (up).
+A8 - Shades #6 starting position (X: 80, Y: A0).
+1C - Shades #6 Base Rock position (X: C0, Y: 10).
+00 - 
+03 - Shades #6 direction (left).
+AB - Shades #7 starting position (X: B0, Y: A0).
+1C - Shades #7 Base Rock position (X: C0, Y: 10).
+00 - 
+03 - Shades #7 direction (left).
+9C - Shades #8 starting position (X: C0, Y: 90).
+1C - Shades #8 Base Rock position (X: C0, Y: 10).
+00 - 
+02 - Shades #8 direction (down).
+EF - 
+FF - 
+22 - Dream Bag #1 (X: 20, Y: 20).
+67 - Dream Bag #2 (X: 70, Y: 60).
+2C - Dream Bag #3 (X: C0, Y: 20).
+01 - 
+72 - Kickle starting position (X: 20, Y: 70).
+FF - Ice cube/Noggles #1 - No Base Rock position.
+02 - Tile under ice cube #1 (02 - Slippery Ice).
+-------------------------------------------------------------------------------
+Level 59 - Special Game 11
+
+Level Data: 0x15F5E
+
+02020202020202020202020202200244
+02020404040404040404040404040245
+02020202020221040202020202020245
+42044143434302040241434343044146
+00044502020202040202020244044500
+00044502040404040404040245044500
+00044503040404040404040245044500
+00044502040404040404040245044500
+00044502020202040202020245044500
+00044542434302040241434346044500
+03020202020220040202020202200344
+03022004040404040404040404020345
+03020202020202020202020202020345
+42434343434343434343434343434346
+
+Enemy Data: 0x12A76
+
+0B C0 0A 05 00 FF FF 00 01 EF 23 38 0A 11 02 84 FF FF 01 6B FF FF 02 EF FF A3
+44 AB 01 C7 FF 02 FF 02 FF 02 FF 04
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+FF - Noggles #1 - No Base Rock position.
+00 - 
+01 - Noggles #1 direction (right).
+EF - 
+23 - 
+38 - 
+0A - 
+11 - 
+02 - 
+84 - Spiny #1 starting position (X: 40, Y: 80).
+FF - Spiny #1 - No Base Rock position.
+FF - 
+01 - Spiny #1 direction (right).
+6B - Spiny #2 starting position (X: B0, Y: 60).
+FF - Spiny #2 - No Base Rock position.
+FF - 
+02 - Spiny #2 direction (down).
+EF - 
+FF - 
+A3 - Dream Bag #1 (X: 30, Y: A0).
+44 - Dream Bag #2 (X: 40, Y: 40).
+AB - Dream Bag #3 (X: B0, Y: A0).
+01 - 
+C7 - Kickle starting position (X: 70, Y: C0).
+FF - Ice cube/Noggles #1 - No Base Rock position.
+02 - Tile under ice cube #1 (02 - Slippery Ice).
+FF - Ice cube/Noggles #2 - No Base Rock position.
+02 - Tile under ice cube #2 (02 - Slippery Ice).
+FF - Ice cube/Noggles #3 - No Base Rock position.
+02 - Tile under ice cube #3 (02 - Slippery Ice).
+FF - Ice cube/Noggles #4 - No Base Rock position.
+04 - Tile under ice cube #4 (04 - Water Hole).
+-------------------------------------------------------------------------------
+Level 5A - Cake Land I
+
+Level Data: 0x1563D
+
+00000029440000000000002B44000000
+00002907292929032B2B2B072B440000
+002931020202020202020202302B4400
+0042290202020202020202022B414600
+0000290202010101010102022B450000
+0000290202010201020102022B450000
+0000290202010101010102022B450000
+0000290202010101010102022B450000
+00004243432C2C2C2C2C414343460000
+00000202020202030202020202440000
+00000202020202030202020202450000
+00004243430202030202414343460000
+00000000000202030202450000000000
+00000000004243434343460000000000
+
+Enemy Data: 0x12A9C
+
+0B C0 0A 05 00 55 85 00 02 46 86 00 03 66 86 00 02 57 87 00 02 48 88 00 01 68
+88 00 02 59 89 00 02 EF 23 18 0A 11 02 A4 FF FF 01 EF 23 58 0A 11 02 AA FF FF
+03 EF FF C6 77 C8 01 27
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+55 - Noggles #1 starting position (X: 50, Y: 50).
+85 - Noggles #1 Base Rock position (X: 50, Y: 80).
+00 - 
+02 - Noggles #1 direction (down).
+46 - Noggles #2 starting position (X: 60, Y: 40).
+86 - Noggles #2 Base Rock position (X: 60, Y: 80).
+00 - 
+03 - Noggles #2 direction (left).
+66 - Noggles #3 starting position (X: 60, Y: 60).
+86 - Noggles #3 Base Rock position (X: 60, Y: 80).
+00 - 
+02 - Noggles #3 direction (down).
+57 - Noggles #4 starting position (X: 70, Y: 50).
+87 - Noggles #4 Base Rock position (X: 70, Y: 80).
+00 - 
+02 - Noggles #4 direction (down).
+48 - Noggles #5 starting position (X: 80, Y: 40).
+88 - Noggles #5 Base Rock position (X: 80, Y: 80).
+00 - 
+01 - Noggles #5 direction (right).
+68 - Noggles #6 starting position (X: 80, Y: 60).
+88 - Noggles #6 Base Rock position (X: 80, Y: 80).
+00 - 
+02 - Noggles #6 direction (down).
+59 - Noggles #7 starting position (X: 90, Y: 50).
+89 - Noggles #7 Base Rock position (X: 90, Y: 80).
+00 - 
+02 - Noggles #7 direction (down).
+EF - 
+23 - 
+18 - 
+0A - 
+11 - 
+02 - 
+A4 - Spiny #1 starting position (X: 40, Y: A0).
+FF - Spiny #1 - No Base Rock position.
+FF - 
+01 - Spiny #1 direction (right).
+EF - 
+23 - 
+58 - 
+0A - 
+11 - 
+02 - 
+AA - Spiny #2 starting position (X: A0, Y: A0).
+FF - Spiny #2 - No Base Rock position.
+FF - 
+03 - Spiny #2 direction (left).
+EF - 
+FF - 
+C6 - Dream Bag #1 (X: 60, Y: C0).
+77 - Dream Bag #2 (X: 70, Y: 70).
+C8 - Dream Bag #3 (X: 80, Y: C0).
+01 - 
+27 - Kickle starting position (X: 70, Y: 20).
+-------------------------------------------------------------------------------
+Level 5B - Special Game 22
+
+Level Data: 0x15116
+
+02030303030303030303030303030244
+02030202020202020202020202030245
+02030203020303030303030302030245
+02030203020202020202020202030245
+02030203020302030303020302030245
+02030203020302020402020302030245
+02030203020302030203020302030245
+02310202020402020203020302030245
+02030203032C03030203020302030245
+02410202022004020202020302030245
+02030203030303030303020302030245
+02030202020202020202020202030245
+02030303030303030303030303030245
+42434343434343434343434343434346
+
+Enemy Data: 0x12AD8
+
+23 28 0A 11 02 30 FF FF 02 6C FF FF 02 EF FF 00 60 C0 01 77 85 01
+
+23 - 
+28 - 
+0A - 
+11 - 
+02 - 
+30 - Spiny #1 starting position (X: 00, Y: 30).
+FF - Spiny #1 - No Base Rock position.
+FF - 
+02 - Spiny #1 direction (down).
+6C - Spiny #2 starting position (X: C0, Y: 60).
+FF - Spiny #2 - No Base Rock position.
+FF - 
+02 - Spiny #2 direction (down).
+EF - 
+FF - 
+00 - Dream Bag #1 (X: 00, Y: 00).
+60 - Dream Bag #2 (X: 00, Y: 60).
+C0 - Dream Bag #3 (X: 00, Y: C0).
+01 - 
+77 - Kickle starting position (X: 70, Y: 70).
+85 - Ice cube/Noggles #1 Base Rock position (X: 50, Y: 80).
+01 - Tile under ice cube #1 (01 - Land).
+-------------------------------------------------------------------------------
+Level 5D - Toy Land I
+
+Level Data: 0x141D1
+
+00024400334400000000024400024400
+03020202020202020202020230020344
+42024143024143434343334143024146
+2C023102020202020202020202022C44
+42024143024143034143024143024146
+03020231020202020202023002020344
+42024143024143024143024143024146
+02020202020202020202020202020244
+42024143024143044143024143024146
+0002450002452C012C44024500024500
+00024500024504010445024500024500
+0042460002452C012C45024500424600
+00024400324542044146324500024400
+00424600424600424600424600424600
+
+Enemy Data: 0x12AEE
+
+0B C0 0A 05 00 97 96 FF 00 EF 20 08 0B 03 02 B7 B8 FF 00 EF 1A 4C 0F 03 03 31
+30 FF 00 3D 3E FF 00 EF FF 17 C1 CD 01 67
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+97 - Noggles #1 starting position (X: 70, Y: 90).
+96 - Noggles #1 Base Rock position (X: 60, Y: 90).
+FF - 
+00 - Noggles #1 direction (up).
+EF - 
+20 - 
+08 - 
+0B - 
+03 - 
+02 - 
+B7 - Max #1 starting position (X: 70, Y: B0).
+B8 - Max #1 Base Rock position (X: 80, Y: B0).
+FF - 
+00 - Max #1 direction (up).
+EF - 
+1A - 
+4C - 
+0F - 
+03 - 
+03 - 
+31 - Rooker #1 starting position (X: 10, Y: 30).
+30 - Rooker #1 Base Rock position (X: 00, Y: 30).
+FF - 
+00 - Rooker #1 direction (up).
+3D - Rooker #2 starting position (X: D0, Y: 30).
+3E - Rooker #2 Base Rock position (X: E0, Y: 30).
+FF - 
+00 - Rooker #2 direction (up).
+EF - 
+FF - 
+17 - Dream Bag #1 (X: 70, Y: 10).
+C1 - Dream Bag #2 (X: 10, Y: C0).
+CD - Dream Bag #3 (X: D0, Y: C0).
+01 - 
+67 - Kickle starting position (X: 70, Y: 60).
+-------------------------------------------------------------------------------
+Level 5E - Toy Land H
+
+Level Data: 0x14F54
+
+00000000000000024400000000000000
+00000000000002020244000000000000
+00000002020202020202020244000000
+00000202414302020241430202440000
+00020241460042024146004202024400
+00024146000344424603440042024500
+00024500004246000042460000024500
+00424600000000000000000000424600
+0002442C0404042C0404042C44024400
+00020201040101012001040102024500
+00024102040404040404040241024500
+00424602020202020202020245424600
+00000042434302020241434346000000
+00000000000042434346000000000000
+
+Enemy Data: 0x12B16
+
+0B C0 0A 05 00 93 83 00 02 9B 8B 00 02 EF 20 0C 0B 03 03 96 87 00 01 EF 23 70
+0A 11 02 47 FF 00 03 EF FF 91 27 9D 01 C7 FF 01
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+93 - Noggles #1 starting position (X: 30, Y: 90).
+83 - Noggles #1 Base Rock position (X: 30, Y: 80).
+00 - 
+02 - Noggles #1 direction (down).
+9B - Noggles #2 starting position (X: B0, Y: 90).
+8B - Noggles #2 Base Rock position (X: B0, Y: 80).
+00 - 
+02 - Noggles #2 direction (down).
+EF - 
+20 - 
+0C - 
+0B - 
+03 - 
+03 - 
+96 - Max #1 starting position (X: 60, Y: 90).
+87 - Max #1 Base Rock position (X: 70, Y: 80).
+00 - 
+01 - Max #1 direction (right).
+EF - 
+23 - 
+70 - 
+0A - 
+11 - 
+02 - 
+47 - Spiny #1 starting position (X: 70, Y: 40).
+FF - Spiny #1 - No Base Rock position.
+00 - 
+03 - Spiny #1 direction (left).
+EF - 
+FF - 
+91 - Dream Bag #1 (X: 10, Y: 90).
+27 - Dream Bag #2 (X: 70, Y: 20).
+9D - Dream Bag #3 (X: D0, Y: 90).
+01 - 
+C7 - Kickle starting position (X: 70, Y: C0).
+FF - Ice cube/Noggles #1 - No Base Rock position.
+01 - Tile under ice cube #1 (01 - Land).
+-------------------------------------------------------------------------------
+Level 5F - Garden Land C
+
+Level Data: 0x13EBD
+
+00000000000000014400000000000000
+00000000000001410144000000000000
+00000000000741074107440000000000
+00000000074107410741074400000000
+00000007410741074107410744000000
+00000042464246424642464246000000
+00000101010101010101010101440000
+00002C0101010101010101012C450000
+00004201010101010101010141460000
+00000042010101010101014146000000
+00000000424343014143434600000000
+00000000000000014500000000000000
+00000000000501010105440000000000
+00000000004243434343460000000000
+
+Enemy Data: 0x12B40
+
+0B C0 0A 05 00 75 72 00 01 79 7C 00 03 EF FF 16 07 18 01 C7
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+75 - Noggles #1 starting position (X: 50, Y: 70).
+72 - Noggles #1 Base Rock position (X: 20, Y: 70).
+00 - 
+01 - Noggles #1 direction (right).
+79 - Noggles #2 starting position (X: 90, Y: 70).
+7C - Noggles #2 Base Rock position (X: C0, Y: 70).
+00 - 
+03 - Noggles #2 direction (left).
+EF - 
+FF - 
+16 - Dream Bag #1 (X: 60, Y: 10).
+07 - Dream Bag #2 (X: 70, Y: 00).
+18 - Dream Bag #3 (X: 80, Y: 10).
+01 - 
+C7 - Kickle starting position (X: 70, Y: C0).
+-------------------------------------------------------------------------------
+Level 60 - Fruit Land A
+
+Level Data: 0x15C36
+
+00000000010101440101014400000000
+00000000212121450707074500000000
+00000000010101030101014500000000
+00000000020202030202024500000000
+00000003010101030101010344000000
+00000301010101010301010103440000
+00030101010101010103010101034400
+2C010101010101010101030101010344
+42030101010101010103010101034146
+00420301010101010301210103414600
+00004203010101030101010341460000
+00000042030103410301034146000000
+00000000420341464203414600000000
+00000000004246000042460000000000
+
+Enemy Data: 0x12B54
+
+0B C0 0A 05 00 84 70 00 00 86 70 00 00 EF 23 40 0A 11 02 7D FF 00 02 7B FF 00
+00 EF FF 05 09 A9 01 25
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+84 - Noggles #1 starting position (X: 40, Y: 80).
+70 - Noggles #1 Base Rock position (X: 00, Y: 70).
+00 - 
+00 - Noggles #1 direction (up).
+86 - Noggles #2 starting position (X: 60, Y: 80).
+70 - Noggles #2 Base Rock position (X: 00, Y: 70).
+00 - 
+00 - Noggles #2 direction (up).
+EF - 
+23 - 
+40 - 
+0A - 
+11 - 
+02 - 
+7D - Spiny #1 starting position (X: D0, Y: 70).
+FF - Spiny #1 - No Base Rock position.
+00 - 
+02 - Spiny #1 direction (down).
+7B - Spiny #2 starting position (X: B0, Y: 70).
+FF - Spiny #2 - No Base Rock position.
+00 - 
+00 - Spiny #2 direction (up).
+EF - 
+FF - 
+05 - Dream Bag #1 (X: 50, Y: 00).
+09 - Dream Bag #2 (X: 90, Y: 00).
+A9 - Dream Bag #3 (X: 90, Y: A0).
+01 - 
+25 - Kickle starting position (X: 50, Y: 20).
+-------------------------------------------------------------------------------
+Level 62 - Garden Land M
+
+Level Data: 0x13D10
+
+000000000000002C4400000000000000
+00000000000701010107440000000000
+00000000004243434343460000000000
+00000000044404440444044400000000
+00000000424642464246424600000000
+00000004440444044404440444000000
+00000042464246424642464246000000
+00002C0101010101010101012C440000
+00004201010101010101010141460000
+00000042010101010101014146000000
+00000000420101010101414600000000
+00000000004201010141460000000000
+00000000000042014146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x12B76
+
+0B C0 0A 05 00 FF 72 00 01 FF 7C 00 03 EF 20 08 0B 03 02 FF 07 00 01 EF FF 85
+17 89 01 97
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+72 - Noggles #1 Base Rock position (X: 20, Y: 70).
+00 - 
+01 - Noggles #1 direction (right).
+FF - Noggles #2 - No starting position.
+7C - Noggles #2 Base Rock position (X: C0, Y: 70).
+00 - 
+03 - Noggles #2 direction (left).
+EF - 
+20 - 
+08 - 
+0B - 
+03 - 
+02 - 
+FF - Max #1 - No starting position.
+07 - Max #1 Base Rock position (X: 70, Y: 00).
+00 - 
+01 - Max #1 direction (right).
+EF - 
+FF - 
+85 - Dream Bag #1 (X: 50, Y: 80).
+17 - Dream Bag #2 (X: 70, Y: 10).
+89 - Dream Bag #3 (X: 90, Y: 80).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+-------------------------------------------------------------------------------
+Level 63 - Garden Land G
+
+Level Data: 0x13AE9
+
+00000000000000000000000000000000
+00000000000000000002440000000000
+00000101440000020241460101440000
+00014143014402020245014143014400
+00014500010102020101014500014500
+00074501010101010101010144074500
+00420101010101010101010101414600
+00000101012C0101012C010101450000
+00000101010101010101010101450000
+00000101010101010101010101450000
+00004205010101410101010541460000
+00000042010101010101014146000000
+00000000424343434343434600000000
+00000000000000000000000000000000
+
+Enemy Data: 0x12B94
+
+0B C0 0A 05 00 64 75 00 02 6A 79 00 02 EF 18 08 0C 0B 02 37 79 00 02 EF FF 22
+19 2C 01 97
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+64 - Noggles #1 starting position (X: 40, Y: 60).
+75 - Noggles #1 Base Rock position (X: 50, Y: 70).
+00 - 
+02 - Noggles #1 direction (down).
+6A - Noggles #2 starting position (X: A0, Y: 60).
+79 - Noggles #2 Base Rock position (X: 90, Y: 70).
+00 - 
+02 - Noggles #2 direction (down).
+EF - 
+18 - 
+08 - 
+0C - 
+0B - 
+02 - 
+37 - Rocky #1 starting position (X: 70, Y: 30).
+79 - Rocky #1 Base Rock position (X: 90, Y: 70).
+00 - 
+02 - Rocky #1 direction (down).
+EF - 
+FF - 
+22 - Dream Bag #1 (X: 20, Y: 20).
+19 - Dream Bag #2 (X: 90, Y: 10).
+2C - Dream Bag #3 (X: C0, Y: 20).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+-------------------------------------------------------------------------------
+Level 64 - Toy Land D
+
+Level Data: 0x13487
+
+00000000000003030344000000000000
+00000000000302020203440000000000
+00000000000302020203450000000000
+00000000000302020203450000000000
+00000303032C0120012C030303440000
+0003010A020202020202020E01034400
+0301010A020202020202020E01010344
+4203010A020202020202020E01034146
+00420303030303020303030303414600
+00004243430303080303414343460000
+00000000000301010103450000000000
+00000000004203010341460000000000
+00000000000042034146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x12BB2
+
+0B C0 0A 05 00 46 45 00 02 FF 45 00 02 FF 45 00 02 48 49 00 02 FF 49 00 02 FF
+49 00 02 EF FF 64 87 6A 01 27 FF 02
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+46 - Noggles #1 starting position (X: 60, Y: 40).
+45 - Noggles #1 Base Rock position (X: 50, Y: 40).
+00 - 
+02 - Noggles #1 direction (down).
+FF - Noggles #2 - No starting position.
+45 - Noggles #2 Base Rock position (X: 50, Y: 40).
+00 - 
+02 - Noggles #2 direction (down).
+FF - Noggles #3 - No starting position.
+45 - Noggles #3 Base Rock position (X: 50, Y: 40).
+00 - 
+02 - Noggles #3 direction (down).
+48 - Noggles #4 starting position (X: 80, Y: 40).
+49 - Noggles #4 Base Rock position (X: 90, Y: 40).
+00 - 
+02 - Noggles #4 direction (down).
+FF - Noggles #5 - No starting position.
+49 - Noggles #5 Base Rock position (X: 90, Y: 40).
+00 - 
+02 - Noggles #5 direction (down).
+FF - Noggles #6 - No starting position.
+49 - Noggles #6 Base Rock position (X: 90, Y: 40).
+00 - 
+02 - Noggles #6 direction (down).
+EF - 
+FF - 
+64 - Dream Bag #1 (X: 40, Y: 60).
+87 - Dream Bag #2 (X: 70, Y: 80).
+6A - Dream Bag #3 (X: A0, Y: 60).
+01 - 
+27 - Kickle starting position (X: 70, Y: 20).
+FF - Ice cube/Noggles #1 - No Base Rock position.
+02 - Tile under ice cube #1 (02 - Slippery Ice).
+-------------------------------------------------------------------------------
+Level 65 - Fruit Land N
+
+Level Data: 0x13A78
+
+00000000000000000000000000000000
+00000202020202020202020202440000
+00000202020202020202020202450000
+000042433333332C3333334143460000
+00003107010101010101010730440000
+00310101010101010101010101304400
+00310101010101010101010101304500
+00310101010201010102010101304500
+00310202020302020203020202304500
+00423101010201010102010130414600
+00004231010101010101013041460000
+000000423232322C3232324146000000
+00000000424343434343434600000000
+00000000000000000000000000000000
+
+Enemy Data: 0x12BD8
+
+0B C0 0A 05 00 A5 B7 00 03 A7 B7 00 00 A9 B7 00 01 FF B7 00 03 FF B7 00 01 FF
+B7 00 03 EF 2B 08 12 11 02 17 37 00 02 EF FF 63 27 6B 01 57
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+A5 - Noggles #1 starting position (X: 50, Y: A0).
+B7 - Noggles #1 Base Rock position (X: 70, Y: B0).
+00 - 
+03 - Noggles #1 direction (left).
+A7 - Noggles #2 starting position (X: 70, Y: A0).
+B7 - Noggles #2 Base Rock position (X: 70, Y: B0).
+00 - 
+00 - Noggles #2 direction (up).
+A9 - Noggles #3 starting position (X: 90, Y: A0).
+B7 - Noggles #3 Base Rock position (X: 70, Y: B0).
+00 - 
+01 - Noggles #3 direction (right).
+FF - Noggles #4 - No starting position.
+B7 - Noggles #4 Base Rock position (X: 70, Y: B0).
+00 - 
+03 - Noggles #4 direction (left).
+FF - Noggles #5 - No starting position.
+B7 - Noggles #5 Base Rock position (X: 70, Y: B0).
+00 - 
+01 - Noggles #5 direction (right).
+FF - Noggles #6 - No starting position.
+B7 - Noggles #6 Base Rock position (X: 70, Y: B0).
+00 - 
+03 - Noggles #6 direction (left).
+EF - 
+2B - 
+08 - 
+12 - 
+11 - 
+02 - 
+17 - Equalizer #1 starting position (X: 70, Y: 10).
+37 - Equalizer #1 Base Rock position (X: 70, Y: 30).
+00 - 
+02 - Equalizer #1 direction (down).
+EF - 
+FF - 
+63 - Dream Bag #1 (X: 30, Y: 60).
+27 - Dream Bag #2 (X: 70, Y: 20).
+6B - Dream Bag #3 (X: B0, Y: 60).
+01 - 
+57 - Kickle starting position (X: 70, Y: 50).
+-------------------------------------------------------------------------------
+Level 66 - Fruit Land J
+
+Level Data: 0x15E54
+
+00000000000002020244000000000000
+00000244020210131502024402440000
+000202450202111E1602024502024400
+004202450202121A1702024502414600
+00004246420302020203414642460000
+00000000030301010103034400000000
+00000003010101010101010344000000
+00002C0101010101010101012C440000
+00004203010101010101010341460000
+00000042030101010101034146000000
+00000000420301010103414600000000
+00000000004203010341460000000000
+00000000000042034146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x12C06
+
+0B C0 0A 05 00 75 72 00 01 79 7C 00 03 EF 2B 08 12 11 02 2D FF 00 03 EF FF 22
+67 2C 01 97
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+75 - Noggles #1 starting position (X: 50, Y: 70).
+72 - Noggles #1 Base Rock position (X: 20, Y: 70).
+00 - 
+01 - Noggles #1 direction (right).
+79 - Noggles #2 starting position (X: 90, Y: 70).
+7C - Noggles #2 Base Rock position (X: C0, Y: 70).
+00 - 
+03 - Noggles #2 direction (left).
+EF - 
+2B - 
+08 - 
+12 - 
+11 - 
+02 - 
+2D - Equalizer #1 starting position (X: D0, Y: 20).
+FF - Equalizer #1 - No Base Rock position.
+00 - 
+03 - Equalizer #1 direction (left).
+EF - 
+FF - 
+22 - Dream Bag #1 (X: 20, Y: 20).
+67 - Dream Bag #2 (X: 70, Y: 60).
+2C - Dream Bag #3 (X: C0, Y: 20).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+-------------------------------------------------------------------------------
+Level 67 - Special Game 28
+
+Level Data: 0x17810
+
+10131510131510131510131510131544
+1B1F16111D191B1F16111D191B1F1645
+12141712141712141712141712141745
+042C04040404040404040404042C0445
+01010101010101010101010101010145
+02020202020202020202020202020245
+02020202020202020202020202020245
+02020202020202020202020202020245
+02020202020202020202020202020245
+02020202020202020202020202020245
+02040404040404040404040404040445
+02024143024143024143024143020245
+04040404040404040404040404040445
+42434343434343434343434343434346
+
+Enemy Data: 0x12C24
+
+0B C0 0A 05 00 45 31 00 01 42 31 00 01 49 3D 00 03 4C 3D 00 03 EF 1A 08 0F 03
+02 71 31 00 01 7D 3D 00 03 EF FF B1 B7 BD 01 57
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+45 - Noggles #1 starting position (X: 50, Y: 40).
+31 - Noggles #1 Base Rock position (X: 10, Y: 30).
+00 - 
+01 - Noggles #1 direction (right).
+42 - Noggles #2 starting position (X: 20, Y: 40).
+31 - Noggles #2 Base Rock position (X: 10, Y: 30).
+00 - 
+01 - Noggles #2 direction (right).
+49 - Noggles #3 starting position (X: 90, Y: 40).
+3D - Noggles #3 Base Rock position (X: D0, Y: 30).
+00 - 
+03 - Noggles #3 direction (left).
+4C - Noggles #4 starting position (X: C0, Y: 40).
+3D - Noggles #4 Base Rock position (X: D0, Y: 30).
+00 - 
+03 - Noggles #4 direction (left).
+EF - 
+1A - 
+08 - 
+0F - 
+03 - 
+02 - 
+71 - Rooker #1 starting position (X: 10, Y: 70).
+31 - Rooker #1 Base Rock position (X: 10, Y: 30).
+00 - 
+01 - Rooker #1 direction (right).
+7D - Rooker #2 starting position (X: D0, Y: 70).
+3D - Rooker #2 Base Rock position (X: D0, Y: 30).
+00 - 
+03 - Rooker #2 direction (left).
+EF - 
+FF - 
+B1 - Dream Bag #1 (X: 10, Y: B0).
+B7 - Dream Bag #2 (X: 70, Y: B0).
+BD - Dream Bag #3 (X: D0, Y: B0).
+01 - 
+57 - Kickle starting position (X: 70, Y: 50).
+-------------------------------------------------------------------------------
+Level 68 - Toy Land M
+
+Level Data: 0x17939
+
+03333333333333333333333333330344
+31020202020202020202020202023045
+31020202020202020202020202023045
+31020202020202020202010202023045
+310202022C02020202022C0202023045
+31020202020202020202020702023045
+31020202070202020202020202023045
+31020207020202410202020202023045
+31020202020241024102020202023045
+31020202020202410202020202023045
+31020202020202020202020202023045
+31020202020202020202020202023045
+03323232323232323232323232320345
+42434343434343434343434343434346
+
+Enemy Data: 0x12C4E
+
+0B C0 0A 05 00 FF 4A 00 01 EF 27 C8 10 01 02 A2 44 00 00 AC 44 00 00 EF FF 94
+87 9A 01 57
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+4A - Noggles #1 Base Rock position (X: A0, Y: 40).
+00 - 
+01 - Noggles #1 direction (right).
+EF - 
+27 - 
+C8 - 
+10 - 
+01 - 
+02 - 
+A2 - Shades #1 starting position (X: 20, Y: A0).
+44 - Shades #1 Base Rock position (X: 40, Y: 40).
+00 - 
+00 - Shades #1 direction (up).
+AC - Shades #2 starting position (X: C0, Y: A0).
+44 - Shades #2 Base Rock position (X: 40, Y: 40).
+00 - 
+00 - Shades #2 direction (up).
+EF - 
+FF - 
+94 - Dream Bag #1 (X: 40, Y: 90).
+87 - Dream Bag #2 (X: 70, Y: 80).
+9A - Dream Bag #3 (X: A0, Y: 90).
+01 - 
+57 - Kickle starting position (X: 70, Y: 50).
+-------------------------------------------------------------------------------
+Level 69 - Special Game 16
+
+Level Data: 0x13311
+
+03333333333333333333333333330344
+31040404040404040404040404043045
+31020202410241024102410202023045
+31020404040404040404040404023045
+31020402020202020202020202023045
+31020402101315021013150202023045
+2C020402111D1902111D19022C022C45
+31020402121417021214170201023045
+31020402020202020202020202023045
+31020404040404040404040404043045
+31020202410241024102410202023045
+31040404040404040404040404043045
+03323232323232323232323232320345
+42434343434343434343434343434346
+
+Enemy Data: 0x12C6C
+
+0B C0 0A 05 00 FF 6C 00 01 EF 2B 48 12 11 02 FF 60 00 02 FF 6E 00 02 EF FF A1
+27 AD 01 67
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+6C - Noggles #1 Base Rock position (X: C0, Y: 60).
+00 - 
+01 - Noggles #1 direction (right).
+EF - 
+2B - 
+48 - 
+12 - 
+11 - 
+02 - 
+FF - Equalizer #1 - No starting position.
+60 - Equalizer #1 Base Rock position (X: 00, Y: 60).
+00 - 
+02 - Equalizer #1 direction (down).
+FF - Equalizer #2 - No starting position.
+6E - Equalizer #2 Base Rock position (X: E0, Y: 60).
+00 - 
+02 - Equalizer #2 direction (down).
+EF - 
+FF - 
+A1 - Dream Bag #1 (X: 10, Y: A0).
+27 - Dream Bag #2 (X: 70, Y: 20).
+AD - Dream Bag #3 (X: D0, Y: A0).
+01 - 
+67 - Kickle starting position (X: 70, Y: 60).
+-------------------------------------------------------------------------------
+Level 6A - Special Game 30
+
+Level Data: 0x1433E
+
+10131504041013150404040410131544
+111D190204111D1902020404111E1645
+121417040412141704020404121A1745
+04020404040204040402040404040445
+04020202020204040402040404040445
+31040404020404101315020202020445
+04040404020404111E16040404020445
+04040410131504121A17040410131545
+040404111D190420020404041B1F1645
+04040412141704020204040412141745
+10181504020404040410131504020445
+111C160402020220021B1F1602040445
+12141704040404040412141704040445
+42434343434343434343434343434346
+
+Enemy Data: 0x12C8A
+
+0B C0 0A 05 00 FF FF FF 01 EF FF 13 AD BC 01 97 FF 04 FF 02
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+FF - Noggles #1 - No Base Rock position.
+FF - 
+01 - Noggles #1 direction (right).
+EF - 
+FF - 
+13 - Dream Bag #1 (X: 30, Y: 10).
+AD - Dream Bag #2 (X: D0, Y: A0).
+BC - Dream Bag #3 (X: C0, Y: B0).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+FF - Ice cube/Noggles #1 - No Base Rock position.
+04 - Tile under ice cube #1 (04 - Water Hole).
+FF - Ice cube/Noggles #2 - No Base Rock position.
+02 - Tile under ice cube #2 (02 - Slippery Ice).
+-------------------------------------------------------------------------------
+Level 6B - Cake Land B
+
+Level Data: 0x153F8
+
+00000002440244024402440244000000
+00000002450245024502450202440000
+00020204040404040404040402024400
+00020204010101010101010402024500
+00020204010101010101010402024500
+00020204010104040401010402024500
+00020204010101010101010402024500
+00020204010101010101010402024500
+00020204040404040404040402024500
+0002022C012C012C012C012C02024500
+00420202020202020202020202414600
+00004202020202020202020241460000
+00000042020202020202024146000000
+00000000424343434343434600000000
+
+Enemy Data: 0x12C9E
+
+0B C0 0A 05 00 94 95 FF 01 96 95 FF 01 98 99 FF 01 9A 99 FF 01 EF 23 38 0A 11
+02 44 FF FF 02 4A FF FF 00 EF 23 28 0A 11 02 47 FF FF 01 EF 23 68 0A 11 02 C7
+FF FF 03 EF FF 13 15 17 01 B7
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+94 - Noggles #1 starting position (X: 40, Y: 90).
+95 - Noggles #1 Base Rock position (X: 50, Y: 90).
+FF - 
+01 - Noggles #1 direction (right).
+96 - Noggles #2 starting position (X: 60, Y: 90).
+95 - Noggles #2 Base Rock position (X: 50, Y: 90).
+FF - 
+01 - Noggles #2 direction (right).
+98 - Noggles #3 starting position (X: 80, Y: 90).
+99 - Noggles #3 Base Rock position (X: 90, Y: 90).
+FF - 
+01 - Noggles #3 direction (right).
+9A - Noggles #4 starting position (X: A0, Y: 90).
+99 - Noggles #4 Base Rock position (X: 90, Y: 90).
+FF - 
+01 - Noggles #4 direction (right).
+EF - 
+23 - 
+38 - 
+0A - 
+11 - 
+02 - 
+44 - Spiny #1 starting position (X: 40, Y: 40).
+FF - Spiny #1 - No Base Rock position.
+FF - 
+02 - Spiny #1 direction (down).
+4A - Spiny #2 starting position (X: A0, Y: 40).
+FF - Spiny #2 - No Base Rock position.
+FF - 
+00 - Spiny #2 direction (up).
+EF - 
+23 - 
+28 - 
+0A - 
+11 - 
+02 - 
+47 - Spiny #3 starting position (X: 70, Y: 40).
+FF - Spiny #3 - No Base Rock position.
+FF - 
+01 - Spiny #3 direction (right).
+EF - 
+23 - 
+68 - 
+0A - 
+11 - 
+02 - 
+C7 - Spiny #4 starting position (X: 70, Y: C0).
+FF - Spiny #4 - No Base Rock position.
+FF - 
+03 - Spiny #4 direction (left).
+EF - 
+FF - 
+13 - Dream Bag #1 (X: 30, Y: 10).
+15 - Dream Bag #2 (X: 50, Y: 10).
+17 - Dream Bag #3 (X: 70, Y: 10).
+01 - 
+B7 - Kickle starting position (X: 70, Y: B0).
+-------------------------------------------------------------------------------
+Level 6D - Special Game 13
+
+Level Data: 0x1357A
+
+10131502020202020202020210131544
+111D190202020202020202021B1F1645
+12141702020202020202020212141745
+02020202020202020202020202020245
+02020202034143434343030202020245
+02020202030202020202030202020245
+010101012C02020202022C0101010145
+02020202030202020202030202020245
+02020202030303030303030202020245
+02020202020202070202020202020245
+10131502020202070202020210131545
+111D190202020207020202021B1F1645
+12141702020202070202020212141745
+42434343434343434343434343434346
+
+Enemy Data: 0x12CDC
+
+0B C0 0A 05 00 FF 64 00 01 FF 6A 00 00 EF 46 88 4F 0A 02 56 FF 00 01 76 FF 00
+03 58 FF 00 01 78 FF 00 03 EF FF 15 67 19 01 27
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+64 - Noggles #1 Base Rock position (X: 40, Y: 60).
+00 - 
+01 - Noggles #1 direction (right).
+FF - Noggles #2 - No starting position.
+6A - Noggles #2 Base Rock position (X: A0, Y: 60).
+00 - 
+00 - Noggles #2 direction (up).
+EF - 
+46 - 
+88 - 
+4F - 
+0A - 
+02 - 
+56 - Gale #1 starting position (X: 60, Y: 50).
+FF - Gale #1 - No Base Rock position.
+00 - 
+01 - Gale #1 direction (right).
+76 - Gale #2 starting position (X: 60, Y: 70).
+FF - Gale #2 - No Base Rock position.
+00 - 
+03 - Gale #2 direction (left).
+58 - Gale #3 starting position (X: 80, Y: 50).
+FF - Gale #3 - No Base Rock position.
+00 - 
+01 - Gale #3 direction (right).
+78 - Gale #4 starting position (X: 80, Y: 70).
+FF - Gale #4 - No Base Rock position.
+00 - 
+03 - Gale #4 direction (left).
+EF - 
+FF - 
+15 - Dream Bag #1 (X: 50, Y: 10).
+67 - Dream Bag #2 (X: 70, Y: 60).
+19 - Dream Bag #3 (X: 90, Y: 10).
+01 - 
+27 - Kickle starting position (X: 70, Y: 20).
+-------------------------------------------------------------------------------
+Level 6E - Garden Land F
+
+Level Data: 0x179FC
+
+00000000000000034400000000000000
+00000000000001010144000000000000
+00000000000101010101440000000000
+00000000010101010101014400000000
+00000001010101010101010144000000
+00000101010101010101010101440000
+00010101010101010101010101014400
+002C41044104410441044104412C4500
+00424642464246014542464246424600
+00000000000000014500000000000000
+00000000000000014500000000000000
+00000000000144014500000000000000
+00000000004201414600000000000000
+00000000000042460000000000000000
+
+Enemy Data: 0x12D06
+
+0B C0 0A 05 00 54 71 00 01 5A 7D 00 03 EF 20 08 0B 03 02 97 7D 00 00 EF FF B5
+C6 B7 01 37
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+54 - Noggles #1 starting position (X: 40, Y: 50).
+71 - Noggles #1 Base Rock position (X: 10, Y: 70).
+00 - 
+01 - Noggles #1 direction (right).
+5A - Noggles #2 starting position (X: A0, Y: 50).
+7D - Noggles #2 Base Rock position (X: D0, Y: 70).
+00 - 
+03 - Noggles #2 direction (left).
+EF - 
+20 - 
+08 - 
+0B - 
+03 - 
+02 - 
+97 - Max #1 starting position (X: 70, Y: 90).
+7D - Max #1 Base Rock position (X: D0, Y: 70).
+00 - 
+00 - Max #1 direction (up).
+EF - 
+FF - 
+B5 - Dream Bag #1 (X: 50, Y: B0).
+C6 - Dream Bag #2 (X: 60, Y: C0).
+B7 - Dream Bag #3 (X: 70, Y: B0).
+01 - 
+37 - Kickle starting position (X: 70, Y: 30).
+-------------------------------------------------------------------------------
+Level 71 - Toy Land O
+
+Level Data: 0x13CA3
+
+02020202020202020202020202020244
+02020202020202020202020202020245
+020204040404042C0404040404020245
+02024110131510131510131504020245
+020245111D19111D19111E1604020245
+020245121417121417121A1704020245
+020204040404042C0404040404020245
+02020202020202020202020202020245
+02020202070202020202020202020245
+020202020202022C0102020202020245
+02020202020202020202020202020245
+02020202020202020202020202020245
+02020202020232020232020202020245
+42434343434343434343434343434346
+
+Enemy Data: 0x12D24
+
+1E 08 0D 11 02 71 67 00 01 7D 27 00 03 EF 0B C0 0A 05 00 98 97 00 02 FF 97 00
+03 EF FF 34 37 3A 01 77
+
+1E - 
+08 - 
+0D - 
+11 - 
+02 - 
+71 - Sparky #1 starting position (X: 10, Y: 70).
+67 - Sparky #1 Base Rock position (X: 70, Y: 60).
+00 - 
+01 - Sparky #1 direction (right).
+7D - Sparky #2 starting position (X: D0, Y: 70).
+27 - Sparky #2 Base Rock position (X: 70, Y: 20).
+00 - 
+03 - Sparky #2 direction (left).
+EF - 
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+98 - Noggles #1 starting position (X: 80, Y: 90).
+97 - Noggles #1 Base Rock position (X: 70, Y: 90).
+00 - 
+02 - Noggles #1 direction (down).
+FF - Noggles #2 - No starting position.
+97 - Noggles #2 Base Rock position (X: 70, Y: 90).
+00 - 
+03 - Noggles #2 direction (left).
+EF - 
+FF - 
+34 - Dream Bag #1 (X: 40, Y: 30).
+37 - Dream Bag #2 (X: 70, Y: 30).
+3A - Dream Bag #3 (X: A0, Y: 30).
+01 - 
+77 - Kickle starting position (X: 70, Y: 70).
+-------------------------------------------------------------------------------
+Level 72 - Toy Land C
+
+Level Data: 0x17B0B
+
+00000000000000000000000000000000
+02020202020202020202020202020244
+02414343434343434343434307414346
+02020202020202020202020202020244
+42434343434343074143434343430245
+02020202020202020202020202020245
+02410741434343434343434343434346
+02020202020202020202020202020244
+42434343434343074143434343430245
+02020202020202020202020202020245
+02414343434343434343434307414346
+02020202020202020202020202020244
+42434343434343434343434343434346
+00000000000000000000000000000000
+
+Enemy Data: 0x12D46
+
+46 88 4F 0A 02 17 FF FF 02 37 FF FF 02 57 FF FF 02 77 FF FF 02 97 FF FF 02 EF
+FF 60 1E 8E 01 B7
+
+46 - 
+88 - 
+4F - 
+0A - 
+02 - 
+17 - Gale #1 starting position (X: 70, Y: 10).
+FF - Gale #1 - No Base Rock position.
+FF - 
+02 - Gale #1 direction (down).
+37 - Gale #2 starting position (X: 70, Y: 30).
+FF - Gale #2 - No Base Rock position.
+FF - 
+02 - Gale #2 direction (down).
+57 - Gale #3 starting position (X: 70, Y: 50).
+FF - Gale #3 - No Base Rock position.
+FF - 
+02 - Gale #3 direction (down).
+77 - Gale #4 starting position (X: 70, Y: 70).
+FF - Gale #4 - No Base Rock position.
+FF - 
+02 - Gale #4 direction (down).
+97 - Gale #5 starting position (X: 70, Y: 90).
+FF - Gale #5 - No Base Rock position.
+FF - 
+02 - Gale #5 direction (down).
+EF - 
+FF - 
+60 - Dream Bag #1 (X: 00, Y: 60).
+1E - Dream Bag #2 (X: E0, Y: 10).
+8E - Dream Bag #3 (X: E0, Y: 80).
+01 - 
+B7 - Kickle starting position (X: 70, Y: B0).
+-------------------------------------------------------------------------------
+Level 73 - Fruit Land E
+
+Level Data: 0x1799B
+
+00000000333333013333334400000000
+00000000424343014143434600000000
+00000000000404040404440000000000
+00000000010101010101014400000000
+00000001010101010101010144000000
+00000501010201010102010105440000
+00004201010101010101010141460000
+00000042010101010101014146000000
+00000002020202020202020244000000
+00000202020202020202020202440000
+00000101010101010101010101450000
+00002C0404040404040404042C450000
+00004232323232323232323241460000
+00000042434343434343434346000000
+
+Enemy Data: 0x12D66
+
+0B C0 0A 05 00 A3 B2 00 01 A5 B2 00 01 A9 BC 00 03 AB BC 00 03 EF 18 C8 0C 0B
+02 97 BC 00 00 EF FF 55 07 59 01 67
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+A3 - Noggles #1 starting position (X: 30, Y: A0).
+B2 - Noggles #1 Base Rock position (X: 20, Y: B0).
+00 - 
+01 - Noggles #1 direction (right).
+A5 - Noggles #2 starting position (X: 50, Y: A0).
+B2 - Noggles #2 Base Rock position (X: 20, Y: B0).
+00 - 
+01 - Noggles #2 direction (right).
+A9 - Noggles #3 starting position (X: 90, Y: A0).
+BC - Noggles #3 Base Rock position (X: C0, Y: B0).
+00 - 
+03 - Noggles #3 direction (left).
+AB - Noggles #4 starting position (X: B0, Y: A0).
+BC - Noggles #4 Base Rock position (X: C0, Y: B0).
+00 - 
+03 - Noggles #4 direction (left).
+EF - 
+18 - 
+C8 - 
+0C - 
+0B - 
+02 - 
+97 - Rocky #1 starting position (X: 70, Y: 90).
+BC - Rocky #1 Base Rock position (X: C0, Y: B0).
+00 - 
+00 - Rocky #1 direction (up).
+EF - 
+FF - 
+55 - Dream Bag #1 (X: 50, Y: 50).
+07 - Dream Bag #2 (X: 70, Y: 00).
+59 - Dream Bag #3 (X: 90, Y: 50).
+01 - 
+67 - Kickle starting position (X: 70, Y: 60).
+-------------------------------------------------------------------------------
+Level 74 - Special Game 02
+
+Level Data: 0x1340C
+
+00000000333333013333334400000000
+00000000424343014143434600000000
+00000000000404040404440000000000
+00000000010101010101014400000000
+00000001010101010101010144000000
+00000501010201010102010105440000
+00004201010101010101010141460000
+00000042010101010101014146000000
+00000002020202020202020244000000
+00000202020202020202020202440000
+00000101010101010101010101450000
+00002C0404040404040404042C450000
+00004232323232323232323241460000
+00000042434343434343434346000000
+
+Enemy Data: 0x12D8C
+
+0D 08 0E 0D 02 6A 17 FF 03 EF 46 0C 4F 0A 03 97 FF FF 01 EF 0B C0 0A 05 00 35
+17 00 02 37 17 00 02 39 17 00 02 EF FF 91 A7 9D 01 64
+
+0D - 
+08 - 
+0E - 
+0D - 
+02 - 
+6A - Mr. Hoople #1 starting position (X: A0, Y: 60).
+17 - Mr. Hoople #1 Base Rock position (X: 70, Y: 10).
+FF - 
+03 - Mr. Hoople #1 direction (left).
+EF - 
+46 - 
+0C - 
+4F - 
+0A - 
+03 - 
+97 - Gale #1 starting position (X: 70, Y: 90).
+FF - Gale #1 - No Base Rock position.
+FF - 
+01 - Gale #1 direction (right).
+EF - 
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+35 - Noggles #1 starting position (X: 50, Y: 30).
+17 - Noggles #1 Base Rock position (X: 70, Y: 10).
+00 - 
+02 - Noggles #1 direction (down).
+37 - Noggles #2 starting position (X: 70, Y: 30).
+17 - Noggles #2 Base Rock position (X: 70, Y: 10).
+00 - 
+02 - Noggles #2 direction (down).
+39 - Noggles #3 starting position (X: 90, Y: 30).
+17 - Noggles #3 Base Rock position (X: 70, Y: 10).
+00 - 
+02 - Noggles #3 direction (down).
+EF - 
+FF - 
+91 - Dream Bag #1 (X: 10, Y: 90).
+A7 - Dream Bag #2 (X: 70, Y: A0).
+9D - Dream Bag #3 (X: D0, Y: 90).
+01 - 
+64 - Kickle starting position (X: 40, Y: 60).  
+-------------------------------------------------------------------------------
+Level 75 - Special Game 26
+
+Level Data: 0x1454E
+
+101315440000002C4400000010131544
+111E164502440301034402441B1F1645
+121A1702020202010202020212141745
+42020404040404040404040404024146
+00020404020202020202020404024500
+00020404020202020202020404024500
+00020404414343434343430404024500
+00020404020202020202020404024500
+00020404020202020202020404024500
+00020404040404020404040404024500
+10131504020202020202020210181544
+111D19414343020202414343111C1645
+12141745000042024146000012141745
+42434346000000424600000042434346
+
+Enemy Data: 0x12DB8
+
+0B C0 0A 05 00 27 07 00 00 FF 07 00 00 EF 46 C8 4F 0A 02 47 FF 00 01 EF FF 55
+57 59 01 6D
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+27 - Noggles #1 starting position (X: 70, Y: 20).
+07 - Noggles #1 Base Rock position (X: 70, Y: 00).
+00 - 
+00 - Noggles #1 direction (up).
+FF - Noggles #2 - No starting position.
+07 - Noggles #2 Base Rock position (X: 70, Y: 00).
+00 - 
+00 - Noggles #2 direction (up).
+EF - 
+46 - 
+C8 - 
+4F - 
+0A - 
+02 - 
+47 - Gale #1 starting position (X: 70, Y: 40).
+FF - Gale #1 - No Base Rock position.
+00 - 
+01 - Gale #1 direction (right).
+EF - 
+FF - 
+55 - Dream Bag #1 (X: 50, Y: 50).
+57 - Dream Bag #2 (X: 70, Y: 50).
+59 - Dream Bag #3 (X: 90, Y: 50).
+01 - 
+6D - Kickle starting position (X: D0, Y: 60).
+-------------------------------------------------------------------------------
+Level 77 - Garden Land Q
+
+Level Data: 0x15B23
+
+00000000000000000000000000000000
+00000003010101010101010344000000
+00000303414343434343430303440000
+00030303450000000000000303034400
+0001414301012C032C01014143014500
+00014500014143434343014500014500
+00014500014500000000014500014500
+00014500014500000000014500014500
+00014500010101010101014500014500
+00030303414343434343430303034500
+00420303450000000000000303414600
+00004203010101250101010341460000
+00000042434343434343434346000000
+00000000000000000000000000000000
+
+Enemy Data: 0x12DD6
+
+0B C0 0A 05 00 FF 46 00 02 FF 48 00 02 EF 20 08 0B 03 02 81 FF 00 00 14 FF 00
+01 BA FF 00 03 4D FF 00 02 EF FF 61 17 6D 01 87
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+46 - Noggles #1 Base Rock position (X: 60, Y: 40).
+00 - 
+02 - Noggles #1 direction (right).
+FF - Noggles #2 - No starting position.
+48 - Noggles #2 Base Rock position (X: 80, Y: 40).
+00 - 
+02 - Noggles #2 direction (right).
+EF - 
+20 - 
+08 - 
+0B - 
+03 - 
+02 - 
+81 - Max #1 starting position (X: 10, Y: 80).
+FF - Max #1 - No Base Rock position.
+00 - 
+00 - Max #1 direction (up).
+14 - Max #2 starting position (X: 40, Y: 10).
+FF - Max #2 - No Base Rock position.
+00 - 
+01 - Max #2 direction (right).
+BA - Max #3 starting position (X: A0, Y: B0).
+FF - Max #3 - No Base Rock position.
+00 - 
+03 - Max #3 direction (left).
+4D - Max #4 starting position (X: D0, Y: 40).
+FF - Max #4 - No Base Rock position.
+00 - 
+02 - Max #4 direction (down).
+EF - 
+FF - 
+61 - Dream Bag #1 (X: 10, Y: 60).
+17 - Dream Bag #2 (X: 70, Y: 10).
+6D - Dream Bag #3 (X: D0, Y: 60).
+01 - 
+87 - Kickle starting position (X: 70, Y: 80).
+-------------------------------------------------------------------------------
+Level 7A - Garden Land K
+
+Level Data: 0x13BC8
+
+00000000000007070744000000000000
+00000000000741434307440000000000
+000000002C41014401412C4400000000
+00000000014542464246014500000000
+00000000014500000000014500000000
+01010144010101010101014501010144
+422C01014143434343434301012C4146
+00420101010101010101010101414600
+00004201010101010101010141460000
+00000042010101010101014146000000
+00000000420101010101414600000000
+00000000004201010141460000000000
+00000000000042054146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x12E00
+
+0B C0 0A 05 00 FF 61 00 01 FF 24 00 01 FF 2A 00 01 FF 6D 00 01 EF FF 26 87 28
+01 57
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+61 - Noggles #1 Base Rock position (X: 10, Y: 60).
+00 - 
+01 - Noggles #1 direction (right).
+FF - Noggles #2 - No starting position.
+24 - Noggles #2 Base Rock position (X: 40, Y: 20).
+00 - 
+01 - Noggles #2 direction (right).
+FF - Noggles #3 - No starting position.
+2A - Noggles #3 Base Rock position (X: A0, Y: 20).
+00 - 
+01 - Noggles #3 direction (right).
+FF - Noggles #4 - No starting position.
+6D - Noggles #4 Base Rock position (X: D0, Y: 60).
+00 - 
+01 - Noggles #4 direction (right).
+EF - 
+FF - 
+26 - Dream Bag #1 (X: 60, Y: 20).
+87 - Dream Bag #2 (X: 70, Y: 80).
+28 - Dream Bag #3 (X: 80, Y: 20).
+01 - 
+57 - Kickle starting position (X: 70, Y: 50).
+-------------------------------------------------------------------------------
+Level 7B - Special Game 27
+
+Level Data: 0x144A2
+
+00000244000000034400000002440000
+00101315440003030344001013154400
+00111E1645012C012C01441B1F164500
+00121A17040401040104041214174500
+00420204040404040404040402414600
+00000202024102410241020202450000
+00000204040404040404040404450000
+00020202030404040404030202024400
+02020207020202010202020207020244
+420202020202032C0302020202024146
+00420202024103030341020202414600
+00004202414642034146420241460000
+00000002450000034500000245000000
+00000042460000424600004246000000
+
+Enemy Data: 0x12E1C
+
+20 08 0B 03 03 25 FF FF 02 27 FF FF 02 29 FF FF 02 EF 23 10 0A 11 02 58 FF FF
+01 EF 0B C0 0A 05 00 36 26 00 02 87 97 00 00 38 28 00 02 EF FF 02 89 0C 01 85
+
+20 - 
+08 - 
+0B - 
+03 - 
+03 - 
+25 - Max #1 starting position (X: 50, Y: 20).
+FF - Max #1 - No Base Rock position.
+FF - 
+02 - Max #1 direction (down).
+27 - Max #2 starting position (X: 70, Y: 20).
+FF - Max #2 - No Base Rock position.
+FF - 
+02 - Max #2 direction (down).
+29 - Max #3 starting position (X: 90, Y: 20).
+FF - Max #3 - No Base Rock position.
+FF - 
+02 - Max #3 direction (down).
+EF - 
+23 - 
+10 - 
+0A - 
+11 - 
+02 - 
+58 - Spiny #1 starting position (X: 80, Y: 50).
+FF - Spiny #1 - No Base Rock position.
+FF - 
+01 - Spiny #1 direction (right).
+EF - 
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+36 - Noggles #1 starting position (X: 60, Y: 30).
+26 - Noggles #1 Base Rock position (X: 60, Y: 20).
+00 - 
+02 - Noggles #1 direction (down).
+87 - Noggles #2 starting position (X: 70, Y: 80).
+97 - Noggles #2 Base Rock position (X: 70, Y: 90).
+00 - 
+00 - Noggles #2 direction (up).
+38 - Noggles #3 starting position (X: 80, Y: 30).
+28 - Noggles #3 Base Rock position (X: 80, Y: 20).
+00 - 
+02 - Noggles #3 direction (down).
+EF - 
+FF - 
+02 - Dream Bag #1 (X: 20, Y: 00).
+89 - Dream Bag #2 (X: 90, Y: 80).
+0C - Dream Bag #3 (X: C0, Y: 00).
+01 - 
+85 - Kickle starting position (X: 50, Y: 80).
+-------------------------------------------------------------------------------
+Level 7C - Toy Land A
+
+Level Data: 0x17A58
+
+00000000000000074400000000000000
+00000000000001010144000000000000
+00000000000101010101440000000000
+00000000070101010101074400000000
+00000001010101010101010144000000
+00000101010101010101010101440000
+00070101010101070101010101074400
+00420101010101010101010101414600
+00004201010101010101010141460000
+00000042070101010101074146000000
+00000000420101010101414600000000
+00000000004201010141460000000000
+00000000000042074146000000000000
+00000000000000424600000000000000
+
+Enemy Data: 0x12E50
+
+0B C0 0A 05 00 FF FF 00 10 EF 46 88 4F 0A 02 44 FF FF 01 84 FF FF 03 17 FF FF
+01 57 FF FF 03 77 FF FF 01 4A FF FF 01 8A FF FF 03 EF FF 64 37 6A 01 97
+
+0B - 
+C0 - 
+0A - 
+05 - 
+00 - 
+FF - Noggles #1 - No starting position.
+FF - Noggles #1 - No Base Rock position.
+00 - 
+10 - Noggles #1 direction (would be up).
+EF - 
+46 - 
+88 - 
+4F - 
+0A - 
+02 - 
+44 - Gale #1 starting position (X: 40, Y: 40).
+FF - Gale #1 - No Base Rock position.
+FF - 
+01 - Gale #1 direction (right).
+84 - Gale #2 starting position (X: 40, Y: 80).
+FF - Gale #2 - No Base Rock position.
+FF - 
+03 - Gale #2 direction (left).
+17 - Gale #3 starting position (X: 70, Y: 10).
+FF - Gale #3 - No Base Rock position.
+FF - 
+01 - Gale #3 direction (right).
+57 - Gale #4 starting position (X: 70, Y: 50).
+FF - Gale #4 - No Base Rock position.
+FF - 
+03 - Gale #4 direction (left).
+77 - Gale #5 starting position (X: 70, Y: 70).
+FF - Gale #5 - No Base Rock position.
+FF - 
+01 - Gale #5 direction (right).
+4A - Gale #6 starting position (X: A0, Y: 40).
+FF - Gale #6 - No Base Rock position.
+FF - 
+01 - Gale #6 direction (right).
+8A - Gale #7 starting position (X: A0, Y: 80).
+FF - Gale #7 - No Base Rock position.
+FF - 
+03 - Gale #7 direction (left).
+EF - 
+FF - 
+64 - Dream Bag #1 (X: 40, Y: 60).
+37 - Dream Bag #2 (X: 70, Y: 30).
+6A - Dream Bag #3 (X: A0, Y: 60).
+01 - 
+97 - Kickle starting position (X: 70, Y: 90).
+---------------------------------------------------------------------------------------------------

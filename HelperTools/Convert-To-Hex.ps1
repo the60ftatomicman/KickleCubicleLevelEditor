@@ -2,15 +2,12 @@ cls
 $mapFile  = ".\romMap_LevelData_OrderByLevel.txt"
 $maps     = [System.Collections.ArrayList]@()
 Get-Content -Path $mapFile | ForEach-Object{
-	#Write-Host $_
 	$maps.Add(@{
 		start = $_.substring(0 ,5)
 		end   = $_.substring(9,5)
 		name  = $_.substring(17)
 	})
 }
-#$maps
-#exit;
 $romFile  = ".\Kickle Cubicle (USA).nes"
 $currentMap = 0
 $maps | forEach-Object{
@@ -28,13 +25,13 @@ $maps | forEach-Object{
 		$line = [string]$_
 		$hexArray = $line.substring(10,49).replace(" ","") -split '([0-9A-F]{2})'
 		$hexArray.Where({ "" -ne $_ }) | ForEach-Object{
-			$hexAdd = '{0:x2}' -f $count
+			$hexAdd  = '{0:x2}' -f $count
+			$hexPrev = '{0:x2}' -f ($count-1)
 			if($hexAdd -eq $idxStart){
 				$record=$true
 				Write-Host $name
-				#Set-Content -Path '.\level_$currentMap.json' -Value $name
 			}
-			if($hexAdd -eq $idxEnd){
+			if($hexPrev -eq $idxEnd){
 				$record=$false
 				Write-Host $hexData
 				Write-Host "----------"
@@ -42,7 +39,7 @@ $maps | forEach-Object{
 				{
 					"meta":{
 						"world" : "$name",
-						"index" : "??"
+						"index" : "$idxName"
 					},
 					"rawHexData": {
 						"tile"     : "$hexData",
@@ -56,7 +53,9 @@ $maps | forEach-Object{
 					}
 				}
 				'''
-				$fileData = $fileData.replace('$name'    ,$name)
+				$nameArray = $name.split(" ")
+				$fileData = $fileData.replace('$name'    ,$($nameArray[0]+" "+$nameArray[1]))
+				$fileData = $fileData.replace('$idxName' ,$nameArray[2])
 				$fileData = $fileData.replace('$hexData' ,$hexData)
 				$fileData = $fileData.replace('$idxStart',$idxStart)
 				$fileData = $fileData.replace('$idxEnd'  ,$idxEnd)
