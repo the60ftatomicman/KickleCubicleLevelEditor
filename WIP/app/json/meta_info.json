@@ -68,7 +68,8 @@
 			"hoople"    ,"baserock_hoope" ,
 			"max"       ,"baserock_max"   ,
 			"rocky"     ,"baserock_rocky" ,
-			"spiny_left","spiny_right"
+			"spiny_left","spiny_right",
+			"sparky"    ,"baserock_sparky"
 		]
 	}
 }
