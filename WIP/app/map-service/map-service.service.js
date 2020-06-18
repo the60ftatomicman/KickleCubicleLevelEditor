@@ -213,7 +213,7 @@ angular.module('MapService')
 			return 'noggle';
 		}else if(identifier === '0D080E0D02' || identifier === '0D080E0D03' ){
 			return 'hoople';
-		}else if(identifier === '1E880D1102' || identifier === '1E880D1103' ){
+		}else if(identifier === '1E880D1102' || identifier === '1E880D1103' || identifier === '1E080D1102' ||  identifier === '1E080D1103'){
 			return 'sparky';
 		}else if(identifier === '20080B0302' || identifier === '20080B0303' ){
 			return 'max';
@@ -223,7 +223,7 @@ angular.module('MapService')
 			return 'myrtle';
 		}else if(identifier === '1A080F0302' || identifier === '1A080F0303' ){
 			return 'rooker';
-		}else if(identifier === '2588090702' || identifier === '2588090703' ){
+		}else if(identifier === '2588090702' || identifier === '2588090703' || identifier === '2508090702' || identifier === '2508090703'){
 			return 'bonkers';
 		}else if(identifier === '27C8100102' || identifier === '27C8100103' ){
 			return 'shades';

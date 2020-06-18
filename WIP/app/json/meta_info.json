@@ -70,7 +70,8 @@
 			"rocky"     ,"baserock_rocky" ,
 			"spiny_left","spiny_right",
 			"sparky"    ,"baserock_sparky",
-			"equalizer" ,"baserock_equalizer"
+			"equalizer" ,"baserock_equalizer",
+			"bonekrs"   ,"baserock_bonekrs"
 		]
 	}
 }
