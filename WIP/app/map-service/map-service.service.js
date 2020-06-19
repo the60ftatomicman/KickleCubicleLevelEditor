@@ -219,7 +219,7 @@ angular.module('MapService')
 			return 'max';
 		}else if(identifier === '18080C0B02' || identifier === '18080C0B03' ){
 			return 'rocky';
-		}else if(identifier === '2D08130902' || identifier === '2D08130903' ){
+		}else if(identifier === '2D08130902' || identifier === '2D08130903' || identifier === '2D48130902' || identifier === '2D48130903' ){
 			return 'myrtle';
 		}else if(identifier === '1A080F0302' || identifier === '1A080F0303' ){
 			return 'rooker';

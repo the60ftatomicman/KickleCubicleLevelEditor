@@ -10,6 +10,7 @@ angular.
 		//
 		var self            = this;
 		self.currentMap     = undefined;
+		self.currentIndex   = 0;
 		self.selectableMaps = [];
 		//
 		//
@@ -21,6 +22,19 @@ angular.
 		self.updateMapSelection = function(){
 			console.log(self.currentMap.file);
 			MapService.getMapData(self.currentMap.file);
+			self.currentIndex = parseInt(self.currentMap.file.replace("level_",""))-1;
+		};
+		self.gotoNext = function(){
+			self.currentIndex += self.currentIndex < MapService.availableMaps.length ? 1 : 0;
+			console.log(self.currentIndex);
+			self.currentMap = MapService.availableMaps[self.currentIndex];
+			self.updateMapSelection();
+		};
+		self.gotoPrev = function(){
+			self.currentIndex -= self.currentIndex > 0 ? 1 : 0;
+			console.log(self.currentIndex);
+			self.currentMap = MapService.availableMaps[self.currentIndex];
+			self.updateMapSelection();
 		};
 		self.getMapSelection = function(){
 			var selectedData = MapService.availableMaps;

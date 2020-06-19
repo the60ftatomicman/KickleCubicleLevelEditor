@@ -3,4 +3,6 @@
       ng-options="map.name for map in $ctrl.getMapSelection() track by map.file"
       ng-model="$ctrl.currentMap"
 	  ng-change="$ctrl.updateMapSelection()"></select>
+	<button name="nextButton" ng-click="$ctrl.gotoNext()">Next</button>
+	<button name="prevButton" ng-click="$ctrl.gotoPrev()">Prev</button>
 </div>
