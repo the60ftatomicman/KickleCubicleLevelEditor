@@ -1,159 +1,50 @@
 # KickleCubicleLevelEditor
-Notes, eventually a program for editing Kickle Cubicle levels
+This is a NodeJS application which will run a web server to allow you to edit Kickle Cubicle Levels
 
-# Intro Summary Etc
-blah blah blah. Will write as time goes on but for now just copying down important notes!
+# TL;DR - How do I run this
+0) Install the latest version of nodejs
+1) Clone the Repo
+2) navigate to WIP
+3) run "npm start"
+4) In your web-brwoser goto: localhost:8080/index.html
+-- Steps 5-6 exist since this thing is still VERY much in development to make the process for editing easier
+5) Open the file "<root of this repo>/Docs/breakdownOfCompression.txt" to understand how the tile mapping works
+6) Open the file "<root of this repo>/Docs/CurlyNotes_AKA_almostEverything.txt" to see tile assignments, enemy grouping assignments, and treat it as the definitive text guide on modifying this game
+7) Open the file "<root of this repo>/Docs/quick_tile_guide.txt" for the abridged tile assignment info 
+8) Edit and enjoy.
 
-#How Enemy Data Works
-Calling EF FF, the next 3 values will be our dream bag locations
-After that, call 01 and define kickles position
-0B,C0,0A,05,00 (and dividing by 00) seems to trigger noggle definition. note EF usually run after defining
-monsters
-The noggles are ALWAYS defined in the following manner at minimum until EF
-73 - Noggles #1 starting position (X: 30, Y: 70).
-83 - Noggles #1 Base Rock position (X: 30, Y: 80).
-FF - 
-01 - Noggles #1 direction (right).
-7B - Noggles #2 starting position (X: B0, Y: 70).
-8B - Noggles #2 Base Rock position (X: B0, Y: 80).
-FF - 
-03 - Noggles #2 direction (left).
-EF - Repeat starting, spawn, blank, direction until EF!
+# Intro Summary
+Kickle Cubicle released in 1990 for the NES (previously 1988 in arcades) is a puzzle push block game; similar to Adventures of Lolo (NES). It features 67 levels in the main game with 30 additional special levels. This simply isn't enough.
+With the help of this tool I want to promote new level creation for this game.
+The goal of this project is to build a simplified (eventually) editor so people can design more levels for all to share and enjoy.
 
- --- Enemies defined by this 5 hex character
- 
-0B,C0,0A,05,00      = Noggle group
-1E,88,0D,11,(02/03) = Sparky group
-0D,08,0E,0D,(02/03) = Mr. Hoople group
-20,08,0B,03,(02/03) = Max group
-18,08,0C,0B,(02/03) = Rocky group
-1A,08,0F,03,(02/03) = Rooker group
-25,88,09,07,(02/03) = Bonkers group
-27,C8,10,01,(02/03) = Shades group
-2B,08,12,11,(02/03) = Equalizer group
-23,70,0A,11,(02/03) = Spiny (Right) group
-23,40,0A,11,(02/03) = Spiny (Left) group
-46,88,4F,0A,(02/03) = Spiny (Left) group
+# How do I use this thing
+See steps under TL;DR above to understand how to launch the game.
+AT the moment you'll need to use the hex editors at the bottom of the webpage to edit the tiles.
+- The left-most editor controls the tiles.
+-- Grouping tile hexes will be paired (ex: 80,02)
+-- All hexes will be spaced (ex: 44 43 80,02 34)
+- The right-most editor controls the enemies, their spawns, kickles landing location, and the dream bag locations.
+-- Note that the editors modify the text automatically after a user inserts any text for appearance
 
-# Moving Kickle's and Dream Bags Spawn Points
- Defined by Nybbles of a single Byte.
- Left Nybble is the Y Coordinate 0-F
- Right Nybble is the X Coordinate 0-C
- 
-# Values for block types
-!!! <it'd be nice to insert pictures OF the block!>
-How to Read: (Left of parenthesis is if group, right is if single, right of parenthesis is right nybble)
-example: (8/0)0 == 80 OR 00, depending on group or single use.
----- (8/0)
-- (8/0)0: Ocean
-- (8/0)1: Normal Block 
-- (8/0)2: Purple Block
-- (8/0)3: Orange Blocker
-- (8/0)4: Hole Block
-- (8/0)5: Solid P Powerup
-- (8/0)6: Broken P Powerup
-- (8/0)7: Ice Cream
-- (8/0)8->F: Cannons
----- (9/1)
-- (9/1)0: Purple Block Edged Top Left
-- (9/1)1: Purple Block Edged Left
-- (9/1)2: Purple Block Edged Bottom Left
-- (9/1)3: Purple Block Edged Top
-- (9/1)4: Purple Block Edged Bottom
-- (9/1)5: Purple Block Edged Top Right
-- (9/1)6: Purple Block Edged Right
-- (9/1)7: Purple Block Edged Bottom Right
-- (9/1)8: Hammer Head Piece Horizontal Centered
-- (9/1)9: Hammer Head Piece Vertical
-- (9/1)A: Hammer Head Piece Horizontal Bottom Edge
-- (9/1)B: Hammer Head Piece Vertical Left Edge
-- (9/1)C: Hammer Arm Piece Up
-- (9/1)D: Hammer Arm Piece Right
-- (9/1)E: Hammer Arm Piece Down
-- (9/1)F: Hammer Arm Piece Left
----- (A/2)
-- (A/2)0: Kickle Ice Block Solid
-- (A/2)1->2: Kickle Ice Cylinder
-- (A/2)3: Kickle Ice Block Melted
-- (A/2)4: Normal Block (see solo in water?
-- (A/2)5: 1 up!
-- (A/2)6: Normal Block (see solo in water?)
-- (A/2)7: Just blue (no ocean)
-- (A/2)8: Block Breaker Arrow Up
-- (A/2)9: Block Breaker Arrow Right
-- (A/2)A: Block Breaker Arrow Down
-- (A/2)B: Block Breaker Arrow Left
-- (A/2)C: Monster Spawn Closed (nothing came out)
-- (A/2)D: Monster Spawn Open Mid (nothing came out)
-- (A/2)E: Monster Spawn Open Full (nothing came out)
-- (A/2)F: Tiny Orange Blocks in a group of 4 (note: is walkable)
----- (B/3) -- play with springs sometime, they are uni directional!
-- (B/3)0->1: Spring Expanded Horizontal
-- (B/3)2->3: Spring Expanded Vertical
-- (B/3)4->5: Spring Condensed Horizontal Left
-- (B/3)6->7: Spring Condensed Horizontal Right
-- (B/3)8->9: Spring Condensed Vertical Top
-- (B/3)A->B: Spring Condensed Vertical Bottom
-- (B/3)C: Sinking Tile Mid Sink (unwalkable)
-- (B/3)D: Sinking Tile Beginning Sink (unwalkable)
-- (B/3)E: Tiny Orange Blocks in a group of 4 (note: is walkable)(Yes same as A/2F)
-- (B/3)F: Purple Block  (Same as 8/02)
----- (C/4)
-- (C/4)0: Cracked Ice (non-walkable)
-- (C/4)1: Edge of Ice - top and left
-- (C/4)2: Edge of Ice - top
-- (C/4)3: Edge of Ice - top
-- (C/4)4: Edge of Ice - left
-- (C/4)5: Edge of Ice - left
-- (C/4)6: Edge of Ice - Little top left corner
-- (C/4)7: Tiny yellow/blue corners in a group of 4 (not walkable)
-- (C/4)7: Tiny yellow/blue corners in a group of 4 (not walkable)
-- (C/4)8: Crushed Ice
-- (C/4)9: Crushed Ice (further deteriorated)
-- (C/4)A: Crushed Ice top only
-- (C/4)B: Crushed Ice top and Bottom
-- (C/4)C: Crushed Ice left only
-- (C/4)D: Crushed Ice (different than 8-9 but all over)
-- (C/4)E: Crushed Ice top right only
-- (C/4)F: Crushed Ice (different than 8,9 and D but all over)
----- (D/5) (looks like edging in boss battles and princess rooms)(note flower is "hammer shaft")
--- Note certain this isn't just sprite data at this point!
--- all of these go without palette. will turn back if cylinder placed on them
-- (D/5)0: a lower case 'b' (walkable)
-- (D/5)1: half a flower (walkable)
-- (D/5)2: half flower and hammer
-- (D/5)3: half hammer horizontal and vertical
-- (D/5)4->5: half hammer vertical and horizontal
-- (D/5)6: half hammer vertical and flower
-- (D/5)7: more flower bits
-- (D/5)8: more flower bits and two blank sqaures
-- (D/5)9: Spring Horizontal (not working)
-- (D/5)A: Spring Vertical (not working)
-- (D/5)B: Spring collapsed (all)
-- (D/5)C: Spring collapsed Vertical
-- (D/5)D: Spring collapsed Horizontal
-- (D/5)E: pure white block
-- (D/5)F: Tiny Orange Blocks in a group of 4 (note: is walkable)(Yes same as A/2F)
----- (E/6) (Numbers act as wall)
-- (E/6)0: Numeric, 4,5,6,7
-- (E/6)1: Numeric, 8,9, lives icon
-- (E/6)2: cool blue block (sprite data for block breakers)
-- (E/6)3: half cool blue block and arrow (sprite data for block breakers)
-- (E/6)4->F: Tiny Orange Blocks in a group of 4 (note: is walkable)(Yes same as A/2F)
----- (F/7)
-- (F/7)0: Purple Edge Top Left
-- (F/7)1: Purple Edge Left Right 
-- (F/7)2: Purple Edge Bottom Left
-- (F/7)3: Purple Edge Top
-- (F/7)4: Purple Edge Bottom
-- (F/7)5: Purple Edge Top Right
-- (F/7)6: Purple Edge Right
-- (F/7)7: Purple Edge Bottom Right
-- (F/7)8: Odd blue and white pattern
-- (F/7)9->E: Tiny Orange Blocks in a group of 4 (note: is walkable)(Yes same as A/2F)
-- (F/7)F: Black Red Water
 
 # FAQ
- - Why is my screen modified after I die?
- -- You have not accounted for the byte limit set per level. You need to have an assignment for exactly X amount of tiles. If information is not defined you'll start seeing funky stuff after kickle dies and the level is reloaded.
- ---- this is common if you miscalculate your compressed blocks
+ - Editor Questions
+ -- Why does the enemy data look awful?
+ ---- I have the wrong enemy data input! I pulled the enemy data via powershell scripts from parsing the CurlyNotes_AKA_almostEverything.txt file. This knowing led to a few levels with wierd (or in some cases NO) data.
+ ---- If you are ambitious enough you can find and pull the enemy data yourself and update the files under <root of this repo>/WIP/app/json/maps/level_<# of level>.json. Just putting the hex data (no spaces) in the value for rawHexData.character will fix this!
+ 
+ -- I noticed a white box with just some hex value in it. What's that?
+ ---- I haven't made an image for that tile yet. By default it just shows a white box with the hex value in it.
+ ---- If you are ambitious enough you can add the tile image under <root of this repo>/WIP/app/img/tiles ; than update <root of this repo>/WIP/app/json/meta_info.json sprites.tile with the tile hex value to indicate this sprite has been generated.
+ 
+ -- Why are there so many small steps for updating things? Why!?
+ ---- I originally thought I'd put this out to the public and actually host the website myself...updating at a slow pace when I had time between work and family. Alot of the JSON data I thought I'd keep in a noSQL mongo database somewhere or just write AWS lambda functions to dump this data. I'll just shorten the answer to "I was architecting and coding simultaneously" which is a bad decision for all of you budding Computer Science majors.
+ 
+ -- I want to suggest a feature, like maybe a nice border around the tile you are hovering over! How do I contact you?
+ ---- garb7477@gmail.com. I am 100% also open to collaboration. If you want to make a change and pull request for this code I'd be thirlled.
+ 
+ - Game Behavior Post Modification Questions
+ -- Why is my screen modified after I die?
+ ---- You have not accounted for the byte limit set per level. You need to have an assignment for exactly X amount of tiles. If information is not defined you'll start seeing funky stuff after kickle dies and the level is reloaded.
+ ---------- this is common if you miscalculate your compressed blocks
