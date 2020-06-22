@@ -1,6 +1,9 @@
 body {
 	padding : 20px 0px 00px 20px;
 }
+.grid{
+	cursor:none;
+}
 .row{
 	min-height : 16px;
 	max-height : 16px;
@@ -12,15 +15,16 @@ body {
 	max-width  : 16px;
 	font-size  : 11px;
 	text-align : center;
-	box-sizing : content-box;
+	box-sizing : border-box;
 	margin: 0px;
 }
 .tile img{
 	display : block;
 }
-/*.tile:hover{
-	border : 1px solid green;
-}*/
+.tile:hover{
+	border-left: 2px solid red;
+	border-right: 2px solid red;
+}
 .faded_font{
 	color : rgba(0,0,0,0.1);
 }

@@ -1,6 +1,4 @@
-<table class="grid" ng-repeat="row in $ctrl.getTiles() track by $index" cellspacing="0" cellpadding="0">
-	<!-- style="border: 1px solid black" -->
-	<!-- ng-style="tile.hex%2 === 0 && {'border':'1px solid black'} || {'border':'1px solid red'}" -->
+<table class="grid" ng-repeat="row in $ctrl.getTiles() track by $index">
 	<tr class="row">
 		<td class="tile" 
 			ng-repeat="tile in row track by $index"

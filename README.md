@@ -47,3 +47,29 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 	 - Why is my screen modified after I die?
 		 - You have not accounted for the byte limit set per level. You need to have an assignment for exactly X amount of tiles. If information is not defined you'll start seeing funky stuff after kickle dies and the level is reloaded
 		 - this is common if you miscalculate your compressed blocks
+		 
+# Feature Timeline
+
+ - v0.10 - finishing up images
+	 - Add all tiles under single Garden Land palette
+	 - Add all enemies in mini 16v16 view
+ - v0.20 - adding in Help guide / Better level selection
+	 - Visual guide to EACH tile value
+	 - Visual guide to enemy Group codes
+	 - Better map
+ -  v0.30 - Support for enemy direction
+	 - show which way they are facing
+	 - Try to get full sprite support by this point!
+ - v0.40 -> v0.90 ???
+ - v 1.0
+	 - Actually host online
+	 - Add in "drag and drop" block placement
+		 - Allow users to "paint" on tiles
+	 - Hex Correction
+		 - If the user has too many hexes or too little, click a button that condenses or expands code to best of ability
+			 - so automatically set 80,03 instead of 00 00 00 and vice versa
+	 - Multi editor mode for character data
+		 - Raw mode - what we have now.. just the hex code
+		 - Simple Mode - make individual inputs per character
+	 - Palette modification for level tiles
+
