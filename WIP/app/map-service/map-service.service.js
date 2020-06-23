@@ -209,32 +209,29 @@ angular.module('MapService')
 		}
 	};
 	function getEnemyGroup(identifier){
+
 		if(identifier === '0BC00A0500'){
 			return 'noggle';
-		}else if(identifier === '0D080E0D02' || identifier === '0D080E0D03' ){
-			return 'hoople';
-		}else if(identifier === '1E880D1102' || identifier === '1E880D1103' || identifier === '1E080D1102' ||  identifier === '1E080D1103'){
-			return 'sparky';
-		}else if(identifier === '20080B0302' || identifier === '20080B0303' ){
-			return 'max';
-		}else if(identifier === '18080C0B02' || identifier === '18080C0B03' ){
-			return 'rocky';
-		}else if(identifier === '2D08130902' || identifier === '2D08130903' || identifier === '2D48130902' || identifier === '2D48130903' ){
-			return 'myrtle';
-		}else if(identifier === '1A080F0302' || identifier === '1A080F0303' ){
-			return 'rooker';
-		}else if(identifier === '2588090702' || identifier === '2588090703' || identifier === '2508090702' || identifier === '2508090703'){
-			return 'bonkers';
-		}else if(identifier === '27C8100102' || identifier === '27C8100103' ){
-			return 'shades';
-		}else if(identifier === '2B08121102' || identifier === '2B08121103' ){
-			return 'equalizer';
-		}else if(identifier === '23700A1102' || identifier === '23700A1103' || identifier === '23480A1102'){
-			return 'spiny_right'; 
-		}else if(identifier === '23400A1102' || identifier === '23400A1103' || identifier === '23080A1102'){
-			return 'spiny_left';
-		}else if(identifier === '46884F0A02' || identifier === '46884F0A03' ){
-			return 'gale';
+		}else{
+			let nonNoggleEnemies = [
+				{'name':'hoople'     ,'regex':/(0D)([0-9A-Fa-f]{2})(0E)(0D)(0(2|3))/g},
+				{'name':'sparky'     ,'regex':/(1E)([0-9A-Fa-f]{2})(0D)(11)(0(2|3))/g},
+				{'name':'max'        ,'regex':/(20)([0-9A-Fa-f]{2})(0B)(03)(0(2|3))/g},
+				{'name':'rocky'      ,'regex':/(18)([0-9A-Fa-f]{2})(0C)(0B)(0(2|3))/g},
+				{'name':'myrtle'     ,'regex':/(2D)([0-9A-Fa-f]{2})(13)(09)(0(2|3))/g},
+				{'name':'rooker'     ,'regex':/(1A)([0-9A-Fa-f]{2})(0F)(03)(0(2|3))/g},
+				{'name':'bonkers'    ,'regex':/(25)([0-9A-Fa-f]{2})(09)(07)(0(2|3))/g},
+				{'name':'shades'     ,'regex':/(27)([0-9A-Fa-f]{2})(10)(01)(0(2|3))/g},
+				{'name':'equalizer'  ,'regex':/(2B)([0-9A-Fa-f]{2})(12)(11)(0(2|3))/g},
+				{'name':'spiny_right','regex':/(23)([0-9A-Fa-f]{2})(0A)(11)(0(2|3))/g},
+				{'name':'spiny_left' ,'regex':/(23)([0-9A-Fa-f]{2})(0A)(11)(0(2|3))/g},
+				{'name':'gale'       ,'regex':/(46)([0-9A-Fa-f]{2})(4F)(0A)(0(2|3))/g}
+			];
+			for(let i=0;i<nonNoggleEnemies.length;i++){
+				if(identifier.match(nonNoggleEnemies[i].regex)){
+					return nonNoggleEnemies[i].name;
+				}
+			}
 		}
 		return	undefined;	
 	};
@@ -253,7 +250,7 @@ angular.module('MapService')
 			direction : '',
 			name      : 'baserock_'+enemyName});
 		}
-		return groupSlice.length+5;
+		return groupSlice.length+6;
 	};
 	//
 	// Constructor

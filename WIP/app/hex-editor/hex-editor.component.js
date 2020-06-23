@@ -51,7 +51,7 @@ angular.
 		
 		//
 		self.formatData_Service = function(editorData){
-			return editorData.replace(/ /g, '').replace(/,/g, '');
+			return editorData.replace(/ /g, '').replace(/,/g, '').toUpperCase();
 		}
 		//
 		self.formatEnemyData_Editor = function(newData){
