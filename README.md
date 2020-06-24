@@ -59,6 +59,7 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 		- (FIXED) Bonkers not appearing
 		- (FIXED) Spawn for Hoople not appearing
  - v0.20 - adding in Help guide / Better level selection
+	 - Argueably the earliest this becoems usable by someone who hasn't read the docs
 	 - Visual guide to EACH tile value
 	 - Visual guide to enemy Group codes
 	 - Better map selection and navigation
@@ -67,9 +68,26 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 	 - Try to get full sprite support by this point!
  -  v0.40 - Iron out level data that is incorrect / Get Enemy Memory Adddresses
 	 - This will undoubtably be the most boring thing I do.
- - v0.50 -> v0.90 ???
+	 - Redo the cursor on the map at this point? I hate the solution I have now.
+ - v0.50 -> v0.80 ???
+ - v0.90 - Hosting / Converting to Electron App
+	  - There are benefits to both we'll see by this point what seems to make sense.
+	  - For Hosting
+	     - On the web, no need for people to download!
+		 - Can update whenever
+		 - I can put this on my resume
+		 - Can access from anywhere
+		 - Can dust off the ol' AWS tutorials I took for hosting a site in 2018
+		 - Can build some sort of kickle cubicle map community to pull others maps
+	  - For Electron
+	     - It's a localized app
+		 - Can add features to build .NES for user after they finish saving
+		    - Reluctant to do that with a website as i'll be sharing a rom. If it's modifying one you have I think that's OK
+		 - Does not require internet.
+		 - System for saving work is as simple as storing files locally.
+		
  - v 1.0
-	 - Actually host online
+	 - Actually host online or turn into an Electron application
 	 - Add in "drag and drop" block placement
 		 - Allow users to "paint" on tiles
 	 - Hex Correction
