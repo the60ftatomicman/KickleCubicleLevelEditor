@@ -51,16 +51,23 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 # Feature Timeline
 
  - v0.10 - finishing up images
-	 - Add all tiles under single Garden Land palette
-	 - Add all enemies in mini 16v16 view
+	 - (DONE) Add all tiles under single Garden Land palette
+	 - (DONE) Add all enemies in mini 16v16 view
+	 - BUGS
+		- (FIXED) Secondary enemies seem to be not showing now?
+		- (FIXED) putting in lower case HEX causes unknown to appear
+		- (FIXED) Bonkers not appearing
+		- (FIXED) Spawn for Hoople not appearing
  - v0.20 - adding in Help guide / Better level selection
 	 - Visual guide to EACH tile value
 	 - Visual guide to enemy Group codes
-	 - Better map
+	 - Better map selection and navigation
  -  v0.30 - Support for enemy direction
 	 - show which way they are facing
 	 - Try to get full sprite support by this point!
- - v0.40 -> v0.90 ???
+ -  v0.40 - Iron out level data that is incorrect / Get Enemy Memory Adddresses
+	 - This will undoubtably be the most boring thing I do.
+ - v0.50 -> v0.90 ???
  - v 1.0
 	 - Actually host online
 	 - Add in "drag and drop" block placement
@@ -72,4 +79,7 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 		 - Raw mode - what we have now.. just the hex code
 		 - Simple Mode - make individual inputs per character
 	 - Palette modification for level tiles
+	 - Save / Export Feature
+		 - not saving the ROM image out, but just saving out the hex blobs
+		 - I don't want to get in trouble for providing a full workable rom.
 
