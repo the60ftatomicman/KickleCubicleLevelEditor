@@ -18,12 +18,16 @@ body {
 	box-sizing : border-box;
 	margin: 0px;
 }
+.tile span:hover{
+	border: 1px solid red;
+}
+.tile img:hover{
+	width: 15px;
+	height: 15px;
+	border: 1px solid red;
+}
 .tile img{
 	display : block;
-}
-.tile:hover{
-	border-left: 2px solid red;
-	border-right: 2px solid red;
 }
 .faded_font{
 	color : rgba(0,0,0,0.1);
