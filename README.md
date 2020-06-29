@@ -33,8 +33,9 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 
  - Editor Questions 
 	 - Why does the enemy data look awful?
-		 - I have the wrong enemy data input! I pulled the enemy data via powershell scripts from parsing the CurlyNotes_AKA_almostEverything.txt file. This knowing led to a few levels with wierd (or in some cases NO) data.
-		 -  If you are ambitious enough you can find and pull the enemy data yourself and update the files under <root of this repo>/WIP/app/json/maps/level_<# of level>.json. Just putting the hex data (no spaces) in the value for rawHexData.character will fix this!    
+		 - I have the wrong enemy data input (or didn't add the enemy data). I tried to automate pulling the enemy data via powershell scripts from parsing the CurlyNotes_AKA_almostEverything.txt file. This didn't always extract correctly and led to some iffy looking data.
+		 -  If you are ambitious enough you can find and pull the enemy data yourself and update the files under <root of this repo>/WIP/app/json/maps/level_<# of level>.json. Just putting the hex data (no spaces) in the value for rawHexData.character will fix this!  
+		 - You don't need a ROM to do this...just gotta pull it manually from CurlyNotes_AKA_almostEverything.txt and plop it (remove spaces as well) into the proper level_#.json file.
 	 - I noticed a white box with just some hex value in it. What's that?
 		 -  I haven't made an image for that tile yet. By default it just shows a white box with the hex value in it.
 		 - If you are ambitious enough you can add the tile image under <root of this repo>/WIP/app/img/tiles ; than update <root of this repo>/WIP/app/json/meta_info.json sprites.tile with the tile hex value to indicate this sprite has been generated.
