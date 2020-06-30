@@ -1,6 +1,7 @@
 
 # KickleCubicleLevelEditor
 This is a NodeJS application which will run a web server to allow you to edit Kickle Cubicle Levels
+Currently Version 0.02
 
 # TL;DR - How do I run this
 0) Install the latest version of **nodejs**
@@ -60,10 +61,10 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 		- (FIXED) Bonkers not appearing
 		- (FIXED) Spawn for Hoople not appearing
  - v0.20 - adding in Help guide / Better level selection
-	 - Argueably the earliest this becoems usable by someone who hasn't read the docs
-	 - Visual guide to EACH tile value
-	 - Visual guide to enemy Group codes
-	 - Better map selection and navigation
+	 - Argueably the earliest this becomes usable by someone who hasn't read the docs
+	 - (DONE) Visual guide to EACH tile value
+	 - (DONE) Visual guide to enemy Group codes
+	 - (DONE) Better map selection and navigation
  -  v0.30 - Support for enemy direction
 	 - show which way they are facing
 	 - Try to get full sprite support by this point!
