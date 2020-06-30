@@ -1,8 +1,12 @@
 <div>
+	<select name="levelSelect"
+      ng-options="world.label for world in $ctrl.getWorldSelection()"
+      ng-model="$ctrl.currentWorld"></select>
     <select name="levelSelect"
-      ng-options="map.name for map in $ctrl.getMapSelection() track by map.file"
+      ng-options="map.name for map in $ctrl.getMapSelection() | filter: $ctrl.currentWorld.filter track by map.file"
       ng-model="$ctrl.currentMap"
 	  ng-change="$ctrl.updateMapSelection()"></select>
+	<br/>
 	<button name="nextButton" ng-click="$ctrl.gotoNext()">Next</button>
 	<button name="prevButton" ng-click="$ctrl.gotoPrev()">Prev</button>
 </div>

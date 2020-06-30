@@ -19,7 +19,7 @@ body {
 	margin: 0px;
 }
 .tile span:hover{
-	border: 1px solid red;
+	border: 2px solid red;
 }
 .tile img:hover{
 	width: 15px;
