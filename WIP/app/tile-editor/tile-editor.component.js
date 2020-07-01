@@ -51,6 +51,16 @@ angular.
 		self.setCurrentTile = function (i) {
 			self.currentTile = i;
 		}
+		self.getSprite = function(ch,dir){
+			if(ch.indexOf('baserock') > -1){
+				return "img/characters/"+ch+".png";
+			}else{
+				return "img/characters/"+ch+"_down.png";
+			}
+		}
+		//
+		//
+		//
 		function populateTiles(tile,cHex,index){
 			if(self.tiles[self.tiles.length-1].length >= 16){
 				self.tiles.push([]);

@@ -52,6 +52,9 @@ angular.module('MapService')
 			self.mapData.memoryAddress.character = data.data.hexAddresses.character;
 		});
 	};
+	self.getEnemyData = function(){
+		return self.mapData.sprite.character.slice(2);
+	};
 	//
 	// Tile Data
 	//
