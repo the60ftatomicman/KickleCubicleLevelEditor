@@ -57,9 +57,9 @@ angular.
 			}else{
 				switch(dir){
 					case 0 :{return "img/characters/"+ch+"_up.png";}
-					case 1 :{return "img/characters/"+ch+"_down.png";}
-					case 2 :{return "img/characters/"+ch+"_left.png";}
-					case 3 :{return "img/characters/"+ch+"_right.png";}
+					case 1 :{return "img/characters/"+ch+"_right.png";}
+					case 2 :{return "img/characters/"+ch+"_down.png";}
+					case 3 :{return "img/characters/"+ch+"_left.png";}
 					default:{return "img/characters/"+ch+"_down.png";}
 				}
 			}

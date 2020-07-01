@@ -25,6 +25,7 @@ angular.
 		self.formatMapData_Editor = function(newData){
 			if(!!newData){
                 MapService.setTileData(self.formatData_Service(newData));
+				self.formattedMemoryString = newData;
 			}else{
 				let serviceData = MapService.tileData();
 				if(serviceData != undefined && self.memoryString != serviceData){
@@ -57,6 +58,7 @@ angular.
 		self.formatEnemyData_Editor = function(newData){
 			if(!!newData){
                 MapService.setCharacterData(self.formatData_Service(newData));
+				self.formattedEnemyString = newData;
 			}else{
 				let serviceData = MapService.characterData();
 				if(serviceData != undefined && self.enemyString != serviceData){

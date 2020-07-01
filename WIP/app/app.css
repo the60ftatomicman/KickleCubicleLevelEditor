@@ -30,6 +30,7 @@ body {
 	position: absolute;
 	bottom  :0px;
 	z-index : 3;
+	background-color: transparent;
 }
 .faded_font{
 	color : rgba(0,0,0,0.1);
