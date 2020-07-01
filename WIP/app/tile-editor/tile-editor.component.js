@@ -55,7 +55,13 @@ angular.
 			if(ch.indexOf('baserock') > -1){
 				return "img/characters/"+ch+".png";
 			}else{
-				return "img/characters/"+ch+"_down.png";
+				switch(dir){
+					case 1 :{return "img/characters/"+ch+"_down.png";}
+					case 2 :{return "img/characters/"+ch+"_left.png";}
+					case 3 :{return "img/characters/"+ch+"_up.png";}
+					case 4 :{return "img/characters/"+ch+"_right.png";}
+					default:{return "img/characters/"+ch+"_down.png";}
+				}
 			}
 		}
 		//
@@ -67,13 +73,15 @@ angular.
 			}
 			let r = self.tiles.length-1;
 			let c = self.tiles[self.tiles.length-1].length;
+			let e = getSpawnString(r,c);
 			self.tiles[self.tiles.length-1].push({
 				hex    : cHex,
 				row    : r,
 				col    : c,
 				val    : tile,
 				sprite : getSpritePath(tile),
-				spawn  : getSpawnString(r,c)
+				spawn  : e.name,
+				dir    : e.direction
 			});
 		}
 		function getSpritePath(hexValue){
@@ -85,13 +93,13 @@ angular.
 		}
 		function getSpawnString(row,col){
 			if(MapService.isKickleSpawn(row,col)){
-				return 'kickle';
+				return {name:'kickle',direction:''};
 			}else if(MapService.isBagSpawn(row,col)){
-				return 'bag';
+				return {name:'bag',direction:''};
 			}else if(MapService.isEnemySpawn(row,col)){
-				return MapService.isEnemySpawn(row,col).name;
+				return MapService.isEnemySpawn(row,col);
 			}
-			return '';
+			return {name:'',direction:''};
 		}
 	}
   });
