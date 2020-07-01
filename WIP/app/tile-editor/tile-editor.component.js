@@ -52,14 +52,14 @@ angular.
 			self.currentTile = i;
 		}
 		self.getSprite = function(ch,dir){
-			if(ch.indexOf('baserock') > -1){
+			if(ch.indexOf('baserock') > -1 || ch.indexOf('spiny') > -1 || ch.indexOf('gale') > -1){
 				return "img/characters/"+ch+".png";
 			}else{
 				switch(dir){
+					case 0 :{return "img/characters/"+ch+"_up.png";}
 					case 1 :{return "img/characters/"+ch+"_down.png";}
 					case 2 :{return "img/characters/"+ch+"_left.png";}
-					case 3 :{return "img/characters/"+ch+"_up.png";}
-					case 4 :{return "img/characters/"+ch+"_right.png";}
+					case 3 :{return "img/characters/"+ch+"_right.png";}
 					default:{return "img/characters/"+ch+"_down.png";}
 				}
 			}
