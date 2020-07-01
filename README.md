@@ -70,8 +70,9 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 	 - (DONE) Try to get full sprite support by this point!
 	 - BUGS
 		- (DONE) Unable to edit the enemy data one character at a time. lame.
- -  v0.40 - Iron out level data that is incorrect / Get Enemy Memory Adddresses
+ -  v0.40 - Iron out level data that is incorrect / Get Enemy Memory Adddresses / Performance
 	 - This will undoubtably be the most boring thing I do.
+	 - Test performance slightly. I have concerns.
 	 - (DONE) Redo the cursor on the map at this point? I hate the solution I have now.
  -  v0.50 - Save Levels and Modify ROM (if provided)
 	 - Save and load levels
