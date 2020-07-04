@@ -1,7 +1,7 @@
 
 # KickleCubicleLevelEditor
 This is a NodeJS application which will run a web server to allow you to edit Kickle Cubicle Levels
-Currently Version 0.02
+Currently Version 0.03
 
 # TL;DR - How do I run this
 0) Install the latest version of **nodejs**
