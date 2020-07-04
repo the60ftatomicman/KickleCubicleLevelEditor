@@ -1,0 +1,18 @@
+levels to fix
+1) Garden Land I
+2) Garden Land Q
+3) Fruit Land E
+4) Cake Land D
+5) Cake Land F (Myrtles are broken)
+6) Cake Land H (Myrtles are broken)
+7) Cake Land K
+8) Cake Land N
+9) Toy Land A
+10) Toy Land B
+11) Toy Land J (Missing sprite!!)
+12) Toy Land N (Missing Sprite!!)
+13) Toy Land P
+14) Special Game 2
+15) Special Game 22 (Missing Sprite!!)
+16) Special Game 23 (Myrtles are broken)
+17) Special Game 30 (No Kickle Spawn)
