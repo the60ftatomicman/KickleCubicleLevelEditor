@@ -17,17 +17,20 @@ body {
 	text-align : center;
 	box-sizing : border-box;
 	margin: 0px;
+	position: relative;
 }
 .tile span:hover{
 	border: 2px solid red;
 }
 .tile img:hover{
-	width: 15px;
-	height: 15px;
 	border: 1px solid red;
 }
 .tile img{
 	display : block;
+	position: absolute;
+	bottom  :0px;
+	z-index : 3;
+	background-color: transparent;
 }
 .faded_font{
 	color : rgba(0,0,0,0.1);

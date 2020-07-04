@@ -9,58 +9,20 @@
 						<img ng-switch-default                   src="img/characters/unknown_spawn.png"></img>
 						<img ng-switch-when="kickle"             src="img/characters/kickle_spawn.png"></img>
 						<img ng-switch-when="bag"                src="img/characters/bag.png"></img>
-						<img ng-switch-when="noggle"             src="img/characters/noggle_down.png"></img>
-						<img ng-switch-when="baserock_noggle"    src="img/characters/baserock_noggle.png"></img>
-						<img ng-switch-when="hoople"             src="img/characters/hoople_down.png"></img>
-						<img ng-switch-when="baserock_hoople"    src="img/characters/baserock_hoople.png"></img>
-						<img ng-switch-when="max"                src="img/characters/max_down.png"></img>
-						<img ng-switch-when="baserock_max"       src="img/characters/baserock_max.png"></img>
-						<img ng-switch-when="rocky"              src="img/characters/rocky_down.png"></img>
-						<img ng-switch-when="baserock_rocky"     src="img/characters/baserock_rocky.png"></img>
-						<img ng-switch-when="spiny_left"         src="img/characters/spiny_left.png"></img>
-						<img ng-switch-when="spiny_right"        src="img/characters/spiny_right.png"></img>
-						<img ng-switch-when="gale"               src="img/characters/gale_down.png"></img>
-						<img ng-switch-when="sparky"             src="img/characters/sparky_down.png"></img>
-						<img ng-switch-when="baserock_sparky"    src="img/characters/baserock_sparky.png"></img>
-						<img ng-switch-when="equalizer"          src="img/characters/equalizer_down.png"></img>
-						<img ng-switch-when="baserock_equalizer" src="img/characters/baserock_equalizer.png"></img>
-						<img ng-switch-when="bonkers"            src="img/characters/bonkers_down.png"></img>
-						<img ng-switch-when="baserock_bonkers"   src="img/characters/baserock_bonkers.png"></img>
-						<img ng-switch-when="rooker"             src="img/characters/rooker_down.png"></img>
-						<img ng-switch-when="baserock_rooker"    src="img/characters/baserock_rooker.png"></img>
-						<img ng-switch-when="myrtle"             src="img/characters/myrtle_down.png"></img>
-						<img ng-switch-when="baserock_myrtle"    src="img/characters/baserock_myrtle.png"></img>
-						<img ng-switch-when="shades"             src="img/characters/shades_down.png"></img>
-						<img ng-switch-when="baserock_shades"    src="img/characters/baserock_shades.png"></img>
+						<img ng-switch-when="noggle|hoople|max|rocky|spiny_left|spiny_right|gale|sparky|equalizer|bonkers|rooker|myrtle|shades" 
+							 ng-switch-when-separator="|" ng-src="{{$ctrl.getSprite(tile.spawn,tile.dir)}}"></img>
+						<img ng-switch-when="baserock_noggle|baserock_hoople|baserock_max|baserock_rocky|spiny_left|baserock_sparky|baserock_equalizer|baserock_bonkers|baserock_rooker|baserock_myrtle|baserock_shades" 
+							 ng-switch-when-separator="|" ng-src="{{$ctrl.getSprite(tile.spawn,tile.dir)}}"></img>
 					</div>
 					<div ng-if='tile.sprite' ng-switch="tile.spawn" class="faded_font" style="background-image:url({{tile.sprite}})">
 						<span ng-switch-when="">{{tile.val}}</span>
 						<img ng-switch-default                   src="img/characters/unknown_spawn.png"></img>
 						<img ng-switch-when="kickle"             src="img/characters/kickle_spawn.png"></img>
-						<img ng-switch-when="bag"                src="img/characters/bag.png"></img>
-						<img ng-switch-when="noggle"             src="img/characters/noggle_down.png"></img>
-						<img ng-switch-when="baserock_noggle"    src="img/characters/baserock_noggle.png"></img>
-						<img ng-switch-when="hoople"             src="img/characters/hoople_down.png"></img>
-						<img ng-switch-when="baserock_hoople"    src="img/characters/baserock_hoople.png"></img>
-						<img ng-switch-when="max"                src="img/characters/max_down.png"></img>
-						<img ng-switch-when="baserock_max"       src="img/characters/baserock_max.png"></img>
-						<img ng-switch-when="rocky"              src="img/characters/rocky_down.png"></img>
-						<img ng-switch-when="baserock_rocky"     src="img/characters/baserock_rocky.png"></img>
-						<img ng-switch-when="spiny_left"         src="img/characters/spiny_left.png"></img>
-						<img ng-switch-when="spiny_right"        src="img/characters/spiny_right.png"></img>
-						<img ng-switch-when="gale"               src="img/characters/gale_down.png"></img>
-						<img ng-switch-when="sparky"             src="img/characters/sparky_down.png"></img>
-						<img ng-switch-when="baserock_sparky"    src="img/characters/baserock_sparky.png"></img>
-						<img ng-switch-when="equalizer"          src="img/characters/equalizer_down.png"></img>
-						<img ng-switch-when="baserock_equalizer" src="img/characters/baserock_equalizer.png"></img>
-						<img ng-switch-when="bonkers"            src="img/characters/bonkers_down.png"></img>
-						<img ng-switch-when="baserock_bonkers"   src="img/characters/baserock_bonkers.png"></img>
-						<img ng-switch-when="rooker"             src="img/characters/rooker_down.png"></img>
-						<img ng-switch-when="baserock_rooker"    src="img/characters/baserock_rooker.png"></img>
-						<img ng-switch-when="myrtle"             src="img/characters/myrtle_down.png"></img>
-						<img ng-switch-when="baserock_myrtle"    src="img/characters/baserock_myrtle.png"></img>
-						<img ng-switch-when="shades"             src="img/characters/shades_down.png"></img>
-						<img ng-switch-when="baserock_shades"    src="img/characters/baserock_shades.png"></img>
+						<img ng-switch-when="bag"                src="img/characters/bag.png"></img>						
+						<img ng-switch-when="noggle|hoople|max|rocky|spiny_left|spiny_right|gale|sparky|equalizer|bonkers|rooker|myrtle|shades"
+							 ng-switch-when-separator="|" ng-src="{{$ctrl.getSprite(tile.spawn,tile.dir)}}"></img>
+						<img ng-switch-when="baserock_noggle|baserock_hoople|baserock_max|baserock_rocky|spiny_left|baserock_sparky|baserock_equalizer|baserock_bonkers|baserock_rooker|baserock_myrtle|baserock_shades" 
+							 ng-switch-when-separator="|" ng-src="{{$ctrl.getSprite(tile.spawn,tile.dir)}}"></img>
 					</div>
 			</td>
 		</tr>

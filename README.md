@@ -1,7 +1,7 @@
 
 # KickleCubicleLevelEditor
 This is a NodeJS application which will run a web server to allow you to edit Kickle Cubicle Levels
-Currently Version 0.02
+Currently Version 0.03
 
 # TL;DR - How do I run this
 0) Install the latest version of **nodejs**
@@ -66,12 +66,24 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 	 - (DONE) Visual guide to enemy Group codes
 	 - (DONE) Better map selection and navigation
  -  v0.30 - Support for enemy direction
-	 - show which way they are facing
-	 - Try to get full sprite support by this point!
- -  v0.40 - Iron out level data that is incorrect / Get Enemy Memory Adddresses
+	 - (DONE) show which way they are facing
+	 - (DONE) Try to get full sprite support by this point!
+	 - BUGS
+		- (DONE) Unable to edit the enemy data one character at a time. lame.
+ -  v0.40 - Iron out level data that is incorrect / Get Enemy Memory Adddresses / Performance
 	 - This will undoubtably be the most boring thing I do.
-	 - Redo the cursor on the map at this point? I hate the solution I have now.
- - v0.50 -> v0.80 ???
+	 - Test performance slightly. I have concerns.
+	 - (DONE) Redo the cursor on the map at this point? I hate the solution I have now.
+ -  v0.50 - Save Levels and Modify ROM (if provided)
+	 - Save and load levels
+	 - IF Given a ROM file, modify that ROM with your data.
+ -  v0.60 - Simple Mode Editing for Enemies
+	 - Add toggle for RAW vs Simple
+	 - Add Simple Mode Editing By Default
+		- Shows enemies in a list
+		- add with + or remove with -
+		- define coordinates, spawn, and direction
+ - v0.70 -> v0.80 ???
  - v0.90 - Hosting / Converting to Electron App
 	  - There are benefits to both we'll see by this point what seems to make sense.
 	  - For Hosting
