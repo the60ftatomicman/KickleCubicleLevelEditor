@@ -9,9 +9,12 @@ angular.
 		self.memoryString          = undefined;
 		self.formattedMemoryString = '';
 		self.memoryLocation        = {start:undefined,end:undefined};
+		self.memoryNextState       = 'Simple';
 		self.enemyString           = undefined;
 		self.formattedEnemyString  = '';
 		self.enemyLocation         = {start:undefined,end:undefined};
+		self.enemyNextState        = 'Simple';
+		self.characterSpawns       = undefined;
 		//
 		//
 		//
@@ -64,6 +67,7 @@ angular.
 				if(serviceData != undefined && self.enemyString != serviceData){
 					self.enemyString          = serviceData;
 					self.formattedEnemyString = '';
+					 self.characterSpawns     = undefined;
 					self.enemyLocation        = MapService.mapData.memoryAddress.character;
 					let hexValues             = self.enemyString.match(/[\s\S]{1,2}/g);
 					for(let i=0;i<hexValues.length;i=i){
@@ -76,6 +80,24 @@ angular.
 			}
 			return self.formattedEnemyString;	
 		}
+		//
+		self.getSpawnData_Editor = function(){
+			let serviceData = MapService.characterData();
+			if(serviceData != undefined && self.enemyString != serviceData || self.characterSpawns == undefined){
+				self.characterSpawns = [];
+				self.characterSpawns[0] = MapService.mapData.spawn.kickle;
+				self.characterSpawns[0].name = 'Kickle';
+				for(let i=0;i<MapService.mapData.spawn.bag.length;i++){
+					self.characterSpawns[i+1] = MapService.mapData.spawn.bag[i];
+					self.characterSpawns[i+1].name = 'Bag';
+				}
+				for(let i=0;i<MapService.mapData.spawn.enemy.length;i++){
+					self.characterSpawns[i+4] = MapService.mapData.spawn.enemy[i];
+				}	
+			}
+			return self.characterSpawns;	
+		}
+		
 		//
 		self.getOriginalCount = function(type){
 			if(type == 'Character'){
@@ -135,6 +157,14 @@ angular.
 				}
 			}
 			return tileCount;	
+		}
+		//
+		self.switchState = function(type){
+			if(type == 'Character'){
+				self.enemyNextState  = self.enemyNextState  === 'Simple' ? 'Raw' : 'Simple';
+			}else{
+				self.memoryNextState = self.memoryNextState === 'Simple' ? 'Raw' : 'Simple';
+			}	
 		}
 	}
   });
