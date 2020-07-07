@@ -1,7 +1,7 @@
 
 # KickleCubicleLevelEditor
 This is a NodeJS application which will run a web server to allow you to edit Kickle Cubicle Levels
-Currently Version 0.35
+Currently Version 0.40
 
 # TL;DR - How do I run this
 0) Install the latest version of **nodejs**
@@ -77,11 +77,13 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 	 - BUGS
 		- (DONE) Myrtle Sprites Broken
 		- (DONE) One of the enemies happens to be mising!
-		- More Character Editor bugs, removing all text does not update?
-		- See list of levels under "Levels to Fix.txt"
+		- (MOVED) More Character Editor bugs, removing all text does not update?
+		- (DONE) See list of levels under "Levels to Fix.txt"
  -  v0.50 - Save Levels and Modify ROM (if provided)
 	 - Save and load levels
 	 - IF Given a ROM file, modify that ROM with your data.
+	 - BUGS
+		- More Character Editor bugs, removing all text does not update?
  -  v0.60 - Simple Mode Editing for Enemies
 	 - Add toggle for RAW vs Simple
 	 - Add Simple Mode Editing By Default
