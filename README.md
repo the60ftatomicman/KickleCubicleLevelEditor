@@ -84,6 +84,7 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 	 - IF Given a ROM file, modify that ROM with your data.
 	 - BUGS
 		- More Character Editor bugs, removing all text does not update?
+		- Editing cursor goes to END of text box after refresh and I hate it.
  -  v0.60 - Simple Mode Editing for Enemies
 	 - Add toggle for RAW vs Simple
 	 - Add Simple Mode Editing By Default
