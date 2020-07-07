@@ -1,11 +1,11 @@
-levels to fix
+levels to fix (NONE! ALL FIXED!!)
 1) Garden Land I (Fixed by new function in map service to find divider for enemy data)
-2) Garden Land Q 
-3) Fruit Land E
+2) Garden Land Q (Data was just wrong from script. pulled from Curly)
+3) Fruit Land E  (Data was just wrong from script. pulled from Curly)
 4) Cake Land D (Fixed by new function in map service to find divider for enemy data)
 5) Cake Land K (Fixed by new function in map service to find divider for enemy data)
 6) Cake Land N (Fixed by new function in map service to find divider for enemy data)
-7) Toy Land A Loading level B data ?
+7) Toy Land A (Data was just wrong from script. pulled from Curly)
 8) Toy Land B (Fixed by new function in map service to find divider for enemy data)
 9) Toy Land P (Fixed by new function in map service to find divider for enemy data)
 10) Special Game 2 (Fixed by new function in map service to find divider for enemy data)
