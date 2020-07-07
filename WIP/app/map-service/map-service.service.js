@@ -116,7 +116,8 @@ angular.module('MapService')
 		if(self.mapData.character.current != ""){
 			let hexValues   = self.mapData.character.current.match(/[\s\S]{1,2}/g);
 			let atKickle    = false;
-			for(let i=hexValues.lastIndexOf('FF');i<hexValues.length;i++){
+			//hexValues.lastIndexOf('FF')
+			for(let i=findEnemyDataSplitter(hexValues);i<hexValues.length;i++){
 				atKickle = hexValues[i-1] === '01'
 				if(atKickle && self.mapData.spawn.kickle.row == -1){ 
 					self.mapData.spawn.kickle = {row:parseInt(hexValues[i].charAt(0),16),col:parseInt(hexValues[i].charAt(1),16)};
@@ -139,7 +140,7 @@ angular.module('MapService')
 		}
 		if(self.mapData.character.current != ""){
 			let hexValues      = self.mapData.character.current.match(/[\s\S]{1,2}/g);
-			let lastEnemyIndex = hexValues.lastIndexOf('FF');
+			let lastEnemyIndex = findEnemyDataSplitter(hexValues);//hexValues.lastIndexOf('FF');
 			for(var j=0;j<3;j++){
 				self.mapData.spawn.bag[j] = {
 					row:parseInt(hexValues[lastEnemyIndex+j+1].charAt(0),16),
@@ -166,7 +167,7 @@ angular.module('MapService')
 		self.mapData.spawn.enemy = [];
 		if(self.mapData.character.current != ""){
 			let hexValues = self.mapData.character.current.match(/[\s\S]{1,2}/g);
-			let enemyIdx  = hexValues.lastIndexOf('EF');
+			let enemyIdx  = findEnemyDataSplitter(hexValues)-1;//hexValues.lastIndexOf('EF');
 			for(let i=0;i<enemyIdx;i=i){
 				let identifier = hexValues.slice(i,i+5).toString().replace(/,/g, '');
 				let idxMoved   = 1;
@@ -177,7 +178,7 @@ angular.module('MapService')
 				i+=idxMoved;
 			}
 			//For some odd reason, some levels have extra enemy spawn data here baserock data here.
-			let kickleData = hexValues.slice(hexValues.lastIndexOf('FF'));
+			let kickleData = hexValues.slice(findEnemyDataSplitter(hexValues));//hexValues.slice(hexValues.lastIndexOf('FF'));
 			for(let i=kickleData.indexOf('01')+2;i<kickleData.length;i+=2){
 				if(kickleData[i]){
 					self.mapData.spawn.enemy.push({
@@ -204,6 +205,14 @@ angular.module('MapService')
 	//
 	// Private
 	//
+	function findEnemyDataSplitter(hexArray){
+		for(let i=1;i<hexArray.length;i++){
+			if(hexArray[i-1] == 'EF' && hexArray[i] == 'FF' && hexArray[i+4] == '01'){
+				return i;
+			}
+		}
+		return -1;
+	}
 	function countHexes(hexString){
 		if(hexString === undefined){
 			return -1

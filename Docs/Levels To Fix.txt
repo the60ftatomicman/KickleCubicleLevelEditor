@@ -1,12 +1,12 @@
 levels to fix
-1) Garden Land I
-2) Garden Land Q
+1) Garden Land I (Fixed by new function in map service to find divider for enemy data)
+2) Garden Land Q 
 3) Fruit Land E
-4) Cake Land D
-5) Cake Land K
-6) Cake Land N
-7) Toy Land A
-8) Toy Land B
-9) Toy Land P
-10) Special Game 2
-11) Special Game 30 (No Kickle Spawn)
+4) Cake Land D (Fixed by new function in map service to find divider for enemy data)
+5) Cake Land K (Fixed by new function in map service to find divider for enemy data)
+6) Cake Land N (Fixed by new function in map service to find divider for enemy data)
+7) Toy Land A Loading level B data ?
+8) Toy Land B (Fixed by new function in map service to find divider for enemy data)
+9) Toy Land P (Fixed by new function in map service to find divider for enemy data)
+10) Special Game 2 (Fixed by new function in map service to find divider for enemy data)
+11) Special Game 30 (Fixed by new function in map service to find divider for enemy data)
