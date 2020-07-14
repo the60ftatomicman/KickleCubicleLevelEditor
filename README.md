@@ -88,6 +88,11 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 	 - BUGS
 		- More Character Editor bugs, removing all text does not update?
 		- Editing cursor goes to END of text box after refresh and I hate it.
+		- Can't Add Bonkers in simple mode
+		- Can't Add Left Spiny in simple mode
+		- Can't Add Sparky in simple mode
+		- Not a bug but I HAAAAATE that up and down are reversed. controls are a bit cumbersome but usable.
+		- Spelling Error, I type noggle and noogle with wild inconsistency.
  -  v0.60 - Save Levels and Modify ROM (if provided)
 	 - Save and load levels
 	 - IF Given a ROM file, modify that ROM with your data.

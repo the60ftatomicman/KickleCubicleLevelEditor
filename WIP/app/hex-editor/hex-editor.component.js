@@ -15,6 +15,22 @@ angular.
 		self.enemyLocation         = {start:undefined,end:undefined};
 		self.enemyNextState        = 'Raw';
 		self.characterSpawns       = undefined;
+		self.enemySelection        = [
+			'noggle'     ,
+			'hoople'     ,  	
+			'sparky'     ,   	
+			'max'        ,    	
+			'rocky'      ,    	
+			'myrtle'     ,    	
+			'rooker'     ,    	
+			'bonkers'    ,    	
+			'shades'     ,   	
+			'equalizer'  ,  	
+			'spiny_right',	
+		    'spiny_left' ,
+	        'gale'       
+		];
+		self.currentEnemySelection =  'noggle';
 		//
 		//
 		//
@@ -170,6 +186,17 @@ angular.
 			}else{
 				self.memoryNextState = self.memoryNextState === 'Simple' ? 'Raw' : 'Simple';
 			}	
+		}
+		//
+		self.addEnemy_Simple = function(){
+			console.log(self.characterSpawns);
+			self.characterSpawns.push({
+				row: 0, col: 0, direction: 1, name: self.currentEnemySelection
+			});
+			self.characterSpawns.push({
+				row: 0, col: 1, direction: "", name: "baserock_"+self.currentEnemySelection
+			});
+			self.formatEnemyData_Editor(convertToEnemyDataString());
 		}
 		//
 		//
