@@ -13,7 +13,7 @@ angular.
 		self.enemyString           = undefined;
 		self.formattedEnemyString  = '';
 		self.enemyLocation         = {start:undefined,end:undefined};
-		self.enemyNextState        = 'Simple';
+		self.enemyNextState        = 'Raw';
 		self.characterSpawns       = undefined;
 		//
 		//
@@ -51,8 +51,7 @@ angular.
 				}
 			}
 			return self.formattedMemoryString;
-		}
-		
+		}		
 		//
 		self.formatData_Service = function(editorData){
 			return editorData.replace(/ /g, '').replace(/,/g, '').toUpperCase();
@@ -97,7 +96,11 @@ angular.
 			}
 			return self.characterSpawns;	
 		}
-		
+		//
+		self.setSpawnData_Service = function(hex,idx){
+			self.characterSpawns[idx] = hex;
+			self.formatEnemyData_Editor(convertToEnemyDataString());
+		}
 		//
 		self.getOriginalCount = function(type){
 			if(type == 'Character'){
@@ -114,6 +117,7 @@ angular.
 				return MapService.getTileDataCurrentSize();
 			}
 		}
+		//
 		self.resetText = function(type){
 			if(type == 'Character'){
 				return MapService.resetCharacterData();
@@ -121,6 +125,7 @@ angular.
 				return MapService.resetTileData();
 			}
 		}
+		//
 		self.copyText = function(type){
 			let tmp = document.createElement("textarea");
 			if(type == 'Character'){
@@ -165,6 +170,51 @@ angular.
 			}else{
 				self.memoryNextState = self.memoryNextState === 'Simple' ? 'Raw' : 'Simple';
 			}	
+		}
+		//
+		//
+		//
+		function convertToEnemyDataString(){
+			var newEnemyData = '';
+			//var enemyTemplate = '#$00!EF';
+			var templateStrings = {
+			'noggle'     :'~0BC00A0500',
+			'hoople'     :'~0D080E0D02',  	
+			'sparky'     :'~1EE880D1102',    	
+			'max'        :'~20080B0302',    	
+			'rocky'      :'~18080C0b02',    	
+			'myrtle'     :'~2d08130902',    	
+			'rooker'     :'~1A080F0302',    	
+			'bonkers'    :'~2588097002',    	
+			'shades'     :'~27C8100102',   	
+			'equalizer'  :'~2B08121102',  	
+			'spiny_right':'~23400A1102',	
+		    'spiny_left' :'~23700A1102',
+	        'gale'       :'~46884F0A02',
+			'Bag'        :'~FF',
+			'Kickle'     :'~01'
+			}
+			for(let i=0;i<self.characterSpawns.length;i++){
+				let name =  self.characterSpawns[i].name;
+				let hex  = self.characterSpawns[i].row.toString(16)+self.characterSpawns[i].col.toString(16);
+				let len  = self.characterSpawns.length;
+				templateStrings[name]  = templateStrings[name][0] === '~' ? templateStrings[name].slice(1) : templateStrings[name];
+				templateStrings[name] +=hex;
+				if(name != 'Kickle' && name != 'Bag'){
+					let brock = self.characterSpawns[i+1].row.toString(16)+self.characterSpawns[i+1].col.toString(16)
+					templateStrings[name]+=brock+"00"+"01";
+					i++;
+				}
+			}
+			for (var ts in templateStrings) {
+				if(templateStrings[ts][0] != '~'){
+					newEnemyData+=templateStrings[ts];
+					if(ts != 'Kickle' && ts != 'Bag'){
+						newEnemyData+='EF';
+					}
+				}
+			}
+			return newEnemyData;
 		}
 	}
   });
