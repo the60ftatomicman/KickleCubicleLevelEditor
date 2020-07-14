@@ -16,11 +16,11 @@
 		<td ng-if="!!$ctrl.enemyLocation.start">Address {{$ctrl.enemyLocation.start}} > {{$ctrl.enemyLocation.end}}</td>
 	</tr>
 	<tr style="margin-top:2px;">
-		<td style="width:375px; height:160px;border: 1px solid;">
+		<td style="width:250px; height:160px;border: 1px solid;">
 			<textarea style="width:100%; height:100%;"
 			ng-if="$ctrl.memoryNextState == 'Simple'"
 			ng-model="$ctrl.formatMapData_Editor"
-			ng-model-options="{ debounce: 1000 , getterSetter: true}"
+			ng-model-options="{ debounce: 100 , getterSetter: true}"
 			ng-change="$ctrl.formatMapData_Editor()">
 			</textarea>
 			<div style="width:100%; height:100%;"
@@ -30,7 +30,7 @@
 			<textarea style="width:100%; height:100%;"
 			ng-if="$ctrl.enemyNextState == 'Simple'"
 			ng-model="$ctrl.formatEnemyData_Editor"
-			ng-model-options="{ debounce: 1000 , getterSetter: true}"
+			ng-model-options="{ debounce: 100 , getterSetter: true}"
 			ng-change="$ctrl.formatEnemyData_Editor()"></textarea>
 			<div ng-if="$ctrl.enemyNextState == 'Raw'" style="width:100%;height:280px;overflow-y: scroll;">
 				<div style="border: 1px solid black;height:flex;min-height:20px;"

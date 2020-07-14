@@ -5,7 +5,7 @@
 				ng-repeat="tile in row track by $index"
 				ng-mouseover="$ctrl.setCurrentTile(tile)">
 					<div ng-if='!tile.sprite' ng-switch="tile.spawn" class="solid_font">
-						<span ng-switch-when="">{{tile.val}}</span>
+						<span ng-switch-when="">{{::tile.val}}</span>
 						<img ng-switch-default                   src="img/characters/unknown_spawn.png"></img>
 						<img ng-switch-when="kickle"             src="img/characters/kickle_spawn.png"></img>
 						<img ng-switch-when="bag"                src="img/characters/bag.png"></img>
@@ -15,7 +15,7 @@
 							 ng-switch-when-separator="|" ng-src="{{$ctrl.getSprite(tile.spawn,tile.dir)}}"></img>
 					</div>
 					<div ng-if='tile.sprite' ng-switch="tile.spawn" class="faded_font" style="background-image:url({{tile.sprite}})">
-						<span ng-switch-when="">{{tile.val}}</span>
+						<span ng-switch-when="">{{::tile.val}}</span>
 						<img ng-switch-default                   src="img/characters/unknown_spawn.png"></img>
 						<img ng-switch-when="kickle"             src="img/characters/kickle_spawn.png"></img>
 						<img ng-switch-when="bag"                src="img/characters/bag.png"></img>						
