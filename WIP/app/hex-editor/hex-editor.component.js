@@ -30,6 +30,12 @@ angular.
 		    'spiny_left' ,
 	        'gale'       
 		];
+		self.directions = [
+			{label:'Down' ,val:'2'},
+			{label:'Right',val:'1'},
+			{label:'Up'   ,val:'0'},
+			{label:'Left' ,val:'3'},
+		];
 		self.currentEnemySelection =  'noggle';
 		//
 		//
@@ -110,6 +116,7 @@ angular.
 					self.characterSpawns[i+4] = MapService.mapData.spawn.enemy[i];
 				}	
 			}
+			console.log(self.characterSpawns);
 			return self.characterSpawns;	
 		}
 		//
@@ -214,6 +221,11 @@ angular.
 			self.formatEnemyData_Editor(convertToEnemyDataString());
 		}
 		//
+		self.updateDirection = function(dir,idx){
+			self.characterSpawns[idx].direction = dir; 
+			self.formatEnemyData_Editor(convertToEnemyDataString());
+		}
+		//
 		self.isDeletable = function(name){
 			return name != 'Kickle' && name != 'Bag' && !name.match(/(baserock)/g)
 		}
@@ -247,8 +259,9 @@ angular.
 				templateStrings[name]  = templateStrings[name][0] === '~' ? templateStrings[name].slice(1) : templateStrings[name];
 				templateStrings[name] +=hex;
 				if(name != 'Kickle' && name != 'Bag'){
-					let brock = self.characterSpawns[i+1].row.toString(16)+self.characterSpawns[i+1].col.toString(16)
-					templateStrings[name]+=brock+"00"+"01";
+					let brock  = self.characterSpawns[i+1].row.toString(16)+self.characterSpawns[i+1].col.toString(16);
+					let dirHex = self.characterSpawns[i].direction ? self.characterSpawns[i].direction.toString(16) : "0";
+					templateStrings[name]+=brock+"000"+dirHex;
 					i++;
 				}
 			}

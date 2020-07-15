@@ -36,17 +36,27 @@
 				<div style="border: 1px solid black;height:flex;min-height:20px;"
 					 ng-repeat="hex in $ctrl.getSpawnData_Editor() track by $index">
 					<div style="display: inline-block;width:135px">{{hex.name}}</div>
-					<!-- Row: --><div style="display: inline-block;width:100px">
+					<!-- Row: -->
+					<div style="display: inline-block;width:100px">
 						<button ng-click="$ctrl.moveCharacter(-1,0,$index)">^</button>
 						<input type="number" style="width: 40px;" min="0" max="13" ng-model="hex.row" ng-model-options="{debounce : 10}" ng-change="$ctrl.setSpawnData_Service(hex,$index)"></input>
 						<button ng-click="$ctrl.moveCharacter(1,0,$index)">v</button>
 					</div>
-					<!-- Col: --><div style="display: inline-block;width:100">
-					<button ng-click="$ctrl.moveCharacter(0,-1,$index)"><</button>
-					<input type="number" style="width: 40px;" min="0" max="15" ng-model="hex.col" ng-model-options="{debounce : 10}" ng-change="$ctrl.setSpawnData_Service(hex,$index)"></input>
-					<button ng-click="$ctrl.moveCharacter(0,1,$index)">></button>
+					<!-- Col: -->
+					<div style="display: inline-block;width:100">
+						<button ng-click="$ctrl.moveCharacter(0,-1,$index)"><</button>
+						<input type="number" style="width: 40px;" min="0" max="15" ng-model="hex.col" ng-model-options="{debounce : 10}" ng-change="$ctrl.setSpawnData_Service(hex,$index)"></input>
+						<button ng-click="$ctrl.moveCharacter(0,1,$index)">></button>
 					</div>
-					<button ng-if="$ctrl.isDeletable(hex.name)" ng-click="$ctrl.deleteCharacter($index)">Delete</button>
+					<div ng-if="$ctrl.isDeletable(hex.name)" style="display: inline-block;width:100">
+						<select
+							style="height:26px;"
+							ng-model="hex.direction"
+							ng-change="$ctrl.updateDirection(hex.direction,$index)">
+						<option ng-repeat="x in $ctrl.directions" ng-value="{{x.val}}">{{x.label}}</option>
+						</select>
+						<button ng-click="$ctrl.deleteCharacter($index)">Delete</button>
+					</div>
 				</div>
 			</div>
 			<div style="width:100%;height:28px;border: 1px solid black;height:flex;"

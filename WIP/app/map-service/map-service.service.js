@@ -254,7 +254,7 @@ angular.module('MapService')
 		self.mapData.spawn.enemy.push({
 			row       : parseInt(groupSlice[j].charAt(0),16),
 			col       : parseInt(groupSlice[j].charAt(1),16),
-			direction : parseInt(groupSlice[j+3]        ,16),
+			direction : parseInt(groupSlice[j+3]        ,16) || 2,
 			name      : enemyName});
 		self.mapData.spawn.enemy.push({
 			row       : parseInt(groupSlice[j+1].charAt(0),16),
