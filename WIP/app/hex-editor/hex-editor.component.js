@@ -206,7 +206,18 @@ angular.
 			let newC = self.characterSpawns[idx].col + dY;
 			self.characterSpawns[idx].row = newR > -1 && newR < 13 ? newR : self.characterSpawns[idx].row;
 			self.characterSpawns[idx].col = newC > -1 && newC < 15 ? newC : self.characterSpawns[idx].col;
-			self.setSpawnData_Service(self.characterSpawns[idx],idx);
+			self.formatEnemyData_Editor(convertToEnemyDataString());
+		}
+		//
+		self.deleteCharacter = function(idx){
+			console.log(self.characterSpawns);
+			self.characterSpawns.splice(idx,idx+1);
+			console.log(self.characterSpawns);
+			self.formatEnemyData_Editor(convertToEnemyDataString());
+		}
+		//
+		self.isDeletable = function(name){
+			return name != 'Kickle' && name != 'Bag' && !name.match(/(baserock)/g)
 		}
 		//
 		//

@@ -35,6 +35,7 @@
 			<div ng-if="$ctrl.enemyNextState == 'Raw'" style="width:100%;height:280px;overflow-y: scroll;">
 				<div style="border: 1px solid black;height:flex;min-height:20px;"
 					 ng-repeat="hex in $ctrl.getSpawnData_Editor() track by $index">
+					<button ng-if="$ctrl.isDeletable(hex.name)" ng-click="$ctrl.deleteCharacter($index)">Delete</button>
 					<div style="display: inline-block;width:135px">{{hex.name}}</div>
 					<!-- Row: --><div style="display: inline-block;width:100px">
 						<button ng-click="$ctrl.moveCharacter(-1,0,$index)">^</button>
