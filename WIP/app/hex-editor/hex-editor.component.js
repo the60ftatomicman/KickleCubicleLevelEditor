@@ -210,9 +210,7 @@ angular.
 		}
 		//
 		self.deleteCharacter = function(idx){
-			console.log(self.characterSpawns);
-			self.characterSpawns.splice(idx,idx+1);
-			console.log(self.characterSpawns);
+			self.characterSpawns.splice(idx,2);
 			self.formatEnemyData_Editor(convertToEnemyDataString());
 		}
 		//
@@ -231,7 +229,7 @@ angular.
 			'sparky'     :'~1E880D1102',    	
 			'max'        :'~20080B0302',    	
 			'rocky'      :'~18080C0b02',    	
-			'myrtle'     :'~2d08130902',    	
+			'myrtle'     :'~2D08130902',    	
 			'rooker'     :'~1A080F0302',    	
 			'bonkers'    :'~2508090702',    	
 			'shades'     :'~27C8100102',   	

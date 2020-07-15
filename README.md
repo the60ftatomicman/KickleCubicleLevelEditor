@@ -89,7 +89,7 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 		- (DONE?) More Character Editor bugs, removing all text does not update? (modified debounce to 100ms)
 		- (DONE?) Editing cursor goes to END of text box after refresh and I hate it. (modified debounce to 100ms)
 		- (DONE) Can't Add Bonkers in simple mode -- issue is my guide is wrong. bonkers group code is 25 08 09 07 02
-		- Can't Add Left Spiny in simple mode
+		- (DONE) Can't Add Left Spiny in simple mode
 		- (DONE) Can't Add Sparky in simple mode
 		- Spelling Error, I type noggle and noogle with wild inconsistency.
  -  v0.60 - Save Levels and Modify ROM (if provided)

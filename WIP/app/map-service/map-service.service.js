@@ -235,8 +235,8 @@ angular.module('MapService')
 				{'name':'bonkers'    ,'regex':/(25)([0-9A-Fa-f]{2})(09)(07)(0(2|3))/g},
 				{'name':'shades'     ,'regex':/(27)([0-9A-Fa-f]{2})(10)(01)(0(2|3))/g},
 				{'name':'equalizer'  ,'regex':/(2B)([0-9A-Fa-f]{2})(12)(11)(0(2|3))/g},
-				{'name':'spiny_right','regex':/(23)([0-9A-Fa-f]{2})(0A)(11)(0(2|3))/g},
-				{'name':'spiny_left' ,'regex':/(23)([0-9A-Fa-f]{2})(0A)(11)(0(2|3))/g},
+				{'name':'spiny_right','regex':/(23)(4[0-9A-Fa-f]{1})(0A)(11)(0(2|3))/g},
+				{'name':'spiny_left' ,'regex':/(23)([^4]{1}[0-9A-Fa-f]{1})(0A)(11)(0(2|3))/g},
 				{'name':'gale'       ,'regex':/(46)([0-9A-Fa-f]{2})(4F)(0A)(0(2|3))/g}
 			];
 			for(let i=0;i<nonNoggleEnemies.length;i++){
