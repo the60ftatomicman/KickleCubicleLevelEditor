@@ -64,7 +64,7 @@ angular.
 		};
 		self.getMapSelection = function(){
 			var selectedData = MapService.availableMaps;
-			if(self.selectableMaps != MapService.availableMaps){
+			if(selectedData && self.selectableMaps != MapService.availableMaps){
 				self.selectableMaps = MapService.availableMaps;
 				setCurrent(0);
 				MapService.getMapData( MapService.availableMaps[0].file);
@@ -79,7 +79,9 @@ angular.
 		//
 		//TODO: add pallete modifications here here!
 		function setCurrent(idx){
-			self.currentMap   = MapService.availableMaps[idx];
+			if(MapService.availableMaps){
+			self.currentMap = MapService.availableMaps[idx];
+			}
 		}
 	}
   });

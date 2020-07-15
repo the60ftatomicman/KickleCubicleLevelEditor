@@ -50,3 +50,8 @@ textarea{border: 0px;margin-top: 1px;}
 	padding       : 1px;
 	margin-bottom : 3px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

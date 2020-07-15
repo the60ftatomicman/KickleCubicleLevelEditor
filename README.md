@@ -91,7 +91,6 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 		- (DONE) Can't Add Bonkers in simple mode -- issue is my guide is wrong. bonkers group code is 25 08 09 07 02
 		- Can't Add Left Spiny in simple mode
 		- (DONE) Can't Add Sparky in simple mode
-		- Not a bug but I HAAAAATE that up and down are reversed. controls are a bit cumbersome but usable.
 		- Spelling Error, I type noggle and noogle with wild inconsistency.
  -  v0.60 - Save Levels and Modify ROM (if provided)
 	 - Save and load levels

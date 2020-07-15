@@ -164,17 +164,19 @@ angular.
 		}
 		//
 		self.tilesDefined = function(){
-					let hexValues     = self.memoryString.match(/[\s\S]{1,2}/g);
 			let tileCount     = 0;
-			for(let i=0;i<hexValues.length;i=i){
-				let isGroup = parseInt(hexValues[i].charAt(0),16) > 7;
-				let nextHex = hexValues[i+1];
-				if(isGroup && nextHex){ 
-					tileCount+=parseInt(nextHex,16)+1;
-					i+=2;
-				}else{
-					tileCount++;
-					i+=1;
+			if(self.memoryString){
+				let hexValues     = self.memoryString.match(/[\s\S]{1,2}/g);
+				for(let i=0;i<hexValues.length;i=i){
+					let isGroup = parseInt(hexValues[i].charAt(0),16) > 7;
+					let nextHex = hexValues[i+1];
+					if(isGroup && nextHex){ 
+						tileCount+=parseInt(nextHex,16)+1;
+						i+=2;
+					}else{
+						tileCount++;
+						i+=1;
+					}
 				}
 			}
 			return tileCount;	
@@ -197,6 +199,14 @@ angular.
 				row: 0, col: 1, direction: "", name: "baserock_"+self.currentEnemySelection
 			});
 			self.formatEnemyData_Editor(convertToEnemyDataString());
+		}
+		//
+		self.moveCharacter = function(dX,dY,idx){
+			let newR = self.characterSpawns[idx].row + dX;
+			let newC = self.characterSpawns[idx].col + dY;
+			self.characterSpawns[idx].row = newR > -1 && newR < 13 ? newR : self.characterSpawns[idx].row;
+			self.characterSpawns[idx].col = newC > -1 && newC < 15 ? newC : self.characterSpawns[idx].col;
+			self.setSpawnData_Service(self.characterSpawns[idx],idx);
 		}
 		//
 		//
