@@ -50,8 +50,27 @@ textarea{border: 0px;margin-top: 1px;}
 	padding       : 1px;
 	margin-bottom : 3px;
 }
+
+.small_border{
+	border: 1px solid;
+}
+.maxW{
+	width:100%
+}
+.maxH{
+	height:100%;
+}
+.inline{
+	display: inline-block;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
+}
+.w100{
+	width:100;
+}
+.h26{
+	height:26px;
 }
