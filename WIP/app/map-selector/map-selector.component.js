@@ -62,6 +62,9 @@ angular.
 			setCurrent(self.currentIndex);
 			self.updateMapSelection();
 		};
+		self.saveData = function(){
+			MapService.saveData(self.currentMap.file);
+		};
 		self.getMapSelection = function(){
 			var selectedData = MapService.availableMaps;
 			if(selectedData && self.selectableMaps != MapService.availableMaps){

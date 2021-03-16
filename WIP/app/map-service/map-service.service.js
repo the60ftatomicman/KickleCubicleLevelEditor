@@ -16,7 +16,8 @@ angular.module('MapService')
 			},
 			tile:{
 				original:undefined,
-				current :undefined
+				current :undefined,
+				highlight: {start:undefined,end:undefined}
 			},
 			character:{
 				original:undefined,
@@ -55,6 +56,11 @@ angular.module('MapService')
 	self.getEnemyData = function(){
 		return self.mapData.sprite.character.slice(2);
 	};
+	self.saveData = function(){
+		console.log("Save Data");
+		//self.mapData.character.current
+		//self.mapData.tile.current
+	};
 	//
 	// Tile Data
 	//
@@ -67,6 +73,18 @@ angular.module('MapService')
 	};
 	self.setTileData = function(hexData) {
 		self.mapData.tile.current = hexData;
+	};
+	self.setTileHighlights = function (hexData){
+		if (hexData) {
+			self.mapData.tile.highlight.start = hexData.start || 0;
+			self.mapData.tile.highlight.end = hexData.end || 0;
+		}else{
+			self.mapData.tile.highlight.start = undefined;
+			self.mapData.tile.highlight.end = undefined;
+		}
+	};
+	self.getTileHighlights = function (){
+		return self.mapData.tile.highlight;
 	};
 	self.resetTileData = function(hexData) {
 		self.mapData.tile.current = self.mapData.tile.original;

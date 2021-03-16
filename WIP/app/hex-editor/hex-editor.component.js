@@ -8,8 +8,10 @@ angular.
 		var self                   = this;
 		self.memoryString          = undefined;
 		self.formattedMemoryString = '';
+		self.formattedMemoryArray  = [];
+		self.simpleMemoryString    = [];
 		self.memoryLocation        = {start:undefined,end:undefined};
-		self.memoryNextState       = 'Simple';
+		self.memoryNextState       = 'Raw';
 		self.enemyString           = undefined;
 		self.formattedEnemyString  = '';
 		self.enemyLocation         = {start:undefined,end:undefined};
@@ -37,15 +39,93 @@ angular.
 			{label:'Left' ,val:'3'},
 		];
 		self.currentEnemySelection =  'noggle';
+		self.hexValues     = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
 		//
 		//
 		//
 		self.$onInit = function () {
 			self.formatMapData_Editor();
 			self.formatEnemyData_Editor();
+		};
+		//
+		self.showMapData_Count = function (h){
+			return parseInt(h.category,16) > 7;
+		};
+		//
+		self.showMapData_ChangeCategory = function (h){
+			if (!self.showMapData_Count(h)){
+				h.count = 1;
+			}
+			self.convertTileSimple_Formatted();
+		};
+		self.setTileHighlight = function(hex){
+			//Makes performance LAAAAAAAG
+			//MapService.setTileHighlights(hex.indexes);
+		};
+		//
+		//
+		//
+		self.getMapData_Simple = function (){
+			self.formattedMemoryArray = [];
+			let formattedArray = self.formattedMemoryString.split(' ');
+			let currentTileIndex=0;
+			for (let h=0;h<formattedArray.length;h++){
+				if(formattedArray[h].length > 0) {
+					let count       = formattedArray[h].length < 3 ? 1 : parseInt(formattedArray[h].substr(3, 2),16);
+					let category    = formattedArray[h][0];//self.hexCategories[0];
+					let val         = formattedArray[h][1];
+					self.formattedMemoryArray.push({
+						category: category,
+						val: val,
+						count: count
+						//indexes:{start:currentTileIndex,end:currentTileIndex+count-1}
+					});
+					currentTileIndex+=count;
+				}
+			}
+		};
+		//
+		self.convertTileSimple_Formatted = function (){
+			let tempFormattedString = '';
+			for (let h=0;h<self.formattedMemoryArray.length;h++) {
+				let bytes    = self.formattedMemoryArray[h];
+				//(i+0x10000).toString(16).substr(-4).toUpperCase();
+				let count    = self.showMapData_Count(bytes) ? ','+(bytes.count+0x100).toString(16).substr(-2).toUpperCase() : '';
+				tempFormattedString += bytes.category+bytes.val+count+' ';
+			}
+			//self.formattedMemoryString = tempFormattedString;
+			self.formatMapData_Editor(tempFormattedString);
+		};
+		//
+		self.deleteTile = function(idx){
+			self.formattedMemoryArray.splice(idx, 1)
+			self.convertTileSimple_Formatted();
 		}
 		//
+		self.addTile = function(idx){
+			self.formattedMemoryArray.splice(idx+1,0,{
+				category: "0",
+				val: "0",
+				count: 1
+			});
+			self.convertTileSimple_Formatted();
+		}
 		//
+		self.incrementTileCount = function(delta,idx){
+			let next = self.formattedMemoryArray[idx].count + delta;
+			if (next > 0 && next < 16) {
+				self.formattedMemoryArray[idx].count = next;
+				/*
+				let newIndex = self.formattedMemoryArray[idx].start;
+				for (let i=idx;i<self.formattedMemoryArray.length;i++){
+					self.formattedMemoryArray[i].indexes.start = newIndex;
+					self.formattedMemoryArray[i].indexes.end   = newIndex+self.formattedMemoryArray[i].count;
+					newIndex += self.formattedMemoryArray[i].count;
+				}
+				*/
+				self.convertTileSimple_Formatted();
+			}
+		}
 		//
 		self.formatMapData_Editor = function(newData){
 			if(!!newData){
@@ -70,6 +150,7 @@ angular.
 						}
 						self.formattedMemoryString += ' ';
 					}
+					self.getMapData_Simple();
 				}
 			}
 			return self.formattedMemoryString;
@@ -211,8 +292,8 @@ angular.
 		self.moveCharacter = function(dX,dY,idx){
 			let newR = self.characterSpawns[idx].row + dX;
 			let newC = self.characterSpawns[idx].col + dY;
-			self.characterSpawns[idx].row = newR > -1 && newR < 13 ? newR : self.characterSpawns[idx].row;
-			self.characterSpawns[idx].col = newC > -1 && newC < 15 ? newC : self.characterSpawns[idx].col;
+			self.characterSpawns[idx].row = newR > -1 && newR < 14 ? newR : self.characterSpawns[idx].row;
+			self.characterSpawns[idx].col = newC > -1 && newC < 16 ? newC : self.characterSpawns[idx].col;
 			self.formatEnemyData_Editor(convertToEnemyDataString());
 		}
 		//

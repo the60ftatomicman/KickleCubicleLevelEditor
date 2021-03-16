@@ -25,6 +25,9 @@ body {
 .tile img:hover{
 	border: 1px solid red;
 }
+.highlight{
+	border: 1px solid yellow;
+}
 .tile img{
 	display : block;
 	position: absolute;
@@ -67,6 +70,9 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
+}
+.w50{
+	width:50;
 }
 .w100{
 	width:100;

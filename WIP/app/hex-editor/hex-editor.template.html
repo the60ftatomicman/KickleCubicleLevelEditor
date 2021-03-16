@@ -16,15 +16,45 @@
 		<td ng-if="!!$ctrl.enemyLocation.start">Address {{$ctrl.enemyLocation.start}} > {{$ctrl.enemyLocation.end}}</td>
 	</tr>
 	<tr style="margin-top:2px;">
-		<td class="small_border" style="width:250px; height:160px;">
+		<td class="small_border" style="width:250px; height:160px;max-height:160px;overflow: scroll">
 			<textarea class="maxW maxH"
 			ng-if="$ctrl.memoryNextState == 'Simple'"
 			ng-model="$ctrl.formatMapData_Editor"
-			ng-model-options="{ debounce: 100 , getterSetter: true}"
+			ng-model-options="{ debounce: 1000 , getterSetter: true}"
 			ng-change="$ctrl.formatMapData_Editor()">
 			</textarea>
-			<div class="maxW maxH"
-			ng-if="$ctrl.memoryNextState == 'Raw'">TODO</div>
+			<!-- added model only so we'd load the stupid simple form properly -->
+			<div class="maxW"
+				 ng-model="$ctrl.formatMapData_Editor"
+				 ng-model-options="{getterSetter: true}"
+				ng-if="$ctrl.memoryNextState == 'Raw'" style="width:300px;height: 307px;">
+				<div class="small_border"
+					 ng-mouseover="$ctrl.setTileHighlight(hex);"
+					 ng-repeat="hex in $ctrl.formattedMemoryArray track by $index">
+					<div style="display: inline-block;width: 30px;">{{$index}}: </div>
+					<button class="inline w50" ng-click="$ctrl.deleteTile($index)">Del</button>
+					<button class="inline w50" ng-click="$ctrl.addTile($index)">Add</button>
+					<div class="inline w50">
+						<select class="h26"
+								ng-model="hex.category" ng-model-options="{debounce : 10}" ng-change="$ctrl.showMapData_ChangeCategory(hex)">
+							<option ng-value="hv" ng-repeat="hv in $ctrl.hexValues">
+								{{hv}}
+							</option>
+						</select>
+						<select class="h26"
+								ng-model="hex.val" ng-model-options="{debounce : 10}" ng-change="$ctrl.showMapData_ChangeCategory(hex)">
+							<option ng-value="hv" ng-repeat="hv in $ctrl.hexValues">
+								{{hv}}
+							</option>
+						</select>
+					</div>
+					<div class="inline w50" ng-show="$ctrl.showMapData_Count(hex)">
+						<button ng-click="$ctrl.incrementTileCount(1,$index)">^</button>
+						<input type="number" style="width: 30px;" min="1" max="255" ng-model="hex.count" ng-model-options="{debounce : 100}"></input>
+						<button ng-click="$ctrl.incrementTileCount(-1,$index)">v</button>
+					</div>
+				</div>
+			</div>
 		</td>
 		<td class="small_border" style="min-width:350px; min-height:300px;">
 			<textarea class="maxW maxH"
@@ -39,13 +69,13 @@
 					<!-- Row: -->
 					<div class="inline w100">
 						<button ng-click="$ctrl.moveCharacter(-1,0,$index)">^</button>
-						<input type="number" style="width: 40px;" min="0" max="13" ng-model="hex.row" ng-model-options="{debounce : 10}" ng-change="$ctrl.setSpawnData_Service(hex,$index)"></input>
+						<input type="number" style="width: 40px;" min="0" max="14" ng-model="hex.row" ng-model-options="{debounce : 10}" ng-change="$ctrl.setSpawnData_Service(hex,$index)" readonly></input>
 						<button ng-click="$ctrl.moveCharacter(1,0,$index)">v</button>
 					</div>
 					<!-- Col: -->
 					<div class="inline w100">
 						<button ng-click="$ctrl.moveCharacter(0,-1,$index)"><</button>
-						<input type="number" style="width: 40px;" min="0" max="15" ng-model="hex.col" ng-model-options="{debounce : 10}" ng-change="$ctrl.setSpawnData_Service(hex,$index)"></input>
+						<input type="number" style="width: 40px;" min="0" max="16" ng-model="hex.col" ng-model-options="{debounce : 10}" ng-change="$ctrl.setSpawnData_Service(hex,$index)" readonly></input>
 						<button ng-click="$ctrl.moveCharacter(0,1,$index)">></button>
 					</div>
 					<div ng-if="$ctrl.isDeletable(hex.name)" class="inline w100">
