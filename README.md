@@ -1,7 +1,7 @@
 
 # KickleCubicleLevelEditor
 This is a NodeJS application which will run a web server to allow you to edit Kickle Cubicle Levels
-Currently Version 0.40
+Currently Version 0.55
 
 # TL;DR - How do I run this
 0) Install the latest version of **nodejs**
@@ -92,6 +92,11 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 		- (DONE) Can't Add Left Spiny in simple mode
 		- (DONE) Can't Add Sparky in simple mode
 		- Spelling Error, I type noggle and noogle with wild inconsistency.
+  -  v0.55 - Simple Mode Editing for Map
+	 - Add toggle for RAW vs Simple
+	 - Add Simple Mode Editing By Default
+		- Shows hexes in a list
+		- It's not originally what I planned but it'll do.
  -  v0.60 - Save Levels and Modify ROM (if provided)
 	 - Save and load levels
 	 - IF Given a ROM file, modify that ROM with your data.
