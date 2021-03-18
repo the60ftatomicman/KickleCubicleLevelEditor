@@ -16,7 +16,8 @@ angular.module('MapService')
 			},
 			tile:{
 				original:undefined,
-				current :undefined
+				current :undefined,
+				highlight: {start:undefined,end:undefined}
 			},
 			character:{
 				original:undefined,
@@ -55,6 +56,11 @@ angular.module('MapService')
 	self.getEnemyData = function(){
 		return self.mapData.sprite.character.slice(2);
 	};
+	self.saveData = function(){
+		console.log("Save Data");
+		//self.mapData.character.current
+		//self.mapData.tile.current
+	};
 	//
 	// Tile Data
 	//
@@ -67,6 +73,18 @@ angular.module('MapService')
 	};
 	self.setTileData = function(hexData) {
 		self.mapData.tile.current = hexData;
+	};
+	self.setTileHighlights = function (hexData){
+		if (hexData) {
+			self.mapData.tile.highlight.start = hexData.start || 0;
+			self.mapData.tile.highlight.end = hexData.end || 0;
+		}else{
+			self.mapData.tile.highlight.start = undefined;
+			self.mapData.tile.highlight.end = undefined;
+		}
+	};
+	self.getTileHighlights = function (){
+		return self.mapData.tile.highlight;
 	};
 	self.resetTileData = function(hexData) {
 		self.mapData.tile.current = self.mapData.tile.original;
@@ -235,8 +253,8 @@ angular.module('MapService')
 				{'name':'bonkers'    ,'regex':/(25)([0-9A-Fa-f]{2})(09)(07)(0(2|3))/g},
 				{'name':'shades'     ,'regex':/(27)([0-9A-Fa-f]{2})(10)(01)(0(2|3))/g},
 				{'name':'equalizer'  ,'regex':/(2B)([0-9A-Fa-f]{2})(12)(11)(0(2|3))/g},
-				{'name':'spiny_right','regex':/(23)([0-9A-Fa-f]{2})(0A)(11)(0(2|3))/g},
-				{'name':'spiny_left' ,'regex':/(23)([0-9A-Fa-f]{2})(0A)(11)(0(2|3))/g},
+				{'name':'spiny_right','regex':/(23)(4[0-9A-Fa-f]{1})(0A)(11)(0(2|3))/g},
+				{'name':'spiny_left' ,'regex':/(23)([^4]{1}[0-9A-Fa-f]{1})(0A)(11)(0(2|3))/g},
 				{'name':'gale'       ,'regex':/(46)([0-9A-Fa-f]{2})(4F)(0A)(0(2|3))/g}
 			];
 			for(let i=0;i<nonNoggleEnemies.length;i++){
@@ -254,7 +272,7 @@ angular.module('MapService')
 		self.mapData.spawn.enemy.push({
 			row       : parseInt(groupSlice[j].charAt(0),16),
 			col       : parseInt(groupSlice[j].charAt(1),16),
-			direction : parseInt(groupSlice[j+3]        ,16),
+			direction : parseInt(groupSlice[j+3]        ,16) || 2,
 			name      : enemyName});
 		self.mapData.spawn.enemy.push({
 			row       : parseInt(groupSlice[j+1].charAt(0),16),

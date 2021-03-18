@@ -25,6 +25,9 @@ body {
 .tile img:hover{
 	border: 1px solid red;
 }
+.highlight{
+	border: 1px solid yellow;
+}
 .tile img{
 	display : block;
 	position: absolute;
@@ -32,6 +35,7 @@ body {
 	z-index : 3;
 	background-color: transparent;
 }
+textarea{border: 0px;margin-top: 1px;}
 .faded_font{
 	color : rgba(0,0,0,0.1);
 }
@@ -48,4 +52,31 @@ body {
 	font-size     : 11px;
 	padding       : 1px;
 	margin-bottom : 3px;
+}
+
+.small_border{
+	border: 1px solid;
+}
+.maxW{
+	width:100%
+}
+.maxH{
+	height:100%;
+}
+.inline{
+	display: inline-block;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.w50{
+	width:50;
+}
+.w100{
+	width:100;
+}
+.h26{
+	height:26px;
 }

@@ -21,6 +21,15 @@ angular.
 		//
 		//
 		//
+		self.isHighlightTile = function(idx){
+			let range = MapService.getTileHighlights();
+			if (!!range) {
+				return (idx >= range.start) && (idx <= range.end);
+			}else{
+				return false;
+			}
+		};
+		//
 		self.getTiles = function(){
 			let serviceMapData  = MapService.tileData();
 			let serviceCharData = MapService.characterData();
@@ -81,7 +90,8 @@ angular.
 				val    : tile,
 				sprite : getSpritePath(tile),
 				spawn  : e.name,
-				dir    : e.direction
+				dir    : e.direction,
+				idx    : index
 			});
 		}
 		function getSpritePath(hexValue){

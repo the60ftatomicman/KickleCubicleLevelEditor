@@ -79,18 +79,22 @@ AT the moment you'll need to use the hex editors at the bottom of the webpage to
 		- (DONE) One of the enemies happens to be mising!
 		- (MOVED) More Character Editor bugs, removing all text does not update?
 		- (DONE) See list of levels under "Levels to Fix.txt"
- -  v0.50 - Save Levels and Modify ROM (if provided)
-	 - Save and load levels
-	 - IF Given a ROM file, modify that ROM with your data.
-	 - BUGS
-		- More Character Editor bugs, removing all text does not update?
-		- Editing cursor goes to END of text box after refresh and I hate it.
- -  v0.60 - Simple Mode Editing for Enemies
+ -  v0.50 - Simple Mode Editing for Enemies
 	 - Add toggle for RAW vs Simple
 	 - Add Simple Mode Editing By Default
 		- Shows enemies in a list
 		- add with + or remove with -
 		- define coordinates, spawn, and direction
+	 - BUGS
+		- (DONE?) More Character Editor bugs, removing all text does not update? (modified debounce to 100ms)
+		- (DONE?) Editing cursor goes to END of text box after refresh and I hate it. (modified debounce to 100ms)
+		- (DONE) Can't Add Bonkers in simple mode -- issue is my guide is wrong. bonkers group code is 25 08 09 07 02
+		- (DONE) Can't Add Left Spiny in simple mode
+		- (DONE) Can't Add Sparky in simple mode
+		- Spelling Error, I type noggle and noogle with wild inconsistency.
+ -  v0.60 - Save Levels and Modify ROM (if provided)
+	 - Save and load levels
+	 - IF Given a ROM file, modify that ROM with your data.
  - v0.70 -> v0.80 ???
  - v0.90 - Hosting / Converting to Electron App
 	  - There are benefits to both we'll see by this point what seems to make sense.

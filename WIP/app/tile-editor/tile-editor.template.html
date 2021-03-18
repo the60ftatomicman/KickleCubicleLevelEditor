@@ -5,7 +5,7 @@
 				ng-repeat="tile in row track by $index"
 				ng-mouseover="$ctrl.setCurrentTile(tile)">
 					<div ng-if='!tile.sprite' ng-switch="tile.spawn" class="solid_font">
-						<span ng-switch-when="">{{tile.val}}</span>
+						<span ng-switch-when="">{{::tile.val}}</span>
 						<img ng-switch-default                   src="img/characters/unknown_spawn.png"></img>
 						<img ng-switch-when="kickle"             src="img/characters/kickle_spawn.png"></img>
 						<img ng-switch-when="bag"                src="img/characters/bag.png"></img>
@@ -14,11 +14,11 @@
 						<img ng-switch-when="baserock_noggle|baserock_hoople|baserock_max|baserock_rocky|spiny_left|baserock_sparky|baserock_equalizer|baserock_bonkers|baserock_rooker|baserock_myrtle|baserock_shades|baserock_spiny_left|baserock_spiny_right" 
 							 ng-switch-when-separator="|" ng-src="{{$ctrl.getSprite(tile.spawn,tile.dir)}}"></img>
 					</div>
-					<div ng-if='tile.sprite' ng-switch="tile.spawn" class="faded_font" style="background-image:url({{tile.sprite}})">
-						<span ng-switch-when="">{{tile.val}}</span>
+					<div class="faded_font" ng-if='tile.sprite' ng-switch="tile.spawn" style="background-image:url({{tile.sprite}})">
+						<span ng-switch-when="">{{::tile.val}}</span>
 						<img ng-switch-default                   src="img/characters/unknown_spawn.png"></img>
 						<img ng-switch-when="kickle"             src="img/characters/kickle_spawn.png"></img>
-						<img ng-switch-when="bag"                src="img/characters/bag.png"></img>						
+						<img ng-switch-when="bag"                src="img/characters/bag.png"></img>
 						<img ng-switch-when="noggle|hoople|max|rocky|spiny_left|spiny_right|gale|sparky|equalizer|bonkers|rooker|myrtle|shades"
 							 ng-switch-when-separator="|" ng-src="{{$ctrl.getSprite(tile.spawn,tile.dir)}}"></img>
 						<img ng-switch-when="baserock_noggle|baserock_hoople|baserock_max|baserock_rocky|spiny_left|baserock_sparky|baserock_equalizer|baserock_bonkers|baserock_rooker|baserock_myrtle|baserock_shades|baserock_spiny_left|baserock_spiny_right" 
@@ -28,10 +28,4 @@
 		</tr>
 	</table>
 	<div>Tile Type Currently Hovered Over: {{$ctrl.currentTile.val}}</div>
-</span>
-<span style="display: inline-block; vertical-align:top">
-	<img src="img/guides/tiles.png"></img>
-</span>
-<span style="display: inline-block; vertical-align:top">
-	<img src="img/guides/characters.png"></img>
 </span>
